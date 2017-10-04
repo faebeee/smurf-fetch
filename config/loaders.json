@@ -1,0 +1,38 @@
+[
+  {
+    "file" : "./src/Loader/LoadTestLoader",
+    "config" : {
+      "max" : 40
+    }
+  },
+  {
+    "file" : "./src/Loader/Pa11yLoader",
+    "config" : {}
+  },
+  {
+    "file" : "./src/Loader/CSSStatsLoader",
+    "config" : {}
+  },
+  {
+    "file" : "./src/Loader/CSSAnalyzeLoader",
+    "config" : {}
+  },
+  {
+    "file" : "./src/Loader/PSILoader",
+    "config" : {
+      "strategy" : "desktop"
+    }
+  },
+  {
+    "file" : "./src/Loader/WebPageTestLoader",
+    "config" : {}
+  },
+  {
+    "file" : "./src/Loader/LightHouseLoader",
+    "config" : {}
+  },
+  {
+    "file" : "./src/Loader/HARLoader",
+    "config" : {}
+  }
+]
