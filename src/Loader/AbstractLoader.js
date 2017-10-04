@@ -1,6 +1,6 @@
 'use strict'
 
-const ipc = require('../Util/IPC');
+const ipc = require('../../../smurf/src/Reporter/Util/IPC');
 
 module.exports = class AbstractLoader {
     /**
