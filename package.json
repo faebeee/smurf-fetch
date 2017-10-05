@@ -6,6 +6,9 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha test --recursive"
   },
+  "engines": {
+    "node" : ">= 6"
+  },
   "dependencies": {
     "analyze-css": "^0.12.5",
     "bluebird": "^3.5.0",
