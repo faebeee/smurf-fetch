@@ -6,7 +6,17 @@ const lighthouse = require('lighthouse');
 const chromeLauncher = require('lighthouse/chrome-launcher');
 
 const AbstractLoader = require('./AbstractLoader');
-const perfConfig = require('lighthouse/lighthouse-core/config/perf.json');
+const perfConfig = {
+
+  onlyAudits: [
+    'works-offline',
+    'first-meaningful-paint',
+    'speed-index-metric',
+    'estimated-input-latency',
+    'first-interactive',
+    'consistently-interactive',
+  ]
+}
 const fs = require('fs');
 
 module.exports = class LightHouseLoader extends AbstractLoader {
@@ -16,9 +26,8 @@ module.exports = class LightHouseLoader extends AbstractLoader {
 
     load() {
 
-        return this.launchChromeAndRunLighthouse(this.url, {})
+        return this.launchChromeAndRunLighthouse(this.url, perfConfig)
             .then(results => {
-                // fs.writeFileSync('lh.json', JSON.stringify(results));
                 this.data = results.audits;
             })
             .catch( (e) => {
