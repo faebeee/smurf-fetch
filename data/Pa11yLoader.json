@@ -1,0 +1,1546 @@
+[
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_2.H25.2",
+    "context": "<title>zkm-«Lehrer-Stress-Test»</title>",
+    "message": "Check that the title element describes the document.",
+    "selector": "html > head > title",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+    "context": "<img class=\"background-stars\" src=\"/dist/img/rotate_screen_stars.svg\">",
+    "message": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+    "selector": "html > body > div:nth-child(1) > img:nth-child(1)",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img class=\"background-stars\" src=\"/dist/img/rotate_screen_stars.svg\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "html > body > div:nth-child(1) > img:nth-child(1)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+    "context": "<img class=\"background-stars background-stars--slow\" src=\"/dist/img/rotate_screen_stars2.svg\">",
+    "message": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+    "selector": "html > body > div:nth-child(1) > img:nth-child(2)",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img class=\"background-stars background-stars--slow\" src=\"/dist/img/rotate_screen_stars2.svg\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "html > body > div:nth-child(1) > img:nth-child(2)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+    "context": "<img src=\"/dist/img/rotate_screen.svg\">",
+    "message": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+    "selector": "html > body > div:nth-child(1) > img:nth-child(3)",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/rotate_screen.svg\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "html > body > div:nth-child(1) > img:nth-child(3)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3_F24.F24.BGColour",
+    "context": "<div class=\"section intro fp-section active fp-table fp-completely\" style=\"height: 768px; padding-top: 0em; padding-bottom: 0px; background-color: rgb(0, 156, 216);\"><div class=\"fp-tableCell\" style...</div>",
+    "message": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+    "selector": "#fullpage > div:nth-child(1)",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Abs",
+    "context": "<h1>\n                              ...</h1>",
+    "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(1) > div > div:nth-child(2) > div > h1",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Abs",
+    "context": "<p>\n                              ...</p>",
+    "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(1) > div > div:nth-child(2) > div > p",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+    "context": "<p>\n                              ...</p>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.11:1. Recommendation: change background to #007fb0.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(1) > div > div:nth-child(2) > div > p",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H49.B",
+    "context": "<b>\n                              ...</b>",
+    "message": "Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(1) > div > div:nth-child(2) > div > p > b",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Abs",
+    "context": "<b>\n                              ...</b>",
+    "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(1) > div > div:nth-child(2) > div > p > b",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Abs",
+    "context": "<h2>\n                              ...</h2>",
+    "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > h2",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+    "context": "<h2>\n                              ...</h2>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.76:1. Recommendation: change background to #007eb5.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > h2",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"dist/img/icon_progress.svg\" alt=\"\" class=\"box__image\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > div:nth-child(2) > img",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"dist/img/icon_progress.svg\" alt=\"\" class=\"box__image\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > div:nth-child(2) > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Abs",
+    "context": "<p>\n                              ...</p>",
+    "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > div:nth-child(2) > p",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+    "context": "<p>\n                              ...</p>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.76:1. Recommendation: change background to #007eb5.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > div:nth-child(2) > p",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"dist/img/counter.svg\" alt=\"\" class=\"box__image\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > div:nth-child(3) > img",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"dist/img/counter.svg\" alt=\"\" class=\"box__image\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > div:nth-child(3) > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Abs",
+    "context": "<p>\n                              ...</p>",
+    "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > div:nth-child(3) > p",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+    "context": "<p>\n                              ...</p>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.76:1. Recommendation: change background to #007eb5.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > div:nth-child(3) > p",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"dist/img/example_score.svg\" alt=\"\" class=\"box__image\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > div:nth-child(4) > img",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"dist/img/example_score.svg\" alt=\"\" class=\"box__image\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > div:nth-child(4) > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Abs",
+    "context": "<p>\n                              ...</p>",
+    "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > div:nth-child(4) > p",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+    "context": "<p>\n                              ...</p>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.76:1. Recommendation: change background to #007eb5.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > div:nth-child(4) > p",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"dist/img/announcement.svg\" alt=\"\" class=\"box__image\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > div:nth-child(5) > img",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"dist/img/announcement.svg\" alt=\"\" class=\"box__image\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > div:nth-child(5) > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Abs",
+    "context": "<p>\n                              ...</p>",
+    "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > div:nth-child(5) > p",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+    "context": "<p>\n                              ...</p>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.76:1. Recommendation: change background to #007eb5.",
+    "selector": "#fullpage > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > div:nth-child(5) > p",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81,H33",
+    "context": "<a href=\"#\" title=\"Los!\" class=\"btn start\" id=\"start\">\n                            <s...</a>",
+    "message": "Check that the link text combined with programmatically determined link context, or its title attribute, identifies the purpose of the link.",
+    "selector": "#start",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Abs",
+    "context": "<span>Lädt...</span>",
+    "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+    "selector": "#start > span",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+    "context": "<span>Lädt...</span>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.76:1. Recommendation: change background to #007eb5.",
+    "selector": "#start > span",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3_F24.F24.BGColour",
+    "context": "<div class=\"section section1 fp-section fp-table\" style=\"height: 768px; padding-top: 0em; padding-bottom: 0px; background-color: transparent;\"><div class=\"fp-tableCell\" style...</div>",
+    "message": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+    "selector": "#fullpage > div:nth-child(2)",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Abs",
+    "context": "<p>Aufgekratzte Stimmung nach dem ...</p>",
+    "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+    "selector": "#fullpage > div:nth-child(2) > div > div > div:nth-child(1) > div > div > p",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail",
+    "context": "<p>Aufgekratzte Stimmung nach dem ...</p>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 2.1:1. Recommendation: change background to #839e40.",
+    "selector": "#fullpage > div:nth-child(2) > div > div > div:nth-child(1) > div > div > p",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H48",
+    "context": "<div class=\"btn__wrapper\">\n                        <a hre...</div>",
+    "message": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+    "selector": "#fullpage > div:nth-child(2) > div > div > div:nth-child(2) > div > div:nth-child(1)",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Geht gar nicht. Natürlich...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(2) > div > div > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(1)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich lasse die Buben am Mi...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(2) > div > div > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(2)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Nicht so schlimm, die sin...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(2) > div > div > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(3)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Das ist einfach zu krass....</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(2) > div > div > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(4)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+    "context": "<img src=\"/dist/img/hands-left.svg\">",
+    "message": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+    "selector": "#section1_illustration3 > img",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/hands-left.svg\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#section1_illustration3 > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+    "context": "<img src=\"/dist/img/hands-right.svg\">",
+    "message": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+    "selector": "#section1_illustration4 > img",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/hands-right.svg\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#section1_illustration4 > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3_F24.F24.BGColour",
+    "context": "<div class=\"section section2 fp-section fp-table\" style=\"height: 768px; padding-top: 0em; padding-bottom: 0px; background-color: transparent;\"><div class=\"fp-tableCell\" style...</div>",
+    "message": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+    "selector": "#fullpage > div:nth-child(3)",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Abs",
+    "context": "<p>Lisa schummelt bei der Geografi...</p>",
+    "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+    "selector": "#fullpage > div:nth-child(3) > div > div > div:nth-child(1) > div > div:nth-child(1) > p",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"/dist/img/slide2_girl.svg\" alt=\"\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "#fullpage > div:nth-child(3) > div > div > div:nth-child(1) > div > div:nth-child(3) > img",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/slide2_girl.svg\" alt=\"\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#fullpage > div:nth-child(3) > div > div > div:nth-child(1) > div > div:nth-child(3) > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H48",
+    "context": "<div class=\"btn__wrapper\">\n                        <a hre...</div>",
+    "message": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+    "selector": "#fullpage > div:nth-child(3) > div > div > div:nth-child(2) > div > div",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Handys sind an unserer Sc...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(3) > div > div > div:nth-child(2) > div > div > a:nth-child(1)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich lasse sie machen, sch...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(3) > div > div > div:nth-child(2) > div > div > a:nth-child(2)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich gehe sofort hin, konf...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(3) > div > div > div:nth-child(2) > div > div > a:nth-child(3)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Kommt immer wieder vor. F...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(3) > div > div > div:nth-child(2) > div > div > a:nth-child(4)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3_F24.F24.BGColour",
+    "context": "<div class=\"section section3 fp-section fp-table\" style=\"height: 768px; padding-top: 0em; padding-bottom: 0px; background-color: transparent;\"><div class=\"fp-tableCell\" style...</div>",
+    "message": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+    "selector": "#fullpage > div:nth-child(4)",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Abs",
+    "context": "<p>Wieder nicht gelernt für den Fr...</p>",
+    "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+    "selector": "#fullpage > div:nth-child(4) > div > div > div:nth-child(1) > div > div:nth-child(1) > p",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail",
+    "context": "<p>Wieder nicht gelernt für den Fr...</p>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.8:1. Recommendation: change background to #59a0a5.",
+    "selector": "#fullpage > div:nth-child(4) > div > div > div:nth-child(1) > div > div:nth-child(1) > p",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+    "context": "<img src=\"/dist/img/slide4_balloon2.svg\">",
+    "message": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+    "selector": "#section3_illustration1 > img",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/slide4_balloon2.svg\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#section3_illustration1 > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H48",
+    "context": "<div class=\"btn__wrapper\">\n                        <a hre...</div>",
+    "message": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+    "selector": "#fullpage > div:nth-child(4) > div > div > div:nth-child(2) > div > div:nth-child(1)",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich verdopple die Anzahl ...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(4) > div > div > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(1)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Wir vereinbaren im Lehrer...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(4) > div > div > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(2)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich vermittle jedem Schül...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(4) > div > div > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(3)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich organisiere das nächs...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(4) > div > div > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(4)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3_F24.F24.BGColour",
+    "context": "<div class=\"section section4 fp-section\" style=\"height: 768px; padding-top: 0em; padding-bottom: 0px; background-color: transparent;\">\n        <div class=\"content__w...</div>",
+    "message": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+    "selector": "#fullpage > div:nth-child(5)",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Abs",
+    "context": "<p>Zdennek ist ein zappeliges Bürs...</p>",
+    "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(1) > div > div:nth-child(1) > div > div:nth-child(1) > p",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail",
+    "context": "<p>Zdennek ist ein zappeliges Bürs...</p>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 2.33:1. Recommendation: change background to #d08400.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(1) > div > div:nth-child(1) > div > div:nth-child(1) > p",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"/dist/img/slide4_balloon2.svg\" alt=\"\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "#section4_slide1_illustration3 > img",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/slide4_balloon2.svg\" alt=\"\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#section4_slide1_illustration3 > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H48",
+    "context": "<div class=\"btn__wrapper\">\n                            <a...</div>",
+    "message": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(1) > div > div:nth-child(3) > div > div:nth-child(1)",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Finde ich super, einer we...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(1) > div > div:nth-child(3) > div > div:nth-child(1) > a:nth-child(1)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Langsam, langsam. Ich suc...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(1) > div > div:nth-child(3) > div > div:nth-child(1) > a:nth-child(2)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Rita wer?</span></a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(1) > div > div:nth-child(3) > div > div:nth-child(1) > a:nth-child(3)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Das ist Privatsache, da m...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(1) > div > div:nth-child(3) > div > div:nth-child(1) > a:nth-child(4)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"/dist/img/slide4_balloon1.svg\" alt=\"\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "#section4_slide1_illustration2 > img",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/slide4_balloon1.svg\" alt=\"\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#section4_slide1_illustration2 > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Abs",
+    "context": "<p>Im Lehrerteam werden die Ämtche...</p>",
+    "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(2) > div > div:nth-child(1) > div > div:nth-child(1) > p",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail",
+    "context": "<p>Im Lehrerteam werden die Ämtche...</p>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 2.84:1. Recommendation: change background to #00a3be.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(2) > div > div:nth-child(1) > div > div:nth-child(1) > p",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"/dist/img/slide5_balloon1.svg\" alt=\"\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "#section4_slide2_illustration1 > img",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/slide5_balloon1.svg\" alt=\"\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#section4_slide2_illustration1 > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H48",
+    "context": "<div class=\"btn__wrapper\">\n                            <a...</div>",
+    "message": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(2) > div > div:nth-child(2) > div > div:nth-child(1)",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich werde das schon schau...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(2) > div > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(1)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Nein, da bin ich nicht be...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(2) > div > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(2)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich suche das Gespräch mi...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(2) > div > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(3)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Das Ämtchen bringt Geld u...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(2) > div > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(4)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"/dist/img/slide5_balloon2.svg\" alt=\"\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "#section4_slide2_illustration2 > img",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/slide5_balloon2.svg\" alt=\"\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#section4_slide2_illustration2 > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Abs",
+    "context": "<p>Lea wird im WhatsApp-Klassencha...</p>",
+    "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(3) > div > div:nth-child(1) > div > div > p",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H48",
+    "context": "<div class=\"btn__wrapper\">\n                            <a...</div>",
+    "message": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(3) > div > div:nth-child(2) > div > div:nth-child(1)",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich lade die Eltern der d...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(3) > div > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(1)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich mache mir in Zukunft ...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(3) > div > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(2)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ist mir eigentlich egal. ...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(3) > div > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(3)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich schildere die Situati...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(5) > div > div > div > div:nth-child(3) > div > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(4)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3_F24.F24.BGColour",
+    "context": "<div class=\"section section5 light-toggle fp-section fp-table\" style=\"height: 768px; padding-top: 0em; padding-bottom: 0px; background-color: transparent;\"><div class=\"fp-tableCell\" style...</div>",
+    "message": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+    "selector": "#fullpage > div:nth-child(6)",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H49.B",
+    "context": "<b>So sollte es sein, das finden w...</b>",
+    "message": "Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.",
+    "selector": "#fullpage > div:nth-child(6) > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > b",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"/dist/img/bulb_off.svg\" alt=\"\" class=\"bulb_off\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "#section5_illustration2 > img:nth-child(1)",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/bulb_off.svg\" alt=\"\" class=\"bulb_off\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#section5_illustration2 > img:nth-child(1)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"/dist/img/bulb_on.svg\" alt=\"\" class=\"bulb_on\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "#section5_illustration2 > img:nth-child(2)",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/bulb_on.svg\" alt=\"\" class=\"bulb_on\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#section5_illustration2 > img:nth-child(2)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Abs",
+    "context": "<p>Marco vergisst seine Hausaufgab...</p>",
+    "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+    "selector": "#fullpage > div:nth-child(6) > div > div:nth-child(2) > div:nth-child(1) > div > div:nth-child(2) > p",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail",
+    "context": "<p>Marco vergisst seine Hausaufgab...</p>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.32:1. Recommendation: change text colour to #fdfeff.",
+    "selector": "#fullpage > div:nth-child(6) > div > div:nth-child(2) > div:nth-child(1) > div > div:nth-child(2) > p",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H48",
+    "context": "<div class=\"btn__wrapper\">\n                        <a hre...</div>",
+    "message": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+    "selector": "#fullpage > div:nth-child(6) > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1)",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\" data-hinttrigger=\"1\"><span>Ich schlage vor, dass Mar...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(6) > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(1)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+    "context": "<span>Ich schlage vor, dass Marco ab ...</span>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.51:1. Recommendation: change text colour to #fff.",
+    "selector": "#fullpage > div:nth-child(6) > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(1) > span",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich schreibe seine Versäu...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(6) > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(2)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+    "context": "<span>Ich schreibe seine Versäumnisse...</span>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.51:1. Recommendation: change text colour to #fff.",
+    "selector": "#fullpage > div:nth-child(6) > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(2) > span",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich frage in der Oberstuf...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(6) > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(3)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+    "context": "<span>Ich frage in der Oberstufe nach...</span>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.51:1. Recommendation: change text colour to #fff.",
+    "selector": "#fullpage > div:nth-child(6) > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(3) > span",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Marcos Leistungen sind so...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(6) > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(4)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+    "context": "<span>Marcos Leistungen sind sowieso ...</span>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.51:1. Recommendation: change text colour to #fff.",
+    "selector": "#fullpage > div:nth-child(6) > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1) > a:nth-child(4) > span",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"/dist/img/light_switch_on.svg\" alt=\"\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "#section5_illustration1 > img",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/light_switch_on.svg\" alt=\"\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#section5_illustration1 > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"/dist/img/light_switch_off.svg\" alt=\"\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "#section5_illustration4 > img",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/light_switch_off.svg\" alt=\"\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#section5_illustration4 > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3_F24.F24.BGColour",
+    "context": "<div class=\"section section6 fp-section fp-table\" style=\"height: 768px; padding-top: 0em; padding-bottom: 0px; background-color: transparent;\"><div class=\"fp-tableCell\" style...</div>",
+    "message": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+    "selector": "#fullpage > div:nth-child(7)",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Abs",
+    "context": "<p>Samira respektiert Sie nicht al...</p>",
+    "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+    "selector": "#fullpage > div:nth-child(7) > div > div > div:nth-child(1) > div > div:nth-child(1) > p",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail",
+    "context": "<p>Samira respektiert Sie nicht al...</p>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.82:1. Recommendation: change background to #7f9c78.",
+    "selector": "#fullpage > div:nth-child(7) > div > div > div:nth-child(1) > div > div:nth-child(1) > p",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"/dist/img/people_1.svg\" alt=\"\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "#section6_illustration1 > img",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/people_1.svg\" alt=\"\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#section6_illustration1 > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"/dist/img/people_2.svg\" alt=\"\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "#section6_illustration2 > img",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/people_2.svg\" alt=\"\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#section6_illustration2 > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"/dist/img/people_3.svg\" alt=\"\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "#section6_illustration3 > img",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/people_3.svg\" alt=\"\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#section6_illustration3 > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"/dist/img/people_4.svg\" alt=\"\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "#section6_illustration4 > img",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/people_4.svg\" alt=\"\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#section6_illustration4 > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"/dist/img/people_5.svg\" alt=\"\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "#section6_illustration5 > img",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/people_5.svg\" alt=\"\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#section6_illustration5 > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"/dist/img/people_6.svg\" alt=\"\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "#section6_illustration6 > img",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/people_6.svg\" alt=\"\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#section6_illustration6 > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H48",
+    "context": "<div class=\"btn__wrapper\">\n                        <a hre...</div>",
+    "message": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+    "selector": "#fullpage > div:nth-child(7) > div > div > div:nth-child(2) > div > div",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich hole mir Hilfe von de...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(7) > div > div > div:nth-child(2) > div > div > a:nth-child(1)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Fertig lustig, jetzt pack...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(7) > div > div > div:nth-child(2) > div > div > a:nth-child(2)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich versuche, die Klasse ...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(7) > div > div > div:nth-child(2) > div > div > a:nth-child(3)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich erkläre Samira noch e...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(7) > div > div > div:nth-child(2) > div > div > a:nth-child(4)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3_F24.F24.BGColour",
+    "context": "<div class=\"section section7 fp-section fp-table\" style=\"height: 768px; padding-top: 0em; padding-bottom: 0px; background-color: transparent;\"><div class=\"fp-tableCell\" style...</div>",
+    "message": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+    "selector": "#fullpage > div:nth-child(8)",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Abs",
+    "context": "<p>Sandro ist ein Kind mit besonde...</p>",
+    "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+    "selector": "#fullpage > div:nth-child(8) > div > div > div:nth-child(1) > div > div > p",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail",
+    "context": "<p>Sandro ist ein Kind mit besonde...</p>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 2.62:1. Recommendation: change background to #76a054.",
+    "selector": "#fullpage > div:nth-child(8) > div > div > div:nth-child(1) > div > div > p",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H48",
+    "context": "<div class=\"btn__wrapper\">\n                        <a hre...</div>",
+    "message": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+    "selector": "#fullpage > div:nth-child(8) > div > div > div:nth-child(3) > div:nth-child(1) > div",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Als Lehrperson muss ich a...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(8) > div > div > div:nth-child(3) > div:nth-child(1) > div > a:nth-child(1)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich teile Sandro für jede...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(8) > div > div > div:nth-child(3) > div:nth-child(1) > div > a:nth-child(2)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich zeige mit einer Unter...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(8) > div > div > div:nth-child(3) > div:nth-child(1) > div > a:nth-child(3)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich erzwinge Verständnis!...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(8) > div > div > div:nth-child(3) > div:nth-child(1) > div > a:nth-child(4)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3_F24.F24.BGColour",
+    "context": "<div class=\"section section8 fp-section fp-table\" style=\"height: 768px; padding-top: 0em; padding-bottom: 0px; background-color: transparent;\"><div class=\"fp-tableCell\" style...</div>",
+    "message": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+    "selector": "#fullpage > div:nth-child(9)",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Abs",
+    "context": "<p>Schon wieder diese Sprüche: Bei...</p>",
+    "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+    "selector": "#fullpage > div:nth-child(9) > div > div > div:nth-child(1) > div > div > p",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail",
+    "context": "<p>Schon wieder diese Sprüche: Bei...</p>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.82:1. Recommendation: change background to #539bcc.",
+    "selector": "#fullpage > div:nth-child(9) > div > div > div:nth-child(1) > div > div > p",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H48",
+    "context": "<div class=\"btn__wrapper\">\n                        <a hre...</div>",
+    "message": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+    "selector": "#fullpage > div:nth-child(9) > div > div > div:nth-child(2) > div:nth-child(1) > div",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Alles Neider! Ich geniess...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(9) > div > div > div:nth-child(2) > div:nth-child(1) > div > a:nth-child(1)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich stelle sofort klar, d...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(9) > div > div > div:nth-child(2) > div:nth-child(1) > div > a:nth-child(2)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich schöpfe mir auf den F...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(9) > div > div > div:nth-child(2) > div:nth-child(1) > div > a:nth-child(3)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn question ripple\"><span>Ich biete dem Lästerer an...</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(9) > div > div > div:nth-child(2) > div:nth-child(1) > div > a:nth-child(4)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3_F24.F24.BGColour",
+    "context": "<div class=\"section result fp-section\" style=\"height: 768px; padding-top: 0em; padding-bottom: 0px; background-color: rgb(0, 156, 216);\">\n        <div class=\"fp-slides\"...</div>",
+    "message": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+    "selector": "#fullpage > div:nth-child(10)",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+    "context": "<img src=\"/dist/img/canvas_top.svg\">",
+    "message": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(1) > div > div > div:nth-child(2) > div:nth-child(1) > img",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/canvas_top.svg\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(1) > div > div > div:nth-child(2) > div:nth-child(1) > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H48",
+    "context": "<div class=\"share__wrapper\">\n                              ...</div>",
+    "message": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(1) > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2",
+    "context": "<a href=\"\" target=\"_blank\" title=\"\" id=\"mail\">\n                              ...</a>",
+    "message": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+    "selector": "#mail",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.Empty",
+    "context": "<a href=\"\" target=\"_blank\" title=\"\" id=\"mail\">\n                              ...</a>",
+    "message": "Anchor element found with an ID but without a href or link text. Consider moving its ID to a parent or nearby element.",
+    "selector": "#mail",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81,H33",
+    "context": "<a href=\"\" target=\"_blank\" title=\"\" id=\"mail\">\n                              ...</a>",
+    "message": "Check that the link text combined with programmatically determined link context, or its title attribute, identifies the purpose of the link.",
+    "selector": "#mail",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"dist/img/icon_share_mail.svg\" alt=\"\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#mail > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2",
+    "context": "<a href=\"https://www.facebook.com/sharer/sharer.php?u=zkm.ch\" target=\"_blank\" title=\"\">\n                              ...</a>",
+    "message": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(1) > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > a:nth-child(2)",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81,H33",
+    "context": "<a href=\"https://www.facebook.com/sharer/sharer.php?u=zkm.ch\" target=\"_blank\" title=\"\">\n                              ...</a>",
+    "message": "Check that the link text combined with programmatically determined link context, or its title attribute, identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(1) > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > a:nth-child(2)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"dist/img/icon_share_facebook.svg\" alt=\"\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(1) > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > a:nth-child(2) > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2",
+    "context": "<a href=\"\" title=\"\" class=\"btn__replay\">\n                              ...</a>",
+    "message": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(1) > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > a:nth-child(3)",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
+    "context": "<a href=\"\" title=\"\" class=\"btn__replay\">\n                              ...</a>",
+    "message": "Anchor element found with no link content and no name and/or ID attribute.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(1) > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > a:nth-child(3)",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81,H33",
+    "context": "<a href=\"\" title=\"\" class=\"btn__replay\">\n                              ...</a>",
+    "message": "Check that the link text combined with programmatically determined link context, or its title attribute, identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(1) > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > a:nth-child(3)",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"dist/img/icon_replay.svg\" alt=\"\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(1) > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > a:nth-child(3) > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+    "context": "<img src=\"/dist/img/canvas_bottom.svg\">",
+    "message": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(1) > div > div > div:nth-child(2) > div:nth-child(3) > img",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/canvas_bottom.svg\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(1) > div > div > div:nth-child(2) > div:nth-child(3) > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage",
+    "context": "<a href=\"#\" class=\"btn--white--large fp-next\">Gewinne eine Mitgliedschaft!</a>",
+    "message": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(1) > div > div > div:nth-child(3) > div > a",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" class=\"btn--white--large fp-next\">Gewinne eine Mitgliedschaft!</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(1) > div > div > div:nth-child(3) > div > a",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle3.Guideline3_3.3_3_1.G83,G84,G85",
+    "context": "<form>\n                            <d...</form>",
+    "message": "If an input error is automatically detected in this form, check that the item(s) in error are identified and the error(s) are described to the user in text.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(2) > div > div > div > div:nth-child(1) > form",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle3.Guideline3_3.3_3_2.G131,G89,G184,H90",
+    "context": "<form>\n                            <d...</form>",
+    "message": "Check that descriptive labels or instructions (including for required fields) are provided for user input in this form.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(2) > div > div > div > div:nth-child(1) > form",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle3.Guideline3_3.3_3_3.G177",
+    "context": "<form>\n                            <d...</form>",
+    "message": "Check that this form provides suggested corrections to errors in user input, unless it would jeopardize the security or purpose of the content.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(2) > div > div > div > div:nth-child(1) > form",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle3.Guideline3_3.3_3_4.G98,G99,G155,G164,G168.LegalForms",
+    "context": "<form>\n                            <d...</form>",
+    "message": "If this form would bind a user to a financial or legal commitment, modify/delete user-controllable data, or submit test responses, ensure that submissions are either reversible, checked for input errors, and/or confirmed by the user.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(2) > div > div > div > div:nth-child(1) > form",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+    "context": "<input required=\"\" type=\"text\" name=\"name\" placeholder=\"Name:\">",
+    "message": "This text input element does not have a name available to an accessibility API. Valid names are: label element, title attribute.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(2) > div > div > div > div:nth-child(1) > form > div > div:nth-child(4) > input",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+    "context": "<input required=\"\" type=\"text\" name=\"name\" placeholder=\"Name:\">",
+    "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(2) > div > div > div > div:nth-child(1) > form > div > div:nth-child(4) > input",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle3.Guideline3_2.3_2_1.G107",
+    "context": "<input required=\"\" type=\"text\" name=\"name\" placeholder=\"Name:\">",
+    "message": "Check that a change of context does not occur when this input field receives focus.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(2) > div > div > div > div:nth-child(1) > form > div > div:nth-child(4) > input",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+    "context": "<input required=\"\" type=\"text\" name=\"prename\" placeholder=\"Vorname:\">",
+    "message": "This text input element does not have a name available to an accessibility API. Valid names are: label element, title attribute.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(2) > div > div > div > div:nth-child(1) > form > div > div:nth-child(5) > input",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+    "context": "<input required=\"\" type=\"text\" name=\"prename\" placeholder=\"Vorname:\">",
+    "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(2) > div > div > div > div:nth-child(1) > form > div > div:nth-child(5) > input",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle3.Guideline3_2.3_2_1.G107",
+    "context": "<input required=\"\" type=\"text\" name=\"prename\" placeholder=\"Vorname:\">",
+    "message": "Check that a change of context does not occur when this input field receives focus.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(2) > div > div > div > div:nth-child(1) > form > div > div:nth-child(5) > input",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle3.Guideline3_2.3_2_1.G107",
+    "context": "<input required=\"\" type=\"email\" name=\"mail\" placeholder=\"E-Mail:\">",
+    "message": "Check that a change of context does not occur when this input field receives focus.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(2) > div > div > div > div:nth-child(1) > form > div > div:nth-child(6) > input",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage",
+    "context": "<button class=\"btn--white\" id=\"subscribeToContest\">\n                              ...</button>",
+    "message": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+    "selector": "#subscribeToContest",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle3.Guideline3_2.3_2_1.G107",
+    "context": "<button class=\"btn--white\" id=\"subscribeToContest\">\n                              ...</button>",
+    "message": "Check that a change of context does not occur when this input field receives focus.",
+    "selector": "#subscribeToContest",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+    "context": "<img src=\"/dist/img/registration.svg\">",
+    "message": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(2) > div > div > div > div:nth-child(2) > div > img",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"/dist/img/registration.svg\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(2) > div > div > div > div:nth-child(2) > div > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage",
+    "context": "<a href=\"/\" class=\"btn--white\" target=\"_blank\">Mehr erfahren</a>",
+    "message": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(2) > div > div > div > div:nth-child(2) > a",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"/\" class=\"btn--white\" target=\"_blank\">Mehr erfahren</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(2) > div > div > div > div:nth-child(2) > a",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+    "context": "<p>\n                        Die gl...</p>",
+    "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.11:1. Recommendation: change background to #007fb0.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(3) > div > div > div > p",
+    "type": "error",
+    "typeCode": 1
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage",
+    "context": "<a href=\"#\" target=\"_blank\" class=\"btn--white\">Über ZKM</a>",
+    "message": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(3) > div > div > div > a",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+    "context": "<a href=\"#\" target=\"_blank\" class=\"btn--white\">Über ZKM</a>",
+    "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+    "selector": "#fullpage > div:nth-child(10) > div > div > div:nth-child(3) > div > div > div > a",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+    "context": "<img src=\"dist/img/logo_zkm.svg\" alt=\"\">",
+    "message": "Img element is marked so that it is ignored by Assistive Technology.",
+    "selector": "html > body > div:nth-child(11) > div:nth-child(1) > img",
+    "type": "warning",
+    "typeCode": 2
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+    "context": "<img src=\"dist/img/logo_zkm.svg\" alt=\"\">",
+    "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+    "selector": "html > body > div:nth-child(11) > div:nth-child(1) > img",
+    "type": "notice",
+    "typeCode": 3
+  },
+  {
+    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage",
+    "context": "<span>0</span>",
+    "message": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+    "selector": "html > body > div:nth-child(11) > div:nth-child(2) > div:nth-child(3) > span",
+    "type": "warning",
+    "typeCode": 2
+  }
+]

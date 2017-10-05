@@ -18,7 +18,7 @@ module.exports = class LightHouseLoader extends AbstractLoader {
 
         return this.launchChromeAndRunLighthouse(this.url, {})
             .then(results => {
-                fs.writeFileSync('lh.json', JSON.stringify(results));
+                // fs.writeFileSync('lh.json', JSON.stringify(results));
                 this.data = results.audits;
             })
             .catch( (e) => {

@@ -49,6 +49,7 @@ module.exports = class Report {
 
     /**
      * run all loaders to create a report
+     * @param {Array} loaders array of loader names
      */
     create(loaders) {
         let promises = [];
@@ -79,7 +80,7 @@ module.exports = class Report {
     }
 
     /**
-     *
+     * Transform data to json
      */
     toJson() {
         return JSON.stringify(this.loaders);
@@ -88,7 +89,7 @@ module.exports = class Report {
     /**
      * Get loader by key
      * @param key
-     * @returns {*}
+     * @returns {Object}
      */
     get(key) {
         return this.loaders[key];

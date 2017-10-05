@@ -1,0 +1,146 @@
+{
+  "runs": [
+    {
+      "timings": [
+        {
+          "title": "First Contentful Paint",
+          "id": "ttfcp",
+          "timestamp": 330887704873,
+          "timing": 1978.081,
+          "color": "green"
+        },
+        {
+          "title": "First Meaningful Paint",
+          "id": "ttfmp",
+          "timestamp": 330891455916,
+          "timing": 5729.124,
+          "color": "green"
+        },
+        {
+          "title": "Perceptual Speed Index",
+          "id": "psi",
+          "timestamp": 330888162727.0416,
+          "timing": 2435.9350416259767,
+          "color": "blue"
+        },
+        {
+          "title": "First Visual Change",
+          "id": "fv",
+          "timestamp": 330887704792,
+          "timing": 1978,
+          "color": "blue"
+        },
+        {
+          "title": "Visually Complete 85%",
+          "id": "vc85",
+          "timestamp": 330887705320,
+          "timing": 1978.528,
+          "color": "blue"
+        },
+        {
+          "title": "Visually Complete 100%",
+          "id": "vc100",
+          "timestamp": 330894021792,
+          "timing": 8295,
+          "color": "blue"
+        },
+        {
+          "title": "First Interactive (vBeta)",
+          "id": "ttfi",
+          "timestamp": null,
+          "timing": -330885726.792,
+          "color": "yellow"
+        },
+        {
+          "title": "Time to Consistently Interactive (vBeta)",
+          "id": "ttci",
+          "timestamp": null,
+          "timing": -330885726.792,
+          "color": "yellow"
+        }
+      ],
+      "timestamps": [
+        {
+          "title": "Navigation Start",
+          "id": "navstart",
+          "timestamp": 330885726792
+        }
+      ],
+      "generatedTime": "2017-09-10T18:57:57.887Z",
+      "lighthouseVersion": "2.4.0",
+      "initialUrl": "http://zkm-game.geyster.ch",
+      "url": "http://zkm-game.geyster.ch/"
+    }
+  ],
+  "median": {
+    "timings": [
+      {
+        "title": "First Contentful Paint",
+        "id": "ttfcp",
+        "timestamp": 330908636500,
+        "timing": 3509.033,
+        "color": "green"
+      },
+      {
+        "title": "First Meaningful Paint",
+        "id": "ttfmp",
+        "timestamp": 330909827996,
+        "timing": 4700.529,
+        "color": "green"
+      },
+      {
+        "title": "Perceptual Speed Index",
+        "id": "psi",
+        "timestamp": 330906664309.36884,
+        "timing": 1536.8423688354492,
+        "color": "blue"
+      },
+      {
+        "title": "First Visual Change",
+        "id": "fv",
+        "timestamp": 330906369467,
+        "timing": 1242,
+        "color": "blue"
+      },
+      {
+        "title": "Visually Complete 85%",
+        "id": "vc85",
+        "timestamp": 330906370261,
+        "timing": 1242.794,
+        "color": "blue"
+      },
+      {
+        "title": "Visually Complete 100%",
+        "id": "vc100",
+        "timestamp": 330907184467,
+        "timing": 2057,
+        "color": "blue"
+      },
+      {
+        "title": "First Interactive (vBeta)",
+        "id": "ttfi",
+        "timestamp": null,
+        "timing": -330905127.467,
+        "color": "yellow"
+      },
+      {
+        "title": "Time to Consistently Interactive (vBeta)",
+        "id": "ttci",
+        "timestamp": null,
+        "timing": -330905127.467,
+        "color": "yellow"
+      }
+    ],
+    "timestamps": [
+      {
+        "title": "Navigation Start",
+        "id": "navstart",
+        "timestamp": 330905127467
+      }
+    ],
+    "generatedTime": "2017-09-10T18:58:18.086Z",
+    "lighthouseVersion": "2.4.0",
+    "initialUrl": "http://zkm-game.geyster.ch",
+    "url": "http://zkm-game.geyster.ch/"
+  }
+}

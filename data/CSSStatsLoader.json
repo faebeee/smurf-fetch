@@ -1,0 +1,7277 @@
+{
+  "lib.min": {
+    "size": 3704,
+    "gzipSize": 1142,
+    "humanizedSize": "4kB",
+    "humanizedGzipSize": "1kB",
+    "rules": {
+      "total": 35,
+      "size": {
+        "graph": [
+          4,
+          4,
+          4,
+          1,
+          2,
+          6,
+          3,
+          4,
+          2,
+          15,
+          4,
+          3,
+          2,
+          1,
+          1,
+          2,
+          6,
+          1,
+          1,
+          7,
+          1,
+          1,
+          2,
+          5,
+          1,
+          7,
+          4,
+          14,
+          3,
+          11,
+          4,
+          1,
+          1,
+          1,
+          1
+        ],
+        "max": 15,
+        "average": 3.7142857142857144
+      }
+    },
+    "selectors": {
+      "total": 51,
+      "type": 22,
+      "class": 44,
+      "id": 16,
+      "pseudoClass": 5,
+      "pseudoElement": 0,
+      "values": [
+        ".fp-enabled body",
+        "html.fp-enabled",
+        "#superContainer",
+        ".fp-section",
+        ".fp-slide",
+        ".fp-slide",
+        ".fp-slidesContainer",
+        ".fp-slides",
+        ".fp-section.fp-table",
+        ".fp-slide.fp-table",
+        ".fp-tableCell",
+        ".fp-slidesContainer",
+        ".fp-controlArrow",
+        ".fp-controlArrow.fp-prev",
+        ".fp-controlArrow.fp-next",
+        ".fp-scrollable",
+        ".fp-scroller",
+        ".iScrollIndicator",
+        ".fp-notransition",
+        "#fp-nav",
+        "#fp-nav.right",
+        "#fp-nav.left",
+        ".fp-slidesNav",
+        ".fp-slidesNav.bottom",
+        ".fp-slidesNav.top",
+        "#fp-nav ul",
+        ".fp-slidesNav ul",
+        "#fp-nav ul li",
+        ".fp-slidesNav ul li",
+        ".fp-slidesNav ul li",
+        "#fp-nav ul li a",
+        ".fp-slidesNav ul li a",
+        "#fp-nav ul li a.active span",
+        "#fp-nav ul li:hover a.active span",
+        ".fp-slidesNav ul li a.active span",
+        ".fp-slidesNav ul li:hover a.active span",
+        "#fp-nav ul li a span",
+        ".fp-slidesNav ul li a span",
+        "#fp-nav ul li:hover a span",
+        ".fp-slidesNav ul li:hover a span",
+        "#fp-nav ul li .fp-tooltip",
+        "#fp-nav ul li:hover .fp-tooltip",
+        "#fp-nav.fp-show-active a.active+.fp-tooltip",
+        "#fp-nav ul li .fp-tooltip.right",
+        "#fp-nav ul li .fp-tooltip.left",
+        ".fp-auto-height .fp-slide",
+        ".fp-auto-height .fp-tableCell",
+        ".fp-auto-height.fp-section",
+        ".fp-responsive .fp-auto-height-responsive .fp-slide",
+        ".fp-responsive .fp-auto-height-responsive .fp-tableCell",
+        ".fp-responsive .fp-auto-height-responsive.fp-section"
+      ],
+      "specificity": {
+        "max": 131,
+        "average": 46.21568627450981
+      }
+    },
+    "declarations": {
+      "total": 130,
+      "unique": 87,
+      "properties": {
+        "margin": [
+          "0",
+          "0",
+          "7px",
+          "-6px 0 0 -6px",
+          "-2px 0 0 -2px",
+          "-5px 0 0 -5px"
+        ],
+        "padding": [
+          "0",
+          "0"
+        ],
+        "overflow": [
+          "hidden",
+          "hidden",
+          "hidden",
+          "hidden",
+          "hidden"
+        ],
+        "-webkit-tap-highlight-color": [
+          "transparent"
+        ],
+        "height": [
+          "100%",
+          "100%",
+          "100%",
+          "100%",
+          "0",
+          "13px",
+          "100%",
+          "12px",
+          "4px",
+          "10px",
+          "auto",
+          "auto"
+        ],
+        "position": [
+          "relative",
+          "relative",
+          "relative",
+          "relative",
+          "absolute",
+          "relative",
+          "fixed",
+          "absolute",
+          "relative",
+          "relative",
+          "absolute",
+          "absolute"
+        ],
+        "-ms-touch-action": [
+          "none"
+        ],
+        "touch-action": [
+          "none"
+        ],
+        "-webkit-box-sizing": [
+          "border-box"
+        ],
+        "-moz-box-sizing": [
+          "border-box"
+        ],
+        "box-sizing": [
+          "border-box"
+        ],
+        "float": [
+          "left",
+          "left"
+        ],
+        "display": [
+          "block",
+          "table",
+          "table-cell",
+          "block",
+          "inline-block",
+          "block",
+          "block"
+        ],
+        "z-index": [
+          "1",
+          "4",
+          "100",
+          "4",
+          "1",
+          "1"
+        ],
+        "-webkit-transition": [
+          "all .3s ease-out",
+          "none",
+          "all .1s ease-in-out",
+          "opacity .2s ease-in"
+        ],
+        "transition": [
+          "all .3s ease-out",
+          "none",
+          "all .1s ease-in-out",
+          "opacity .2s ease-in"
+        ],
+        "table-layout": [
+          "fixed"
+        ],
+        "width": [
+          "100%",
+          "100%",
+          "0",
+          "0",
+          "14px",
+          "100%",
+          "12px",
+          "4px",
+          "10px",
+          "0",
+          "auto"
+        ],
+        "vertical-align": [
+          "middle"
+        ],
+        "-webkit-user-select": [
+          "none"
+        ],
+        "-moz-user-select": [
+          "none"
+        ],
+        "-khtml-user-select": [
+          "none"
+        ],
+        "-ms-user-select": [
+          "none"
+        ],
+        "top": [
+          "50%",
+          "50%",
+          "17px",
+          "50%",
+          "-2px"
+        ],
+        "cursor": [
+          "pointer",
+          "pointer",
+          "pointer"
+        ],
+        "border-style": [
+          "solid"
+        ],
+        "margin-top": [
+          "-38px",
+          "-32px"
+        ],
+        "-webkit-transform": [
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)"
+        ],
+        "-ms-transform": [
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)"
+        ],
+        "transform": [
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)"
+        ],
+        "left": [
+          "15px",
+          "17px",
+          "50%",
+          "50%",
+          "20px"
+        ],
+        "border-width": [
+          "38.5px 34px 38.5px 0",
+          "38.5px 0 38.5px 34px"
+        ],
+        "border-color": [
+          "transparent #fff transparent transparent",
+          "transparent transparent transparent #fff"
+        ],
+        "right": [
+          "15px",
+          "17px",
+          "20px"
+        ],
+        "border": [
+          "0",
+          "0"
+        ],
+        "opacity": [
+          "1",
+          "1",
+          "0",
+          "1"
+        ],
+        "bottom": [
+          "17px"
+        ],
+        "text-decoration": [
+          "none"
+        ],
+        "border-radius": [
+          "100%",
+          "50%"
+        ],
+        "background": [
+          "#333"
+        ],
+        "-moz-transition": [
+          "all .1s ease-in-out"
+        ],
+        "-o-transition": [
+          "all .1s ease-in-out"
+        ],
+        "font": [
+          "14px arial,helvetica,sans-serif"
+        ],
+        "color": [
+          "#fff"
+        ],
+        "white-space": [
+          "nowrap"
+        ],
+        "max-width": [
+          "220px"
+        ]
+      }
+    },
+    "mediaQueries": {
+      "total": 0,
+      "unique": 0,
+      "values": [],
+      "contents": []
+    },
+    "fullUrl": "http://zkm-game.geyster.ch/dist/lib/lib.min.css",
+    "specificityGraph": [
+      11,
+      11,
+      100,
+      10,
+      10,
+      10,
+      10,
+      10,
+      20,
+      20,
+      10,
+      10,
+      10,
+      20,
+      20,
+      10,
+      10,
+      10,
+      10,
+      100,
+      110,
+      110,
+      10,
+      20,
+      20,
+      101,
+      11,
+      102,
+      12,
+      12,
+      103,
+      13,
+      114,
+      124,
+      24,
+      34,
+      104,
+      14,
+      114,
+      24,
+      112,
+      122,
+      131,
+      122,
+      122,
+      20,
+      20,
+      20,
+      30,
+      30,
+      30
+    ],
+    "specificityValues": [
+      {
+        "selector": ".fp-enabled body",
+        "specificity": 11
+      },
+      {
+        "selector": "html.fp-enabled",
+        "specificity": 11
+      },
+      {
+        "selector": "#superContainer",
+        "specificity": 100
+      },
+      {
+        "selector": ".fp-section",
+        "specificity": 10
+      },
+      {
+        "selector": ".fp-slide",
+        "specificity": 10
+      },
+      {
+        "selector": ".fp-slide",
+        "specificity": 10
+      },
+      {
+        "selector": ".fp-slidesContainer",
+        "specificity": 10
+      },
+      {
+        "selector": ".fp-slides",
+        "specificity": 10
+      },
+      {
+        "selector": ".fp-section.fp-table",
+        "specificity": 20
+      },
+      {
+        "selector": ".fp-slide.fp-table",
+        "specificity": 20
+      },
+      {
+        "selector": ".fp-tableCell",
+        "specificity": 10
+      },
+      {
+        "selector": ".fp-slidesContainer",
+        "specificity": 10
+      },
+      {
+        "selector": ".fp-controlArrow",
+        "specificity": 10
+      },
+      {
+        "selector": ".fp-controlArrow.fp-prev",
+        "specificity": 20
+      },
+      {
+        "selector": ".fp-controlArrow.fp-next",
+        "specificity": 20
+      },
+      {
+        "selector": ".fp-scrollable",
+        "specificity": 10
+      },
+      {
+        "selector": ".fp-scroller",
+        "specificity": 10
+      },
+      {
+        "selector": ".iScrollIndicator",
+        "specificity": 10
+      },
+      {
+        "selector": ".fp-notransition",
+        "specificity": 10
+      },
+      {
+        "selector": "#fp-nav",
+        "specificity": 100
+      },
+      {
+        "selector": "#fp-nav.right",
+        "specificity": 110
+      },
+      {
+        "selector": "#fp-nav.left",
+        "specificity": 110
+      },
+      {
+        "selector": ".fp-slidesNav",
+        "specificity": 10
+      },
+      {
+        "selector": ".fp-slidesNav.bottom",
+        "specificity": 20
+      },
+      {
+        "selector": ".fp-slidesNav.top",
+        "specificity": 20
+      },
+      {
+        "selector": "#fp-nav ul",
+        "specificity": 101
+      },
+      {
+        "selector": ".fp-slidesNav ul",
+        "specificity": 11
+      },
+      {
+        "selector": "#fp-nav ul li",
+        "specificity": 102
+      },
+      {
+        "selector": ".fp-slidesNav ul li",
+        "specificity": 12
+      },
+      {
+        "selector": ".fp-slidesNav ul li",
+        "specificity": 12
+      },
+      {
+        "selector": "#fp-nav ul li a",
+        "specificity": 103
+      },
+      {
+        "selector": ".fp-slidesNav ul li a",
+        "specificity": 13
+      },
+      {
+        "selector": "#fp-nav ul li a.active span",
+        "specificity": 114
+      },
+      {
+        "selector": "#fp-nav ul li:hover a.active span",
+        "specificity": 124
+      },
+      {
+        "selector": ".fp-slidesNav ul li a.active span",
+        "specificity": 24
+      },
+      {
+        "selector": ".fp-slidesNav ul li:hover a.active span",
+        "specificity": 34
+      },
+      {
+        "selector": "#fp-nav ul li a span",
+        "specificity": 104
+      },
+      {
+        "selector": ".fp-slidesNav ul li a span",
+        "specificity": 14
+      },
+      {
+        "selector": "#fp-nav ul li:hover a span",
+        "specificity": 114
+      },
+      {
+        "selector": ".fp-slidesNav ul li:hover a span",
+        "specificity": 24
+      },
+      {
+        "selector": "#fp-nav ul li .fp-tooltip",
+        "specificity": 112
+      },
+      {
+        "selector": "#fp-nav ul li:hover .fp-tooltip",
+        "specificity": 122
+      },
+      {
+        "selector": "#fp-nav.fp-show-active a.active+.fp-tooltip",
+        "specificity": 131
+      },
+      {
+        "selector": "#fp-nav ul li .fp-tooltip.right",
+        "specificity": 122
+      },
+      {
+        "selector": "#fp-nav ul li .fp-tooltip.left",
+        "specificity": 122
+      },
+      {
+        "selector": ".fp-auto-height .fp-slide",
+        "specificity": 20
+      },
+      {
+        "selector": ".fp-auto-height .fp-tableCell",
+        "specificity": 20
+      },
+      {
+        "selector": ".fp-auto-height.fp-section",
+        "specificity": 20
+      },
+      {
+        "selector": ".fp-responsive .fp-auto-height-responsive .fp-slide",
+        "specificity": 30
+      },
+      {
+        "selector": ".fp-responsive .fp-auto-height-responsive .fp-tableCell",
+        "specificity": 30
+      },
+      {
+        "selector": ".fp-responsive .fp-auto-height-responsive.fp-section",
+        "specificity": 30
+      }
+    ]
+  },
+  "style.min": {
+    "size": 73229,
+    "gzipSize": 7398,
+    "humanizedSize": "72kB",
+    "humanizedGzipSize": "7kB",
+    "rules": {
+      "total": 438,
+      "size": {
+        "graph": [
+          5,
+          1,
+          5,
+          1,
+          1,
+          1,
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          14,
+          2,
+          11,
+          3,
+          3,
+          3,
+          10,
+          10,
+          11,
+          10,
+          11,
+          5,
+          4,
+          8,
+          8,
+          8,
+          11,
+          12,
+          8,
+          12,
+          12,
+          10,
+          8,
+          8,
+          6,
+          6,
+          9,
+          9,
+          1,
+          1,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          8,
+          9,
+          6,
+          1,
+          1,
+          24,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3,
+          24,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3,
+          24,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3,
+          24,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3,
+          24,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3,
+          24,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3,
+          24,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3,
+          24,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          24,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3,
+          28,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3,
+          24,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3,
+          28,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3,
+          28,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3,
+          28,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3,
+          12,
+          24,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          9,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          5,
+          5,
+          1,
+          7,
+          1,
+          3,
+          8,
+          11,
+          8,
+          6,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          9,
+          2,
+          15,
+          7,
+          10,
+          4,
+          7,
+          1,
+          3,
+          4,
+          7,
+          3,
+          1,
+          3,
+          9,
+          15,
+          2,
+          15,
+          3,
+          9,
+          14,
+          16,
+          17,
+          3,
+          7,
+          2,
+          17,
+          3,
+          17,
+          3,
+          3,
+          2,
+          13,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1,
+          21,
+          3,
+          2,
+          1,
+          3,
+          3,
+          21,
+          3,
+          2,
+          2,
+          7,
+          1,
+          5,
+          3,
+          7,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          1,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          5,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          1,
+          2,
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          16,
+          1,
+          11,
+          5,
+          6,
+          1,
+          4,
+          8,
+          2,
+          1,
+          5,
+          5,
+          2,
+          2,
+          1,
+          3,
+          1,
+          1,
+          2,
+          5,
+          16,
+          19,
+          5,
+          1,
+          12,
+          2,
+          1,
+          2,
+          14,
+          5,
+          5,
+          1,
+          1,
+          1,
+          10,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3,
+          6,
+          15,
+          4,
+          1,
+          1,
+          6,
+          15,
+          4,
+          1
+        ],
+        "max": 28,
+        "average": 4.136986301369863
+      }
+    },
+    "selectors": {
+      "total": 587,
+      "type": 166,
+      "class": 383,
+      "id": 54,
+      "pseudoClass": 76,
+      "pseudoElement": 8,
+      "values": [
+        "*",
+        "html",
+        "body",
+        "body",
+        "body",
+        "body",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "h1",
+        "h1",
+        "h1",
+        "h2",
+        "h2",
+        "h2",
+        "a",
+        ".illustration",
+        ".illustration svg",
+        ".section .illustration",
+        ".section.active .illustration",
+        ".section .slide .illustration",
+        ".section .slide.active .illustration",
+        ".section #intro_illustration1",
+        ".section #section1_illustration1",
+        ".section #section1_illustration3",
+        ".section #section1_illustration2",
+        ".section #section1_illustration4",
+        ".section .slide2_hand_with_phone",
+        ".section .slide2_girl",
+        ".section #section3_illustration1",
+        ".section #section3_illustration2",
+        ".section #section3_illustration3",
+        ".section #section4_slide1_illustration1",
+        ".section #section4_slide1_illustration2",
+        ".section #section4_slide1_illustration3",
+        ".section #section4_slide2_illustration1",
+        ".section #section4_slide2_illustration2",
+        ".section #section4_slide2_illustration3",
+        ".section #section4_slide3_illustration1",
+        ".section #section4_slide3_illustration2",
+        ".section #section5_illustration1",
+        ".section #section5_illustration4",
+        ".section #section5_illustration2",
+        ".section #section5_illustration2 img",
+        ".section #section5_illustration2 .bulb_on",
+        ".section #section5_illustration2 .bulb_off",
+        ".section #section6_illustration1",
+        ".section #section6_illustration2",
+        ".section #section6_illustration3",
+        ".section #section6_illustration4",
+        ".section #section6_illustration5",
+        ".section #section6_illustration6",
+        ".section #section7_illustration1",
+        ".section #section7_illustration2",
+        ".section #section8_illustration1",
+        ".section #score_illustration1",
+        ".section",
+        ".section .fp-tableCell",
+        ".section .slide2_hand_with_phone",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        ".section .slide2_girl",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        ".section #section3_illustration1",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        ".section #section4_slide1_illustration2",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        ".section #section4_slide1_illustration3",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        ".section #section4_slide2_illustration1",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        ".section #section4_slide2_illustration2",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        ".section #section5_illustration2",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        ".section #section5_illustration2 .bulb_on",
+        ".section #section5_illustration2 .bulb_off",
+        ".section #section6_illustration1",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        ".section #section6_illustration2",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        ".section #section6_illustration3",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        ".section #section6_illustration4",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        ".section #section6_illustration5",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        ".section #section6_illustration6",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        ".section #section7_illustration1",
+        ".section #score_illustration1",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        ".section.lightning #section5_illustration4",
+        ".section.lightning #section5_illustration1",
+        ".section.lightning #section5_illustration2 .bulb_on",
+        "0%",
+        "16%",
+        "32%",
+        "48%",
+        "64%",
+        "80%",
+        "100%",
+        "0%",
+        "16%",
+        "32%",
+        "48%",
+        "64%",
+        "80%",
+        "100%",
+        "0%",
+        "16%",
+        "32%",
+        "48%",
+        "64%",
+        "80%",
+        "100%",
+        "0%",
+        "16%",
+        "32%",
+        "48%",
+        "64%",
+        "80%",
+        "100%",
+        ".ripple",
+        ".ripple-effect",
+        "from",
+        "to",
+        "from",
+        "to",
+        "from",
+        "to",
+        "from",
+        "to",
+        ".warning",
+        ".warning img",
+        "audio",
+        "svg",
+        ".countdown",
+        ".countdown-number",
+        ".svg-countdown",
+        ".svg-countdown circle",
+        "from",
+        "to",
+        "from",
+        "to",
+        "from",
+        "to",
+        "from",
+        "to",
+        ".header",
+        ".header__logo",
+        ".meta__navigation",
+        ".meta__navigation.show",
+        ".meta__navigation .header__counter",
+        ".meta__navigation .header__hint",
+        ".meta__navigation .header__score",
+        ".meta__navigation .header__time",
+        ".meta__navigation .header__counter svg",
+        ".meta__navigation .header__hint svg",
+        ".meta__navigation .header__score svg",
+        ".meta__navigation .header__time svg",
+        ".meta__navigation .header__hint",
+        ".meta__navigation .header__hint.show",
+        ".meta__navigation .header__hint svg",
+        ".meta__navigation .header__score",
+        ".meta__navigation .header__score span",
+        ".meta__navigation .header__counter",
+        ".meta__navigation .header__counter .counter__inner",
+        ".meta__navigation .header__counter span",
+        ".hint__backdrop.show",
+        ".hint",
+        ".hint .content",
+        ".hint:before",
+        ".hint.show",
+        ".hint.show .close",
+        ".hint .close",
+        ".hint .close::before",
+        ".time__disturber",
+        ".time__disturber.active",
+        "#svgSj6f1gmacd7",
+        ".btn",
+        ".btn--white",
+        ".btn--white--large",
+        ".btn.start",
+        ".start.btn--white",
+        ".start.btn--white--large",
+        ".btn.start[disabled]",
+        ".start[disabled].btn--white",
+        ".start[disabled].btn--white--large",
+        ".btn.start::before",
+        ".start.btn--white--large::before",
+        ".start.btn--white::before",
+        ".btn.start.ready",
+        ".start.ready.btn--white",
+        ".start.ready.btn--white--large",
+        ".btn.start.ready::before",
+        ".start.ready.btn--white--large::before",
+        ".start.ready.btn--white::before",
+        ".btn.start svg",
+        ".start.btn--white svg",
+        ".start.btn--white--large svg",
+        ".btn.question",
+        ".question.btn--white",
+        ".question.btn--white--large",
+        ".btn.question span",
+        ".question.btn--white span",
+        ".question.btn--white--large span",
+        ".answer",
+        "#fullpage",
+        ".header",
+        ".section",
+        ".section.active .hint",
+        ".section.intro .header-text",
+        ".section.intro .header-text h1",
+        ".section.intro .header-text p",
+        ".section.intro .question__wrapper",
+        ".section.intro .question__wrapper p",
+        ".section.intro .question__wrapper .intro__description",
+        ".section.intro .question__wrapper .question__wrapper-inner",
+        ".section.intro h2",
+        ".section.intro .intro__description-wrapper",
+        ".section.intro .answer__wrapper",
+        ".section.intro .answer__wrapper--nobackground",
+        ".section.intro .description__box",
+        ".section.intro .description__box .box__image",
+        ".section.intro .description__box .box__image",
+        ".section.intro .description__box p",
+        ".section.intro .description__box p",
+        ".section.intro h1",
+        ".section .question__wrapper",
+        ".section .question__wrapper .question__wrapper-inner",
+        ".section .answer__wrapper",
+        ".section .answer__wrapper--nobackground",
+        ".section .answer__wrapper--nobackground",
+        ".section.section1 .question__wrapper",
+        ".section.section1 .ripple-effect",
+        ".section.section1 .answer__wrapper",
+        ".section.section1 .answer__wrapper--nobackground",
+        ".section.section1 .answer__wrapper .question:first-child",
+        ".section.section1 .answer__wrapper--nobackground .question:first-child",
+        ".section.section1 .answer__wrapper .question:nth-child(2) span",
+        ".section.section1 .answer__wrapper--nobackground .question:nth-child(2) span",
+        ".section.section2 .question__wrapper",
+        ".section.section2 .question__wrapper .question__wrapper-inner",
+        ".section.section2 .ripple-effect",
+        ".section.section2 .answer__wrapper",
+        ".section.section2 .answer__wrapper--nobackground",
+        ".section.section2 .answer__wrapper .question:last-child span",
+        ".section.section2 .answer__wrapper--nobackground .question:last-child span",
+        ".section.section3 .question__wrapper",
+        ".section.section3 .question__wrapper .question__wrapper-inner",
+        ".section.section3 .ripple-effect",
+        ".section.section3 .answer__wrapper",
+        ".section.section3 .answer__wrapper--nobackground",
+        ".section.section3 .answer__wrapper .question:first-child span",
+        ".section.section3 .answer__wrapper .question:last-child span",
+        ".section.section3 .answer__wrapper--nobackground .question:first-child span",
+        ".section.section3 .answer__wrapper--nobackground .question:last-child span",
+        ".section.section3 .answer__wrapper .question:nth-child(2) span",
+        ".section.section3 .answer__wrapper .question:nth-child(3) span",
+        ".section.section3 .answer__wrapper--nobackground .question:nth-child(2) span",
+        ".section.section3 .answer__wrapper--nobackground .question:nth-child(3) span",
+        ".section.section4",
+        ".section.section4 .fp-slidesContainer .slide__inner",
+        ".section.section4 .fp-slidesContainer .question__wrapper",
+        ".section.section4 .fp-slidesContainer .question__wrapper .question__wrapper-inner",
+        ".section.section4 .fp-slidesContainer .fp-tableCell",
+        ".section.section4 .fp-slidesContainer .slide1 .ripple-effect",
+        ".section.section4 .fp-slidesContainer .slide1 .question__wrapper",
+        ".section.section4 .fp-slidesContainer .slide1 .question__wrapper .question__wrapper-inner",
+        ".section.section4 .fp-slidesContainer .slide1 .answer__wrapper",
+        ".section.section4 .fp-slidesContainer .slide1 .answer__wrapper--nobackground",
+        ".section.section4 .fp-slidesContainer .slide1 .answer__wrapper--nobackground",
+        ".section.section4 .fp-slidesContainer .slide1 .question:first-child",
+        ".section.section4 .fp-slidesContainer .slide1 .question:nth-child(3)",
+        ".section.section4 .fp-slidesContainer .slide2 .question__wrapper",
+        ".section.section4 .fp-slidesContainer .slide2 .question__wrapper .question__wrapper-inner",
+        ".section.section4 .fp-slidesContainer .slide2 .ripple-effect",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper .btn.question",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper .question.btn--white",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper .question.btn--white--large",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground .btn.question",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground .question.btn--white",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground .question.btn--white--large",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper .btn.question span",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper .question.btn--white span",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper .question.btn--white--large span",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground .btn.question span",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground .question.btn--white span",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground .question.btn--white--large span",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper .btn.question:first-child span",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper .question.btn--white--large:first-child span",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper .question.btn--white:first-child span",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground .btn.question:first-child span",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground .question.btn--white--large:first-child span",
+        ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground .question.btn--white:first-child span",
+        ".section.section4 .fp-slidesContainer .slide3 .question__wrapper",
+        ".section.section4 .fp-slidesContainer .slide3 .ripple-effect",
+        ".section.section4 .fp-slidesContainer .slide3 .answer__wrapper",
+        ".section.section4 .fp-slidesContainer .slide3 .answer__wrapper--nobackground",
+        ".section.section4 .fp-slidesContainer .slide3 .answer__wrapper .question span",
+        ".section.section4 .fp-slidesContainer .slide3 .answer__wrapper--nobackground .question span",
+        ".section.section6 .question__wrapper",
+        ".section.section6 .question__wrapper .question__wrapper-inner",
+        ".section.section6 .ripple-effect",
+        ".section.section6 .answer__wrapper",
+        ".section.section6 .answer__wrapper--nobackground",
+        ".section.section6 .answer__wrapper .question:nth-child(2) span",
+        ".section.section6 .answer__wrapper--nobackground .question:nth-child(2) span",
+        ".section.section5.lightning .question__wrapper p",
+        ".section.section5.lightning .ripple-effect",
+        ".section.section5.lightning .answer__wrapper .btn.question",
+        ".section.section5.lightning .answer__wrapper .question.btn--white",
+        ".section.section5.lightning .answer__wrapper .question.btn--white--large",
+        ".section.section5.lightning .answer__wrapper--nobackground .btn.question",
+        ".section.section5.lightning .answer__wrapper--nobackground .question.btn--white",
+        ".section.section5.lightning .answer__wrapper--nobackground .question.btn--white--large",
+        ".section.section5.lightning .answer__wrapper .btn.question span",
+        ".section.section5.lightning .answer__wrapper .question.btn--white span",
+        ".section.section5.lightning .answer__wrapper .question.btn--white--large span",
+        ".section.section5.lightning .answer__wrapper--nobackground .btn.question span",
+        ".section.section5.lightning .answer__wrapper--nobackground .question.btn--white span",
+        ".section.section5.lightning .answer__wrapper--nobackground .question.btn--white--large span",
+        ".section.section5 .question__wrapper",
+        ".section.section5 .question__wrapper .question__wrapper-inner",
+        ".section.section5 .question__wrapper p",
+        ".section.section5 .answer__wrapper",
+        ".section.section5 .answer__wrapper--nobackground",
+        ".section.section5 .answer__wrapper .btn.question",
+        ".section.section5 .answer__wrapper .question.btn--white",
+        ".section.section5 .answer__wrapper .question.btn--white--large",
+        ".section.section5 .answer__wrapper--nobackground .btn.question",
+        ".section.section5 .answer__wrapper--nobackground .question.btn--white",
+        ".section.section5 .answer__wrapper--nobackground .question.btn--white--large",
+        ".section.section5 .answer__wrapper .btn.question span",
+        ".section.section5 .answer__wrapper .question.btn--white span",
+        ".section.section5 .answer__wrapper .question.btn--white--large span",
+        ".section.section5 .answer__wrapper--nobackground .btn.question span",
+        ".section.section5 .answer__wrapper--nobackground .question.btn--white span",
+        ".section.section5 .answer__wrapper--nobackground .question.btn--white--large span",
+        ".section.section5 .answer__wrapper .btn.question:first-child span",
+        ".section.section5 .answer__wrapper .question.btn--white--large:first-child span",
+        ".section.section5 .answer__wrapper .question.btn--white:first-child span",
+        ".section.section5 .answer__wrapper--nobackground .btn.question:first-child span",
+        ".section.section5 .answer__wrapper--nobackground .question.btn--white--large:first-child span",
+        ".section.section5 .answer__wrapper--nobackground .question.btn--white:first-child span",
+        ".section.section5 .answer__wrapper .btn.question:last-child span",
+        ".section.section5 .answer__wrapper .question.btn--white--large:last-child span",
+        ".section.section5 .answer__wrapper .question.btn--white:last-child span",
+        ".section.section5 .answer__wrapper--nobackground .btn.question:last-child span",
+        ".section.section5 .answer__wrapper--nobackground .question.btn--white--large:last-child span",
+        ".section.section5 .answer__wrapper--nobackground .question.btn--white:last-child span",
+        ".section.section5 .answer__wrapper .btn.question:nth-child(2) span",
+        ".section.section5 .answer__wrapper .question.btn--white--large:nth-child(2) span",
+        ".section.section5 .answer__wrapper .question.btn--white:nth-child(2) span",
+        ".section.section5 .answer__wrapper--nobackground .btn.question:nth-child(2) span",
+        ".section.section5 .answer__wrapper--nobackground .question.btn--white--large:nth-child(2) span",
+        ".section.section5 .answer__wrapper--nobackground .question.btn--white:nth-child(2) span",
+        ".section.section5 .answer__wrapper .btn.question:nth-child(3) span",
+        ".section.section5 .answer__wrapper .question.btn--white--large:nth-child(3) span",
+        ".section.section5 .answer__wrapper .question.btn--white:nth-child(3) span",
+        ".section.section5 .answer__wrapper--nobackground .btn.question:nth-child(3) span",
+        ".section.section5 .answer__wrapper--nobackground .question.btn--white--large:nth-child(3) span",
+        ".section.section5 .answer__wrapper--nobackground .question.btn--white:nth-child(3) span",
+        ".section.section7 .question__wrapper",
+        ".section.section7 .ripple-effect",
+        ".section.section7 .answer__wrapper",
+        ".section.section7 .answer__wrapper--nobackground",
+        ".section.section7 .answer__wrapper .btn span",
+        ".section.section7 .answer__wrapper .btn--white span",
+        ".section.section7 .answer__wrapper .btn--white--large span",
+        ".section.section7 .answer__wrapper--nobackground .btn span",
+        ".section.section7 .answer__wrapper--nobackground .btn--white span",
+        ".section.section7 .answer__wrapper--nobackground .btn--white--large span",
+        ".section.section8 .question__wrapper",
+        ".section.section8 .question__wrapper .question__wrapper-inner",
+        ".section.section8 .ripple-effect",
+        ".section.section8 .answer__wrapper",
+        ".section.section8 .answer__wrapper--nobackground",
+        ".section.section8 .answer__wrapper .btn",
+        ".section.section8 .answer__wrapper .btn--white",
+        ".section.section8 .answer__wrapper .btn--white--large",
+        ".section.section8 .answer__wrapper--nobackground .btn",
+        ".section.section8 .answer__wrapper--nobackground .btn--white",
+        ".section.section8 .answer__wrapper--nobackground .btn--white--large",
+        ".section.section8 .answer__wrapper .btn.question:first-child span",
+        ".section.section8 .answer__wrapper .btn.question:nth-child(3) span",
+        ".section.section8 .answer__wrapper .question.btn--white--large:first-child span",
+        ".section.section8 .answer__wrapper .question.btn--white--large:nth-child(3) span",
+        ".section.section8 .answer__wrapper .question.btn--white:first-child span",
+        ".section.section8 .answer__wrapper .question.btn--white:nth-child(3) span",
+        ".section.section8 .answer__wrapper--nobackground .btn.question:first-child span",
+        ".section.section8 .answer__wrapper--nobackground .btn.question:nth-child(3) span",
+        ".section.section8 .answer__wrapper--nobackground .question.btn--white--large:first-child span",
+        ".section.section8 .answer__wrapper--nobackground .question.btn--white--large:nth-child(3) span",
+        ".section.section8 .answer__wrapper--nobackground .question.btn--white:first-child span",
+        ".section.section8 .answer__wrapper--nobackground .question.btn--white:nth-child(3) span",
+        ".section.section8 .answer__wrapper .btn.question:nth-child(2) span",
+        ".section.section8 .answer__wrapper .question.btn--white--large:nth-child(2) span",
+        ".section.section8 .answer__wrapper .question.btn--white:nth-child(2) span",
+        ".section.section8 .answer__wrapper--nobackground .btn.question:nth-child(2) span",
+        ".section.section8 .answer__wrapper--nobackground .question.btn--white--large:nth-child(2) span",
+        ".section.section8 .answer__wrapper--nobackground .question.btn--white:nth-child(2) span",
+        ".section.section8 .answer__wrapper .btn.question:last-child span",
+        ".section.section8 .answer__wrapper .question.btn--white--large:last-child span",
+        ".section.section8 .answer__wrapper .question.btn--white:last-child span",
+        ".section.section8 .answer__wrapper--nobackground .btn.question:last-child span",
+        ".section.section8 .answer__wrapper--nobackground .question.btn--white--large:last-child span",
+        ".section.section8 .answer__wrapper--nobackground .question.btn--white:last-child span",
+        ".section.result.active .result__box-inner",
+        ".section.result",
+        ".section.result .result__score",
+        ".section.result .result__text",
+        ".section.result .result__box",
+        ".section.result .result__box .result-box__top",
+        ".section.result .result__box .result-box__bottom",
+        ".section.result .result__box .result__box-inner",
+        ".section.result .result__box .result__box-inner h2",
+        ".section.result .result__box .result__box-inner p",
+        ".section.result .result__box .result__box-inner p",
+        ".section.result .result__footer",
+        ".section.result .result__footer .footer__info",
+        ".section.result .result__footer p",
+        ".section.result .result__footer strong",
+        ".section.result .result__footer a",
+        ".section.result .share__wrapper",
+        ".section.result .share__wrapper a",
+        ".section.result .share__wrapper a:last-child",
+        ".in-front-of-illustration",
+        ".content__wrapper",
+        ".splitscreen-wrapper",
+        ".splitscreen-wrapper .half",
+        ".btn",
+        ".btn--white",
+        ".btn--white--large",
+        ".btn--white--large:hover",
+        ".btn--white:hover",
+        ".btn:hover",
+        ".btn--white",
+        ".btn--white--large",
+        ".btn--white--large",
+        ".signup .signup-form",
+        ".signup .signup-form .form-error",
+        ".signup .signup-form input",
+        ".signup .signup__image-wrapper",
+        ".signup .signup-form__content-wrapper",
+        ".thanks h1",
+        ".thanks .btn-wrapper",
+        ".section .score",
+        ".section .signup",
+        ".section .thanks",
+        "#time__disturber",
+        ".result_canvas__top",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        "0%",
+        "100%",
+        ".warning",
+        ".warning .background-stars",
+        ".warning .background-stars--slow",
+        ".header",
+        ".hint .content",
+        ".warning",
+        ".warning .background-stars",
+        ".warning .background-stars--slow",
+        ".header"
+      ],
+      "specificity": {
+        "max": 130,
+        "average": 32.05792163543441
+      }
+    },
+    "declarations": {
+      "total": 1812,
+      "unique": 694,
+      "properties": {
+        "margin": [
+          "0",
+          "0 auto",
+          "auto",
+          "10px auto",
+          "0 auto",
+          "0 auto",
+          "0 auto 30px auto",
+          "0 auto",
+          "0",
+          "40px 0 0 10px",
+          "15px auto",
+          "20px auto",
+          "10px 0",
+          "0 auto",
+          "0 auto"
+        ],
+        "padding": [
+          "0",
+          "25px 120px",
+          "11px 0 0 0",
+          "0 25px",
+          "68px 25px 85px 25px",
+          "3px 0",
+          "15px 5px",
+          "0 10px"
+        ],
+        "-webkit-box-sizing": [
+          "border-box"
+        ],
+        "-moz-box-sizing": [
+          "border-box"
+        ],
+        "box-sizing": [
+          "border-box"
+        ],
+        "font-size": [
+          "62.5%",
+          "1.6rem",
+          "1.8rem",
+          "2rem",
+          "3rem",
+          "3rem",
+          "3rem",
+          "2rem",
+          "2rem",
+          "2rem",
+          "1.6rem",
+          "1.6rem",
+          "2rem",
+          "3.5rem",
+          "2rem",
+          "2rem",
+          "1.4rem",
+          "4rem",
+          "1.6rem",
+          "1.6rem",
+          "2rem",
+          "2.1rem",
+          "1.2rem"
+        ],
+        "font-family": [
+          "Miso,sans-serif",
+          "Miso-Bold,sans-serif",
+          "Miso-Bold,sans-serif",
+          "Miso,sans-serif",
+          "Miso-Bold,sans-serif",
+          "Miso-Bold,sans-serif",
+          "Miso-Bold",
+          "Miso-Bold"
+        ],
+        "color": [
+          "#000",
+          "#fff",
+          "#fff",
+          "#fff",
+          "#fff",
+          "#fff",
+          "#333",
+          "#fff",
+          "#009cde",
+          "#000",
+          "#fff",
+          "#fff",
+          "#000",
+          "#1a2c54",
+          "#32373c",
+          "#32373c",
+          "#32373c",
+          "#fff",
+          "#00628b",
+          "#f77b55",
+          "#fff"
+        ],
+        "line-height": [
+          "1.3",
+          "46px",
+          "45px",
+          "45px",
+          "30px",
+          "55px",
+          "1",
+          "1.2",
+          "107px",
+          "58px"
+        ],
+        "-webkit-font-smoothing": [
+          "antialiased"
+        ],
+        "-moz-osx-font-smoothing": [
+          "grayscale"
+        ],
+        "text-rendering": [
+          "optimizeLegibility"
+        ],
+        "font-weight": [
+          "400"
+        ],
+        "text-decoration": [
+          "none"
+        ],
+        "z-index": [
+          "50",
+          "200",
+          "200",
+          "0",
+          "1000",
+          "50",
+          "50",
+          "50",
+          "50",
+          "50",
+          "50",
+          "10000",
+          "2",
+          "300",
+          "300",
+          "1",
+          "800",
+          "900",
+          "500",
+          "-15",
+          "15",
+          "600",
+          "10000",
+          "200",
+          "20000",
+          "unset",
+          "1000",
+          "100000",
+          "100000"
+        ],
+        "-webkit-backface-visibility": [
+          "hidden"
+        ],
+        "-moz-backface-visibility": [
+          "hidden"
+        ],
+        "backface-visibility": [
+          "hidden"
+        ],
+        "-webkit-transform-style": [
+          "preserve-3d"
+        ],
+        "-moz-transform-style": [
+          "preserve-3d"
+        ],
+        "transform-style": [
+          "preserve-3d"
+        ],
+        "-webkit-transform": [
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(-50%,-50%,0) scale(.7)",
+          "translate3d(0,-50%,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,-50%,0)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(0,-50%,0)",
+          "translate3d(0,0,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(0,-50%,0)",
+          "translate3d(50%,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(100%,-50%,0)",
+          "translate3d(0,-50%,0)",
+          "translate3d(100%,-50%,0)",
+          "translate3d(0,-50%,0)",
+          "translate3d(0,45vh,0)",
+          "translate3d(0,30vh,0)",
+          "translate3d(0,45vh,0)",
+          "translate3d(0,30vh,0)",
+          "translate3d(-50%,-50%,0) scale(.4)",
+          "translate3d(-50%,-50%,0) scale(1)",
+          "translate3d(-50%,-50%,0) scale(.4)",
+          "translate3d(-50%,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-150px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-150px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-130px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-130px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-100px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-100px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-180px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-180px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-100px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-100px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-150px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-150px,0)",
+          "translate3d(-50%,-50%,0) scale(.8)",
+          "translate3d(-50%,-50%,0) scale(1)",
+          "translate3d(-50%,-50%,0) scale(.8)",
+          "translate3d(-50%,-50%,0) scale(1)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(-10%,-50%,0) rotateZ(0) scale(.8)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(0,-50%,0) rotateZ(0) scale(1)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(1)",
+          "translate3d(0,-50%,0) rotateZ(0) scale(1.2)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(-10%,-50%,0) rotateZ(0) scale(.8)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(0,-50%,0) rotateZ(0) scale(1)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(1)",
+          "translate3d(0,-50%,0) rotateZ(0) scale(1.2)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "scale(1)",
+          "scale(100)",
+          "scale(1)",
+          "scale(100)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(0,0,0)",
+          "translateX(-50%)",
+          "rotateY(-180deg) rotateZ(-90deg)",
+          "translateX(-50%)",
+          "translate3d(0,-200px,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0) rotate(0)",
+          "translate3d(-50%,100%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(0,0,0)",
+          "translateX(-50%)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0) rotateY(90deg)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,-5px,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(-50%,-50%,0) rotateZ(0) scale(1.5)",
+          "translate3d(-50%,-50%,0) rotateZ(360deg) scale(1.5)",
+          "translate3d(-50%,-50%,0) rotateZ(0) scale(1.5)",
+          "translate3d(-50%,-50%,0) rotateZ(360deg) scale(1.5)",
+          "translate3d(-50%,-50%,0) rotateZ(-90deg)",
+          "translate3d(-50%,-50%,0) rotateZ(-90deg)"
+        ],
+        "-moz-transform": [
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(-50%,-50%,0) scale(.7)",
+          "translate3d(0,-50%,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,-50%,0)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(0,-50%,0)",
+          "translate3d(0,0,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(0,-50%,0)",
+          "translate3d(50%,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(100%,-50%,0)",
+          "translate3d(0,-50%,0)",
+          "translate3d(100%,-50%,0)",
+          "translate3d(0,-50%,0)",
+          "translate3d(0,45vh,0)",
+          "translate3d(0,30vh,0)",
+          "translate3d(0,45vh,0)",
+          "translate3d(0,30vh,0)",
+          "translate3d(-50%,-50%,0) scale(.4)",
+          "translate3d(-50%,-50%,0) scale(1)",
+          "translate3d(-50%,-50%,0) scale(.4)",
+          "translate3d(-50%,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-150px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-150px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-130px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-130px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-100px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-100px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-180px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-180px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-100px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-100px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-150px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-150px,0)",
+          "translate3d(-50%,-50%,0) scale(.8)",
+          "translate3d(-50%,-50%,0) scale(1)",
+          "translate3d(-50%,-50%,0) scale(.8)",
+          "translate3d(-50%,-50%,0) scale(1)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(-10%,-50%,0) rotateZ(0) scale(.8)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(0,-50%,0) rotateZ(0) scale(1)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(1)",
+          "translate3d(0,-50%,0) rotateZ(0) scale(1.2)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(-10%,-50%,0) rotateZ(0) scale(.8)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(0,-50%,0) rotateZ(0) scale(1)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(1)",
+          "translate3d(0,-50%,0) rotateZ(0) scale(1.2)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "scale(1)",
+          "scale(100)",
+          "scale(1)",
+          "scale(100)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(0,0,0)",
+          "translateX(-50%)",
+          "rotateY(-180deg) rotateZ(-90deg)",
+          "translateX(-50%)",
+          "translate3d(0,-200px,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0) rotate(0)",
+          "translate3d(-50%,100%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(0,0,0)",
+          "translateX(-50%)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0) rotateY(90deg)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,-5px,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(-50%,-50%,0) rotateZ(0) scale(1.5)",
+          "translate3d(-50%,-50%,0) rotateZ(360deg) scale(1.5)",
+          "translate3d(-50%,-50%,0) rotateZ(0) scale(1.5)",
+          "translate3d(-50%,-50%,0) rotateZ(360deg) scale(1.5)",
+          "translate3d(-50%,-50%,0) rotateZ(-90deg)",
+          "translate3d(-50%,-50%,0) rotateZ(-90deg)"
+        ],
+        "transform": [
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(-50%,-50%,0) scale(.7)",
+          "translate3d(0,-50%,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,-50%,0)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(0,-50%,0)",
+          "translate3d(0,0,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(0,-50%,0)",
+          "translate3d(50%,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(100%,-50%,0)",
+          "translate3d(0,-50%,0)",
+          "translate3d(100%,-50%,0)",
+          "translate3d(0,-50%,0)",
+          "translate3d(100%,-50%,0)",
+          "translate3d(0,-50%,0)",
+          "translate3d(100%,-50%,0)",
+          "translate3d(0,-50%,0)",
+          "translate3d(0,45vh,0)",
+          "translate3d(0,30vh,0)",
+          "translate3d(0,45vh,0)",
+          "translate3d(0,30vh,0)",
+          "translate3d(0,45vh,0)",
+          "translate3d(0,30vh,0)",
+          "translate3d(0,45vh,0)",
+          "translate3d(0,30vh,0)",
+          "translate3d(-50%,-50%,0) scale(.4)",
+          "translate3d(-50%,-50%,0) scale(1)",
+          "translate3d(-50%,-50%,0) scale(.4)",
+          "translate3d(-50%,-50%,0) scale(1)",
+          "translate3d(-50%,-50%,0) scale(.4)",
+          "translate3d(-50%,-50%,0) scale(1)",
+          "translate3d(-50%,-50%,0) scale(.4)",
+          "translate3d(-50%,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(0,-50%,0) scale(.8)",
+          "translate3d(0,-50%,0) scale(1)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-150px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-150px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-150px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-150px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-130px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-130px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-130px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-130px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-100px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-100px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-100px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-100px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-180px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-180px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-180px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-180px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-100px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-100px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-100px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-100px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-150px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-150px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-150px,0)",
+          "translate3d(-50%,0,0)",
+          "translate3d(-50%,-150px,0)",
+          "translate3d(-50%,-50%,0) scale(.8)",
+          "translate3d(-50%,-50%,0) scale(1)",
+          "translate3d(-50%,-50%,0) scale(.8)",
+          "translate3d(-50%,-50%,0) scale(1)",
+          "translate3d(-50%,-50%,0) scale(.8)",
+          "translate3d(-50%,-50%,0) scale(1)",
+          "translate3d(-50%,-50%,0) scale(.8)",
+          "translate3d(-50%,-50%,0) scale(1)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(-10%,-50%,0) rotateZ(0) scale(.8)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(0,-50%,0) rotateZ(0) scale(1)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(1)",
+          "translate3d(0,-50%,0) rotateZ(0) scale(1.2)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(-10%,-50%,0) rotateZ(0) scale(.8)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(0,-50%,0) rotateZ(0) scale(1)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(1)",
+          "translate3d(0,-50%,0) rotateZ(0) scale(1.2)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(-10%,-50%,0) rotateZ(0) scale(.8)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(0,-50%,0) rotateZ(0) scale(1)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(1)",
+          "translate3d(0,-50%,0) rotateZ(0) scale(1.2)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(-10%,-50%,0) rotateZ(0) scale(.8)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "translate3d(0,-50%,0) rotateZ(0) scale(1)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(1)",
+          "translate3d(0,-50%,0) rotateZ(0) scale(1.2)",
+          "translate3d(-100%,-50%,0) rotateZ(-30deg) scale(.8)",
+          "scale(1)",
+          "scale(100)",
+          "scale(1)",
+          "scale(100)",
+          "scale(1)",
+          "scale(100)",
+          "scale(1)",
+          "scale(100)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(0,0,0)",
+          "translateX(-50%)",
+          "rotateY(-180deg) rotateZ(-90deg)",
+          "translateX(-50%)",
+          "translate3d(0,-200px,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0) rotate(0)",
+          "translate3d(-50%,100%,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(0,0,0)",
+          "translateX(-50%)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0) rotateY(90deg)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,0,0)",
+          "translate3d(0,-5px,0)",
+          "translate3d(-50%,-50%,0)",
+          "translate3d(-50%,-50%,0) rotateZ(0) scale(1.5)",
+          "translate3d(-50%,-50%,0) rotateZ(360deg) scale(1.5)",
+          "translate3d(-50%,-50%,0) rotateZ(0) scale(1.5)",
+          "translate3d(-50%,-50%,0) rotateZ(360deg) scale(1.5)",
+          "translate3d(-50%,-50%,0) rotateZ(0) scale(1.5)",
+          "translate3d(-50%,-50%,0) rotateZ(360deg) scale(1.5)",
+          "translate3d(-50%,-50%,0) rotateZ(0) scale(1.5)",
+          "translate3d(-50%,-50%,0) rotateZ(360deg) scale(1.5)",
+          "translate3d(-50%,-50%,0) rotateZ(-90deg)",
+          "translate3d(-50%,-50%,0) rotateZ(-90deg)"
+        ],
+        "position": [
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "relative",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "relative",
+          "relative",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "relative",
+          "relative",
+          "absolute",
+          "absolute",
+          "absolute",
+          "relative",
+          "absolute",
+          "absolute",
+          "fixed",
+          "absolute",
+          "relative",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "absolute",
+          "relative",
+          "fixed",
+          "absolute",
+          "absolute",
+          "relative",
+          "relative",
+          "relative",
+          "absolute",
+          "relative",
+          "relative",
+          "absolute",
+          "absolute",
+          "relative",
+          "absolute",
+          "absolute"
+        ],
+        "display": [
+          "inline-block",
+          "none",
+          "block",
+          "none",
+          "block",
+          "block",
+          "none",
+          "block",
+          "none",
+          "none",
+          "inline-block",
+          "inline-block",
+          "none",
+          "inline-block",
+          "none",
+          "block",
+          "block",
+          "inline-block",
+          "-webkit-box",
+          "-webkit-flex",
+          "-moz-box",
+          "-ms-flexbox",
+          "flex",
+          "-webkit-box",
+          "-webkit-flex",
+          "-moz-box",
+          "-ms-flexbox",
+          "flex",
+          "inline-block",
+          "inline-block",
+          "inline-block",
+          "inline-block",
+          "inline-block",
+          "inline-block",
+          "inline-block",
+          "-webkit-box",
+          "-webkit-flex",
+          "-moz-box",
+          "-ms-flexbox",
+          "flex",
+          "-webkit-box",
+          "-webkit-flex",
+          "-moz-box",
+          "-ms-flexbox",
+          "flex",
+          "block",
+          "none",
+          "block",
+          "none"
+        ],
+        "width": [
+          "100%",
+          "100%",
+          "100%",
+          "100%",
+          "150px",
+          "100%",
+          "219px",
+          "154px",
+          "50px",
+          "45px",
+          "40px",
+          "110px",
+          "100%",
+          "45px",
+          "45px",
+          "100%",
+          "100%",
+          "100%",
+          "100%",
+          "100%",
+          "38px",
+          "100%",
+          "55px",
+          "55px",
+          "66px",
+          "55px",
+          "100%",
+          "80%",
+          "100%",
+          "100%",
+          "100%",
+          "49%",
+          "50px",
+          "-webkit-calc(100% - 55px)",
+          "-moz-calc(100% - 55px)",
+          "calc(100% - 55px)",
+          "100%",
+          "100%",
+          "100%",
+          "93%",
+          "93%",
+          "67%",
+          "93%",
+          "100%",
+          "100%",
+          "75%",
+          "92%",
+          "76%",
+          "86%",
+          "52%",
+          "47%",
+          "66%",
+          "85%",
+          "86%",
+          "64%",
+          "96%",
+          "77%",
+          "116px",
+          "-webkit-calc(100% - 151px)",
+          "-moz-calc(100% - 151px)",
+          "calc(100% - 151px)",
+          "460px",
+          "100%",
+          "460px",
+          "100%",
+          "auto",
+          "100%",
+          "100%",
+          "100%",
+          "100%",
+          "100%",
+          "100%",
+          "100%",
+          "100%"
+        ],
+        "height": [
+          "100%",
+          "100%",
+          "100%",
+          "100%",
+          "150px",
+          "100%",
+          "336px",
+          "462px",
+          "50px",
+          "45px",
+          "40px",
+          "40px",
+          "45px",
+          "45px",
+          "100%",
+          "0vh",
+          "100%",
+          "80vh",
+          "100%",
+          "38px",
+          "100vh",
+          "55px",
+          "55px",
+          "66px",
+          "55px",
+          "61px",
+          "44vh",
+          "56vh",
+          "50px",
+          "50vh",
+          "50vh",
+          "100%",
+          "107px",
+          "100%",
+          "100%",
+          "100vh",
+          "58px",
+          "100%",
+          "387px",
+          "100%",
+          "100%",
+          "100%"
+        ],
+        "visibility": [
+          "hidden",
+          "visible",
+          "hidden",
+          "visible",
+          "hidden"
+        ],
+        "opacity": [
+          "0",
+          "1",
+          "0",
+          "1",
+          "1",
+          "0",
+          "1",
+          "0",
+          "1",
+          "1",
+          ".4",
+          "0",
+          ".4",
+          "0",
+          ".4",
+          "0",
+          ".4",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "1",
+          "0",
+          "1",
+          "1"
+        ],
+        "-webkit-transition": [
+          "opacity .2s",
+          "opacity .2s ease-in",
+          "-webkit-transform .2s ease-in-out",
+          "all .8s ease-in",
+          "opacity .2s ease-in-out",
+          "width .2s ease-in-out,height .2s ease-in-out",
+          "all .2s ease-in-out",
+          "-webkit-transform .2s ease-in-out",
+          "width .2s ease-in-out,height .2s ease-in-out"
+        ],
+        "-o-transition": [
+          "opacity .2s",
+          "opacity .2s ease-in",
+          "-o-transform .2s ease-in-out",
+          "all .8s ease-in",
+          "opacity .2s ease-in-out",
+          "width .2s ease-in-out,height .2s ease-in-out",
+          "all .2s ease-in-out",
+          "-o-transform .2s ease-in-out",
+          "width .2s ease-in-out,height .2s ease-in-out"
+        ],
+        "-moz-transition": [
+          "opacity .2s",
+          "opacity .2s ease-in",
+          "transform .2s ease-in-out, -moz-transform .2s ease-in-out",
+          "all .8s ease-in",
+          "opacity .2s ease-in-out",
+          "width .2s ease-in-out,height .2s ease-in-out",
+          "all .2s ease-in-out",
+          "transform .2s ease-in-out, -moz-transform .2s ease-in-out",
+          "width .2s ease-in-out,height .2s ease-in-out"
+        ],
+        "transition": [
+          "opacity .2s",
+          "opacity .2s ease-in",
+          "-webkit-transform .2s ease-in-out",
+          "transform .2s ease-in-out",
+          "transform .2s ease-in-out, -webkit-transform .2s ease-in-out, -moz-transform .2s ease-in-out, -o-transform .2s ease-in-out",
+          "all .8s ease-in",
+          "opacity .2s ease-in-out",
+          "width .2s ease-in-out,height .2s ease-in-out",
+          "all .2s ease-in-out",
+          "-webkit-transform .2s ease-in-out",
+          "transform .2s ease-in-out",
+          "transform .2s ease-in-out, -webkit-transform .2s ease-in-out, -moz-transform .2s ease-in-out, -o-transform .2s ease-in-out",
+          "width .2s ease-in-out,height .2s ease-in-out"
+        ],
+        "-webkit-transition-delay": [
+          ".2s",
+          ".8s",
+          ".8s"
+        ],
+        "-moz-transition-delay": [
+          ".2s",
+          ".8s",
+          ".8s"
+        ],
+        "-o-transition-delay": [
+          ".2s",
+          ".8s",
+          ".8s"
+        ],
+        "transition-delay": [
+          ".2s",
+          ".8s",
+          ".8s"
+        ],
+        "bottom": [
+          "56vh",
+          "-webkit-calc(50vh - 3px)",
+          "-moz-calc(50vh - 3px)",
+          "calc(50vh - 3px)",
+          "-webkit-calc(50vh - 3px)",
+          "-moz-calc(50vh - 3px)",
+          "calc(50vh - 3px)",
+          "-webkit-calc(50vh - 3px)",
+          "-moz-calc(50vh - 3px)",
+          "calc(50vh - 3px)",
+          "-webkit-calc(50vh - 3px)",
+          "-moz-calc(50vh - 3px)",
+          "calc(50vh - 3px)",
+          "5vh",
+          "2vh",
+          "2vh",
+          "0",
+          "0",
+          "-20px",
+          "0"
+        ],
+        "right": [
+          "10vw",
+          "2%",
+          "2%",
+          "0",
+          "0",
+          "5vw",
+          "10vw",
+          "7vw",
+          "5vw",
+          "20px",
+          "2vw",
+          "2vw",
+          "7vw",
+          "0",
+          "0",
+          "45px",
+          "0",
+          "100px"
+        ],
+        "max-width": [
+          "228px",
+          "206px",
+          "206px",
+          "206px",
+          "206px",
+          "200px",
+          "413px",
+          "196px",
+          "439px",
+          "300px",
+          "324px",
+          "175px",
+          "228px",
+          "228px",
+          "225px",
+          "275px",
+          "62px",
+          "62px",
+          "239px",
+          "239px",
+          "239px",
+          "239px",
+          "239px",
+          "239px",
+          "495px",
+          "400px",
+          "800px",
+          "228px",
+          "50vw",
+          "50px",
+          "30px",
+          "573px",
+          "1600px",
+          "380px",
+          "569px",
+          "569px",
+          "629px",
+          "500px",
+          "500px",
+          "500px",
+          "465px",
+          "620px",
+          "450px",
+          "450px",
+          "475px",
+          "-webkit-calc(100% - 114px)",
+          "-moz-calc(100% - 114px)",
+          "calc(100% - 114px)",
+          "50vw",
+          "199px",
+          "275px",
+          "325px",
+          "360px",
+          "590px",
+          "75vw"
+        ],
+        "max-height": [
+          "165px",
+          "171px",
+          "20px",
+          "171px",
+          "20px",
+          "217px",
+          "517px",
+          "196px",
+          "564px",
+          "200px",
+          "486px",
+          "175px",
+          "228px",
+          "228px",
+          "450px",
+          "450px",
+          "60px",
+          "60px",
+          "443px",
+          "443px",
+          "443px",
+          "443px",
+          "443px",
+          "443px",
+          "638px",
+          "400px",
+          "800px",
+          "75px",
+          "30px",
+          "360px",
+          "360px",
+          "387px",
+          "560px",
+          "10px",
+          "360px",
+          "10px",
+          "360px",
+          "10px",
+          "360px",
+          "10px",
+          "360px"
+        ],
+        "left": [
+          "2%",
+          "2%",
+          "12%",
+          "2vw",
+          "10px",
+          "2%",
+          "12%",
+          "1vw",
+          "50%",
+          "16%",
+          "32%",
+          "48%",
+          "64%",
+          "80%",
+          "90%",
+          "0",
+          "50%",
+          "50%",
+          "0",
+          "50%",
+          "50%",
+          "0",
+          "50%",
+          "50%",
+          "50%",
+          "50%",
+          "0",
+          "50%"
+        ],
+        "top": [
+          "50%",
+          "40%",
+          "50vh",
+          "50vh",
+          "65vh",
+          "40vh",
+          "40vh",
+          "65vh",
+          "50vh",
+          "40vh",
+          "64vh",
+          "-50%",
+          "50%",
+          "50%",
+          "50%",
+          "50%",
+          "50%",
+          "50%",
+          "60vh",
+          "60vh",
+          "50%",
+          "-50%",
+          "0vh",
+          "-50%",
+          "0vh",
+          "-50%",
+          "0vh",
+          "-50%",
+          "0vh",
+          "50%",
+          "0",
+          "0",
+          "0",
+          "25px",
+          "0",
+          "0",
+          "-95px",
+          "0",
+          "100px",
+          "50%",
+          "0",
+          "50%",
+          "50px",
+          "0",
+          "0",
+          "50%",
+          "5px"
+        ],
+        "-webkit-animation-delay": [
+          ".1s",
+          ".5s",
+          ".5s",
+          ".2s",
+          ".2s",
+          ".2s",
+          ".3s"
+        ],
+        "-moz-animation-delay": [
+          ".1s",
+          ".5s",
+          ".5s",
+          ".2s",
+          ".2s",
+          ".2s",
+          ".3s"
+        ],
+        "-o-animation-delay": [
+          ".1s",
+          ".5s",
+          ".5s",
+          ".2s",
+          ".2s",
+          ".2s",
+          ".3s"
+        ],
+        "animation-delay": [
+          ".1s",
+          ".5s",
+          ".5s",
+          ".2s",
+          ".2s",
+          ".2s",
+          ".3s"
+        ],
+        "overflow": [
+          "hidden",
+          "hidden",
+          "hidden",
+          "hidden",
+          "hidden",
+          "hidden",
+          "hidden"
+        ],
+        "-webkit-animation-name": [
+          "ue9302fd2",
+          "u78dac4bf",
+          "ub526a073",
+          "ue6ba6e31",
+          "u2793896a",
+          "ub79a8691",
+          "u7432b96b",
+          "ub83e64c5",
+          "u3156a83e",
+          "u78b1bddd",
+          "u3fdb9d2a",
+          "u64f42038",
+          "u8b363402",
+          "ufc60e793",
+          "wobblyDude",
+          "ub60a10c8",
+          "openResultCanvas",
+          "rotateFull",
+          "rotateFull"
+        ],
+        "-moz-animation-name": [
+          "ue9302fd2",
+          "u78dac4bf",
+          "ub526a073",
+          "ue6ba6e31",
+          "u2793896a",
+          "ub79a8691",
+          "u7432b96b",
+          "ub83e64c5",
+          "u3156a83e",
+          "u78b1bddd",
+          "u3fdb9d2a",
+          "u64f42038",
+          "u8b363402",
+          "ufc60e793",
+          "wobblyDude",
+          "ub60a10c8",
+          "openResultCanvas",
+          "rotateFull",
+          "rotateFull"
+        ],
+        "-o-animation-name": [
+          "ue9302fd2",
+          "u78dac4bf",
+          "ub526a073",
+          "ue6ba6e31",
+          "u2793896a",
+          "ub79a8691",
+          "u7432b96b",
+          "ub83e64c5",
+          "u3156a83e",
+          "u78b1bddd",
+          "u3fdb9d2a",
+          "u64f42038",
+          "u8b363402",
+          "ufc60e793",
+          "wobblyDude",
+          "ub60a10c8",
+          "openResultCanvas",
+          "rotateFull",
+          "rotateFull"
+        ],
+        "animation-name": [
+          "ue9302fd2",
+          "u78dac4bf",
+          "ub526a073",
+          "ue6ba6e31",
+          "u2793896a",
+          "ub79a8691",
+          "u7432b96b",
+          "ub83e64c5",
+          "u3156a83e",
+          "u78b1bddd",
+          "u3fdb9d2a",
+          "u64f42038",
+          "u8b363402",
+          "ufc60e793",
+          "wobblyDude",
+          "ub60a10c8",
+          "openResultCanvas",
+          "rotateFull",
+          "rotateFull"
+        ],
+        "-webkit-animation-duration": [
+          "2s",
+          "5s",
+          ".8s",
+          ".8s",
+          ".5s",
+          ".8s",
+          ".5s",
+          ".4s",
+          "4s",
+          "2s",
+          "3s",
+          "4s",
+          "2s",
+          "3.5s",
+          "20s",
+          ".8s",
+          "1s",
+          "160s",
+          "200s",
+          "160s",
+          "200s"
+        ],
+        "-moz-animation-duration": [
+          "2s",
+          "5s",
+          ".8s",
+          ".8s",
+          ".5s",
+          ".8s",
+          ".5s",
+          ".4s",
+          "4s",
+          "2s",
+          "3s",
+          "4s",
+          "2s",
+          "3.5s",
+          "20s",
+          ".8s",
+          "1s",
+          "160s",
+          "200s",
+          "160s",
+          "200s"
+        ],
+        "-o-animation-duration": [
+          "2s",
+          "5s",
+          ".8s",
+          ".8s",
+          ".5s",
+          ".8s",
+          ".5s",
+          ".4s",
+          "4s",
+          "2s",
+          "3s",
+          "4s",
+          "2s",
+          "3.5s",
+          "20s",
+          ".8s",
+          "1s",
+          "160s",
+          "200s",
+          "160s",
+          "200s"
+        ],
+        "animation-duration": [
+          "2s",
+          "5s",
+          ".8s",
+          ".8s",
+          ".5s",
+          ".8s",
+          ".5s",
+          ".4s",
+          "4s",
+          "2s",
+          "3s",
+          "4s",
+          "2s",
+          "3.5s",
+          "20s",
+          ".8s",
+          "1s",
+          "160s",
+          "200s",
+          "160s",
+          "200s"
+        ],
+        "-webkit-animation-iteration-count": [
+          "1",
+          "infinite",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "infinite",
+          "infinite",
+          "infinite",
+          "infinite",
+          "infinite",
+          "infinite",
+          "infinite",
+          "1",
+          "infinite",
+          "infinite"
+        ],
+        "-moz-animation-iteration-count": [
+          "1",
+          "infinite",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "infinite",
+          "infinite",
+          "infinite",
+          "infinite",
+          "infinite",
+          "infinite",
+          "infinite",
+          "1",
+          "infinite",
+          "infinite"
+        ],
+        "-o-animation-iteration-count": [
+          "1",
+          "infinite",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "infinite",
+          "infinite",
+          "infinite",
+          "infinite",
+          "infinite",
+          "infinite",
+          "infinite",
+          "1",
+          "infinite",
+          "infinite"
+        ],
+        "animation-iteration-count": [
+          "1",
+          "infinite",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "infinite",
+          "infinite",
+          "infinite",
+          "infinite",
+          "infinite",
+          "infinite",
+          "infinite",
+          "1",
+          "infinite",
+          "infinite"
+        ],
+        "-webkit-animation-timing-function": [
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in"
+        ],
+        "-moz-animation-timing-function": [
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in"
+        ],
+        "-o-animation-timing-function": [
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in"
+        ],
+        "animation-timing-function": [
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in-out",
+          "ease-in"
+        ],
+        "-webkit-animation-fill-mode": [
+          "forwards",
+          "both",
+          "forwards",
+          "forwards",
+          "forwards",
+          "forwards",
+          "forwards",
+          "forwards",
+          "both",
+          "both",
+          "both",
+          "both",
+          "both",
+          "both",
+          "forwards",
+          "forwards"
+        ],
+        "-moz-animation-fill-mode": [
+          "forwards",
+          "both",
+          "forwards",
+          "forwards",
+          "forwards",
+          "forwards",
+          "forwards",
+          "forwards",
+          "both",
+          "both",
+          "both",
+          "both",
+          "both",
+          "both",
+          "forwards",
+          "forwards"
+        ],
+        "-o-animation-fill-mode": [
+          "forwards",
+          "both",
+          "forwards",
+          "forwards",
+          "forwards",
+          "forwards",
+          "forwards",
+          "forwards",
+          "both",
+          "both",
+          "both",
+          "both",
+          "both",
+          "both",
+          "forwards",
+          "forwards"
+        ],
+        "animation-fill-mode": [
+          "forwards",
+          "both",
+          "forwards",
+          "forwards",
+          "forwards",
+          "forwards",
+          "forwards",
+          "forwards",
+          "both",
+          "both",
+          "both",
+          "both",
+          "both",
+          "both",
+          "forwards",
+          "forwards"
+        ],
+        "-webkit-animation-direction": [
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate"
+        ],
+        "-moz-animation-direction": [
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate"
+        ],
+        "-o-animation-direction": [
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate"
+        ],
+        "animation-direction": [
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate",
+          "alternate"
+        ],
+        "-webkit-border-radius": [
+          "50%",
+          "100%",
+          "50px",
+          "150px",
+          "55px",
+          "150px",
+          "61px",
+          "0"
+        ],
+        "border-radius": [
+          "50%",
+          "100%",
+          "50px",
+          "150px",
+          "55px",
+          "150px",
+          "61px",
+          "0"
+        ],
+        "-webkit-animation": [
+          "ripple-animation 2s"
+        ],
+        "-moz-animation": [
+          "ripple-animation 2s"
+        ],
+        "-o-animation": [
+          "ripple-animation 2s"
+        ],
+        "animation": [
+          "ripple-animation 2s"
+        ],
+        "-o-transform": [
+          "scale(1)",
+          "scale(100)",
+          "scale(1)",
+          "scale(100)",
+          "translateX(-50%)",
+          "translateX(-50%)",
+          "translateX(-50%)"
+        ],
+        "text-align": [
+          "center",
+          "center",
+          "center",
+          "center",
+          "center",
+          "center",
+          "left",
+          "center",
+          "left",
+          "center",
+          "center",
+          "left",
+          "left",
+          "left",
+          "center",
+          "center",
+          "left"
+        ],
+        "-ms-transform": [
+          "translateX(-50%)",
+          "translateX(-50%)",
+          "translateX(-50%)"
+        ],
+        "stroke-dasharray": [
+          "124px"
+        ],
+        "stroke-dashoffset": [
+          "0",
+          "0",
+          "124px",
+          "0",
+          "124px",
+          "0",
+          "124px",
+          "0",
+          "124px"
+        ],
+        "stroke-linecap": [
+          "round"
+        ],
+        "stroke-width": [
+          "2px"
+        ],
+        "stroke": [
+          "#fff"
+        ],
+        "fill": [
+          "#32373c"
+        ],
+        "vertical-align": [
+          "top",
+          "middle",
+          "top",
+          "top"
+        ],
+        "margin-right": [
+          "8px",
+          "0",
+          "15px",
+          "auto",
+          "15px",
+          "0"
+        ],
+        "cursor": [
+          "pointer",
+          "pointer",
+          "default",
+          "pointer"
+        ],
+        "background-image": [
+          "url(/dist/img/icon_hint.svg)",
+          "url(/dist/img/icon_score.svg)",
+          "url(/dist/img/hint_drawer.svg)",
+          "url(/dist/img/score.svg)"
+        ],
+        "background-size": [
+          "contain",
+          "contain",
+          "100% 100%"
+        ],
+        "background-position": [
+          "center",
+          "center",
+          "center top",
+          "center"
+        ],
+        "background-repeat": [
+          "no-repeat",
+          "no-repeat",
+          "no-repeat",
+          "no-repeat",
+          "no-repeat",
+          "no-repeat"
+        ],
+        "background-color": [
+          "#32373c",
+          "#fff",
+          "#028cc7",
+          "#028cc7",
+          "#009cd8",
+          "#fff",
+          "#fff",
+          "#009cd8",
+          "#028cc7",
+          "#a2bd5f",
+          "#a2bd5f",
+          "#009cde",
+          "#009cde",
+          "#86cdd2",
+          "#86cdd2",
+          "#ed9700",
+          "#ed9700",
+          "#d07c00",
+          "transparent",
+          "#00a8c3",
+          "#00a8c3",
+          "#86cdd2",
+          "#0f5758",
+          "#0f5758",
+          "#008e94",
+          "#abc8a4",
+          "#abc8a4",
+          "#e1e6b9",
+          "#1a2c54",
+          "#fff",
+          "#0a152d",
+          "#162545",
+          "#0a152d",
+          "#82ac60",
+          "#82ac60",
+          "#a2bd5f",
+          "#80c8f9",
+          "#80c8f9",
+          "#bdd5d6",
+          "#009cd8",
+          "#fafafa",
+          "#00628b",
+          "transparent",
+          "#009cd8",
+          "#32373c",
+          "#32373c"
+        ],
+        "content": [
+          "''",
+          "''",
+          "\"X\"",
+          "' '",
+          "' '"
+        ],
+        "background": [
+          "rgba(20,20,20,.4)",
+          "#82ac60",
+          "#bee4e3",
+          "#00a8c3",
+          "0 0",
+          "url(/dist/img/btn.svg)",
+          "url(/dist/img/btn-large.svg)"
+        ],
+        "padding-top": [
+          "0",
+          "150px",
+          "0",
+          "0",
+          "195px",
+          "-webkit-calc((50vh - 288px)/ 2)",
+          "-moz-calc((50vh - 288px)/ 2)",
+          "calc((50vh - 288px)/ 2)",
+          "22px",
+          "0",
+          "22px"
+        ],
+        "border-bottom": [
+          "solid 20px #4a5054",
+          "solid 1px #fff"
+        ],
+        "border": [
+          "solid 1px #028cc7",
+          "solid 1px #fff",
+          "none",
+          "none"
+        ],
+        "margin-bottom": [
+          "20px",
+          "40px",
+          "25px",
+          "25px",
+          "10px",
+          "20px"
+        ],
+        "-webkit-box-orient": [
+          "vertical",
+          "vertical",
+          "horizontal",
+          "vertical"
+        ],
+        "-webkit-box-direction": [
+          "normal",
+          "normal",
+          "normal",
+          "normal"
+        ],
+        "-webkit-flex-flow": [
+          "column",
+          "column",
+          "row",
+          "column"
+        ],
+        "-moz-box-orient": [
+          "vertical",
+          "vertical",
+          "horizontal",
+          "vertical"
+        ],
+        "-moz-box-direction": [
+          "normal",
+          "normal",
+          "normal",
+          "normal"
+        ],
+        "-ms-flex-flow": [
+          "column",
+          "column",
+          "row",
+          "column"
+        ],
+        "flex-flow": [
+          "column",
+          "column",
+          "row",
+          "column"
+        ],
+        "-webkit-box-pack": [
+          "center",
+          "center",
+          "center"
+        ],
+        "-webkit-justify-content": [
+          "center",
+          "center",
+          "space-around",
+          "center"
+        ],
+        "-moz-box-pack": [
+          "center",
+          "center",
+          "center"
+        ],
+        "-ms-flex-pack": [
+          "center",
+          "center",
+          "distribute",
+          "center"
+        ],
+        "justify-content": [
+          "center",
+          "center",
+          "space-around",
+          "center"
+        ],
+        "padding-bottom": [
+          "20px",
+          "0"
+        ],
+        "margin-top": [
+          "40px",
+          "5px",
+          "100px",
+          "10px",
+          "10px",
+          "50px"
+        ],
+        "pointer-events": [
+          "initial",
+          "none"
+        ],
+        "margin-left": [
+          "90px",
+          "40px",
+          "15px",
+          "auto"
+        ],
+        "outline": [
+          "0",
+          "0"
+        ],
+        "text-transform": [
+          "uppercase"
+        ]
+      }
+    },
+    "mediaQueries": {
+      "total": 11,
+      "unique": 5,
+      "values": [
+        "all and (min-width:320px)",
+        "all and (min-width:768px)",
+        "all and (min-width:1024px)",
+        "all and (min-width:320px)",
+        "all and (min-width:768px)",
+        "all and (min-width:1024px)",
+        "all and (min-width:320px)",
+        "all and (min-width:768px)",
+        "all and (min-width:1024px)",
+        "only screen and (max-width:768px) and (orientation:portrait)",
+        "only screen and (max-width:767px)"
+      ],
+      "contents": [
+        {
+          "value": "all and (min-width:320px)",
+          "rules": {
+            "total": 1,
+            "size": {
+              "graph": [
+                1
+              ],
+              "max": 1,
+              "average": 1
+            }
+          },
+          "selectors": {
+            "total": 1,
+            "type": 1,
+            "class": 0,
+            "id": 0,
+            "pseudoClass": 0,
+            "pseudoElement": 0,
+            "values": [
+              "body"
+            ],
+            "specificity": {
+              "max": 1,
+              "average": 1
+            }
+          },
+          "declarations": {
+            "total": 1,
+            "unique": 1,
+            "properties": {
+              "font-size": [
+                "1.6rem"
+              ]
+            }
+          }
+        },
+        {
+          "value": "all and (min-width:768px)",
+          "rules": {
+            "total": 1,
+            "size": {
+              "graph": [
+                1
+              ],
+              "max": 1,
+              "average": 1
+            }
+          },
+          "selectors": {
+            "total": 1,
+            "type": 1,
+            "class": 0,
+            "id": 0,
+            "pseudoClass": 0,
+            "pseudoElement": 0,
+            "values": [
+              "body"
+            ],
+            "specificity": {
+              "max": 1,
+              "average": 1
+            }
+          },
+          "declarations": {
+            "total": 1,
+            "unique": 1,
+            "properties": {
+              "font-size": [
+                "1.8rem"
+              ]
+            }
+          }
+        },
+        {
+          "value": "all and (min-width:1024px)",
+          "rules": {
+            "total": 1,
+            "size": {
+              "graph": [
+                1
+              ],
+              "max": 1,
+              "average": 1
+            }
+          },
+          "selectors": {
+            "total": 1,
+            "type": 1,
+            "class": 0,
+            "id": 0,
+            "pseudoClass": 0,
+            "pseudoElement": 0,
+            "values": [
+              "body"
+            ],
+            "specificity": {
+              "max": 1,
+              "average": 1
+            }
+          },
+          "declarations": {
+            "total": 1,
+            "unique": 1,
+            "properties": {
+              "font-size": [
+                "2rem"
+              ]
+            }
+          }
+        },
+        {
+          "value": "all and (min-width:320px)",
+          "rules": {
+            "total": 1,
+            "size": {
+              "graph": [
+                1
+              ],
+              "max": 1,
+              "average": 1
+            }
+          },
+          "selectors": {
+            "total": 1,
+            "type": 1,
+            "class": 0,
+            "id": 0,
+            "pseudoClass": 0,
+            "pseudoElement": 0,
+            "values": [
+              "h1"
+            ],
+            "specificity": {
+              "max": 1,
+              "average": 1
+            }
+          },
+          "declarations": {
+            "total": 1,
+            "unique": 1,
+            "properties": {
+              "font-size": [
+                "3rem"
+              ]
+            }
+          }
+        },
+        {
+          "value": "all and (min-width:768px)",
+          "rules": {
+            "total": 1,
+            "size": {
+              "graph": [
+                1
+              ],
+              "max": 1,
+              "average": 1
+            }
+          },
+          "selectors": {
+            "total": 1,
+            "type": 1,
+            "class": 0,
+            "id": 0,
+            "pseudoClass": 0,
+            "pseudoElement": 0,
+            "values": [
+              "h1"
+            ],
+            "specificity": {
+              "max": 1,
+              "average": 1
+            }
+          },
+          "declarations": {
+            "total": 1,
+            "unique": 1,
+            "properties": {
+              "font-size": [
+                "3rem"
+              ]
+            }
+          }
+        },
+        {
+          "value": "all and (min-width:1024px)",
+          "rules": {
+            "total": 1,
+            "size": {
+              "graph": [
+                1
+              ],
+              "max": 1,
+              "average": 1
+            }
+          },
+          "selectors": {
+            "total": 1,
+            "type": 1,
+            "class": 0,
+            "id": 0,
+            "pseudoClass": 0,
+            "pseudoElement": 0,
+            "values": [
+              "h1"
+            ],
+            "specificity": {
+              "max": 1,
+              "average": 1
+            }
+          },
+          "declarations": {
+            "total": 1,
+            "unique": 1,
+            "properties": {
+              "font-size": [
+                "3rem"
+              ]
+            }
+          }
+        },
+        {
+          "value": "all and (min-width:320px)",
+          "rules": {
+            "total": 1,
+            "size": {
+              "graph": [
+                1
+              ],
+              "max": 1,
+              "average": 1
+            }
+          },
+          "selectors": {
+            "total": 1,
+            "type": 1,
+            "class": 0,
+            "id": 0,
+            "pseudoClass": 0,
+            "pseudoElement": 0,
+            "values": [
+              "h2"
+            ],
+            "specificity": {
+              "max": 1,
+              "average": 1
+            }
+          },
+          "declarations": {
+            "total": 1,
+            "unique": 1,
+            "properties": {
+              "font-size": [
+                "2rem"
+              ]
+            }
+          }
+        },
+        {
+          "value": "all and (min-width:768px)",
+          "rules": {
+            "total": 1,
+            "size": {
+              "graph": [
+                1
+              ],
+              "max": 1,
+              "average": 1
+            }
+          },
+          "selectors": {
+            "total": 1,
+            "type": 1,
+            "class": 0,
+            "id": 0,
+            "pseudoClass": 0,
+            "pseudoElement": 0,
+            "values": [
+              "h2"
+            ],
+            "specificity": {
+              "max": 1,
+              "average": 1
+            }
+          },
+          "declarations": {
+            "total": 1,
+            "unique": 1,
+            "properties": {
+              "font-size": [
+                "2rem"
+              ]
+            }
+          }
+        },
+        {
+          "value": "all and (min-width:1024px)",
+          "rules": {
+            "total": 1,
+            "size": {
+              "graph": [
+                1
+              ],
+              "max": 1,
+              "average": 1
+            }
+          },
+          "selectors": {
+            "total": 1,
+            "type": 1,
+            "class": 0,
+            "id": 0,
+            "pseudoClass": 0,
+            "pseudoElement": 0,
+            "values": [
+              "h2"
+            ],
+            "specificity": {
+              "max": 1,
+              "average": 1
+            }
+          },
+          "declarations": {
+            "total": 1,
+            "unique": 1,
+            "properties": {
+              "font-size": [
+                "2rem"
+              ]
+            }
+          }
+        },
+        {
+          "value": "only screen and (max-width:768px) and (orientation:portrait)",
+          "rules": {
+            "total": 4,
+            "size": {
+              "graph": [
+                6,
+                15,
+                4,
+                1
+              ],
+              "max": 15,
+              "average": 6.5
+            }
+          },
+          "selectors": {
+            "total": 4,
+            "type": 0,
+            "class": 4,
+            "id": 0,
+            "pseudoClass": 0,
+            "pseudoElement": 0,
+            "values": [
+              ".warning",
+              ".warning .background-stars",
+              ".warning .background-stars--slow",
+              ".header"
+            ],
+            "specificity": {
+              "max": 20,
+              "average": 15
+            }
+          },
+          "declarations": {
+            "total": 26,
+            "unique": 26,
+            "properties": {
+              "display": [
+                "block",
+                "none"
+              ],
+              "position": [
+                "absolute"
+              ],
+              "z-index": [
+                "100000"
+              ],
+              "width": [
+                "100%"
+              ],
+              "height": [
+                "100%"
+              ],
+              "background-color": [
+                "#32373c"
+              ],
+              "-webkit-animation-name": [
+                "rotateFull"
+              ],
+              "-moz-animation-name": [
+                "rotateFull"
+              ],
+              "-o-animation-name": [
+                "rotateFull"
+              ],
+              "animation-name": [
+                "rotateFull"
+              ],
+              "-webkit-transform": [
+                "translate3d(-50%,-50%,0) rotateZ(-90deg)"
+              ],
+              "-moz-transform": [
+                "translate3d(-50%,-50%,0) rotateZ(-90deg)"
+              ],
+              "transform": [
+                "translate3d(-50%,-50%,0) rotateZ(-90deg)"
+              ],
+              "-webkit-animation-duration": [
+                "160s",
+                "200s"
+              ],
+              "-moz-animation-duration": [
+                "160s",
+                "200s"
+              ],
+              "-o-animation-duration": [
+                "160s",
+                "200s"
+              ],
+              "animation-duration": [
+                "160s",
+                "200s"
+              ],
+              "-webkit-animation-iteration-count": [
+                "infinite"
+              ],
+              "-moz-animation-iteration-count": [
+                "infinite"
+              ],
+              "-o-animation-iteration-count": [
+                "infinite"
+              ],
+              "animation-iteration-count": [
+                "infinite"
+              ]
+            }
+          }
+        },
+        {
+          "value": "only screen and (max-width:767px)",
+          "rules": {
+            "total": 5,
+            "size": {
+              "graph": [
+                1,
+                6,
+                15,
+                4,
+                1
+              ],
+              "max": 15,
+              "average": 5.4
+            }
+          },
+          "selectors": {
+            "total": 5,
+            "type": 0,
+            "class": 5,
+            "id": 0,
+            "pseudoClass": 0,
+            "pseudoElement": 0,
+            "values": [
+              ".hint .content",
+              ".warning",
+              ".warning .background-stars",
+              ".warning .background-stars--slow",
+              ".header"
+            ],
+            "specificity": {
+              "max": 20,
+              "average": 16
+            }
+          },
+          "declarations": {
+            "total": 27,
+            "unique": 27,
+            "properties": {
+              "max-width": [
+                "75vw"
+              ],
+              "display": [
+                "block",
+                "none"
+              ],
+              "z-index": [
+                "100000"
+              ],
+              "width": [
+                "100%"
+              ],
+              "height": [
+                "100%"
+              ],
+              "background-color": [
+                "#32373c"
+              ],
+              "position": [
+                "absolute"
+              ],
+              "-webkit-animation-name": [
+                "rotateFull"
+              ],
+              "-moz-animation-name": [
+                "rotateFull"
+              ],
+              "-o-animation-name": [
+                "rotateFull"
+              ],
+              "animation-name": [
+                "rotateFull"
+              ],
+              "-webkit-transform": [
+                "translate3d(-50%,-50%,0) rotateZ(-90deg)"
+              ],
+              "-moz-transform": [
+                "translate3d(-50%,-50%,0) rotateZ(-90deg)"
+              ],
+              "transform": [
+                "translate3d(-50%,-50%,0) rotateZ(-90deg)"
+              ],
+              "-webkit-animation-duration": [
+                "160s",
+                "200s"
+              ],
+              "-moz-animation-duration": [
+                "160s",
+                "200s"
+              ],
+              "-o-animation-duration": [
+                "160s",
+                "200s"
+              ],
+              "animation-duration": [
+                "160s",
+                "200s"
+              ],
+              "-webkit-animation-iteration-count": [
+                "infinite"
+              ],
+              "-moz-animation-iteration-count": [
+                "infinite"
+              ],
+              "-o-animation-iteration-count": [
+                "infinite"
+              ],
+              "animation-iteration-count": [
+                "infinite"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "fullUrl": "http://zkm-game.geyster.ch/dist/style/style.min.css",
+    "specificityGraph": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      10,
+      11,
+      20,
+      30,
+      30,
+      40,
+      110,
+      110,
+      110,
+      110,
+      110,
+      20,
+      20,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      111,
+      120,
+      120,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      10,
+      20,
+      20,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      20,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      110,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      110,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      110,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      110,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      110,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      110,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      120,
+      120,
+      110,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      110,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      110,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      110,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      110,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      110,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      110,
+      110,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      120,
+      120,
+      130,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      10,
+      10,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      10,
+      11,
+      1,
+      1,
+      10,
+      10,
+      10,
+      11,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      10,
+      10,
+      10,
+      20,
+      20,
+      20,
+      20,
+      20,
+      21,
+      21,
+      21,
+      21,
+      20,
+      30,
+      21,
+      20,
+      21,
+      20,
+      30,
+      21,
+      20,
+      10,
+      20,
+      11,
+      20,
+      30,
+      20,
+      21,
+      10,
+      20,
+      100,
+      10,
+      10,
+      10,
+      20,
+      20,
+      20,
+      30,
+      30,
+      30,
+      21,
+      21,
+      21,
+      30,
+      30,
+      30,
+      31,
+      31,
+      31,
+      21,
+      21,
+      21,
+      20,
+      20,
+      20,
+      21,
+      21,
+      21,
+      10,
+      100,
+      10,
+      10,
+      30,
+      30,
+      31,
+      31,
+      30,
+      31,
+      40,
+      40,
+      21,
+      30,
+      30,
+      30,
+      30,
+      40,
+      40,
+      31,
+      31,
+      21,
+      20,
+      30,
+      20,
+      20,
+      20,
+      30,
+      30,
+      30,
+      30,
+      50,
+      50,
+      51,
+      51,
+      30,
+      40,
+      30,
+      30,
+      30,
+      51,
+      51,
+      30,
+      40,
+      30,
+      30,
+      30,
+      51,
+      51,
+      51,
+      51,
+      51,
+      51,
+      51,
+      51,
+      20,
+      40,
+      40,
+      50,
+      40,
+      50,
+      50,
+      60,
+      50,
+      50,
+      50,
+      60,
+      60,
+      50,
+      60,
+      50,
+      50,
+      50,
+      70,
+      70,
+      70,
+      70,
+      70,
+      70,
+      71,
+      71,
+      71,
+      71,
+      71,
+      71,
+      81,
+      81,
+      81,
+      81,
+      81,
+      81,
+      50,
+      50,
+      50,
+      50,
+      61,
+      61,
+      30,
+      40,
+      30,
+      30,
+      30,
+      51,
+      51,
+      41,
+      40,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      30,
+      40,
+      31,
+      30,
+      30,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      51,
+      51,
+      51,
+      51,
+      51,
+      51,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      30,
+      30,
+      30,
+      30,
+      41,
+      41,
+      41,
+      41,
+      41,
+      41,
+      30,
+      40,
+      30,
+      30,
+      30,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      61,
+      40,
+      20,
+      30,
+      30,
+      30,
+      40,
+      40,
+      40,
+      41,
+      41,
+      41,
+      30,
+      40,
+      31,
+      31,
+      31,
+      30,
+      31,
+      41,
+      10,
+      10,
+      10,
+      20,
+      10,
+      10,
+      10,
+      20,
+      20,
+      20,
+      10,
+      10,
+      10,
+      20,
+      30,
+      21,
+      20,
+      20,
+      11,
+      20,
+      20,
+      20,
+      20,
+      100,
+      10,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      10,
+      20,
+      20,
+      10,
+      20,
+      10,
+      20,
+      20,
+      10
+    ],
+    "specificityValues": [
+      {
+        "selector": "*",
+        "specificity": 0
+      },
+      {
+        "selector": "html",
+        "specificity": 1
+      },
+      {
+        "selector": "body",
+        "specificity": 1
+      },
+      {
+        "selector": "body",
+        "specificity": 1
+      },
+      {
+        "selector": "body",
+        "specificity": 1
+      },
+      {
+        "selector": "body",
+        "specificity": 1
+      },
+      {
+        "selector": "h1",
+        "specificity": 1
+      },
+      {
+        "selector": "h2",
+        "specificity": 1
+      },
+      {
+        "selector": "h3",
+        "specificity": 1
+      },
+      {
+        "selector": "h4",
+        "specificity": 1
+      },
+      {
+        "selector": "h5",
+        "specificity": 1
+      },
+      {
+        "selector": "h6",
+        "specificity": 1
+      },
+      {
+        "selector": "h1",
+        "specificity": 1
+      },
+      {
+        "selector": "h1",
+        "specificity": 1
+      },
+      {
+        "selector": "h1",
+        "specificity": 1
+      },
+      {
+        "selector": "h2",
+        "specificity": 1
+      },
+      {
+        "selector": "h2",
+        "specificity": 1
+      },
+      {
+        "selector": "h2",
+        "specificity": 1
+      },
+      {
+        "selector": "a",
+        "specificity": 1
+      },
+      {
+        "selector": ".illustration",
+        "specificity": 10
+      },
+      {
+        "selector": ".illustration svg",
+        "specificity": 11
+      },
+      {
+        "selector": ".section .illustration",
+        "specificity": 20
+      },
+      {
+        "selector": ".section.active .illustration",
+        "specificity": 30
+      },
+      {
+        "selector": ".section .slide .illustration",
+        "specificity": 30
+      },
+      {
+        "selector": ".section .slide.active .illustration",
+        "specificity": 40
+      },
+      {
+        "selector": ".section #intro_illustration1",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section1_illustration1",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section1_illustration3",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section1_illustration2",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section1_illustration4",
+        "specificity": 110
+      },
+      {
+        "selector": ".section .slide2_hand_with_phone",
+        "specificity": 20
+      },
+      {
+        "selector": ".section .slide2_girl",
+        "specificity": 20
+      },
+      {
+        "selector": ".section #section3_illustration1",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section3_illustration2",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section3_illustration3",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section4_slide1_illustration1",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section4_slide1_illustration2",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section4_slide1_illustration3",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section4_slide2_illustration1",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section4_slide2_illustration2",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section4_slide2_illustration3",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section4_slide3_illustration1",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section4_slide3_illustration2",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section5_illustration1",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section5_illustration4",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section5_illustration2",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section5_illustration2 img",
+        "specificity": 111
+      },
+      {
+        "selector": ".section #section5_illustration2 .bulb_on",
+        "specificity": 120
+      },
+      {
+        "selector": ".section #section5_illustration2 .bulb_off",
+        "specificity": 120
+      },
+      {
+        "selector": ".section #section6_illustration1",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section6_illustration2",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section6_illustration3",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section6_illustration4",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section6_illustration5",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section6_illustration6",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section7_illustration1",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section7_illustration2",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #section8_illustration1",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #score_illustration1",
+        "specificity": 110
+      },
+      {
+        "selector": ".section",
+        "specificity": 10
+      },
+      {
+        "selector": ".section .fp-tableCell",
+        "specificity": 20
+      },
+      {
+        "selector": ".section .slide2_hand_with_phone",
+        "specificity": 20
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": ".section .slide2_girl",
+        "specificity": 20
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": ".section #section3_illustration1",
+        "specificity": 110
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": ".section #section4_slide1_illustration2",
+        "specificity": 110
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": ".section #section4_slide1_illustration3",
+        "specificity": 110
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": ".section #section4_slide2_illustration1",
+        "specificity": 110
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": ".section #section4_slide2_illustration2",
+        "specificity": 110
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": ".section #section5_illustration2",
+        "specificity": 110
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": ".section #section5_illustration2 .bulb_on",
+        "specificity": 120
+      },
+      {
+        "selector": ".section #section5_illustration2 .bulb_off",
+        "specificity": 120
+      },
+      {
+        "selector": ".section #section6_illustration1",
+        "specificity": 110
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": ".section #section6_illustration2",
+        "specificity": 110
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": ".section #section6_illustration3",
+        "specificity": 110
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": ".section #section6_illustration4",
+        "specificity": 110
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": ".section #section6_illustration5",
+        "specificity": 110
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": ".section #section6_illustration6",
+        "specificity": 110
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": ".section #section7_illustration1",
+        "specificity": 110
+      },
+      {
+        "selector": ".section #score_illustration1",
+        "specificity": 110
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": ".section.lightning #section5_illustration4",
+        "specificity": 120
+      },
+      {
+        "selector": ".section.lightning #section5_illustration1",
+        "specificity": 120
+      },
+      {
+        "selector": ".section.lightning #section5_illustration2 .bulb_on",
+        "specificity": 130
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "16%",
+        "specificity": 1
+      },
+      {
+        "selector": "32%",
+        "specificity": 1
+      },
+      {
+        "selector": "48%",
+        "specificity": 1
+      },
+      {
+        "selector": "64%",
+        "specificity": 1
+      },
+      {
+        "selector": "80%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "16%",
+        "specificity": 1
+      },
+      {
+        "selector": "32%",
+        "specificity": 1
+      },
+      {
+        "selector": "48%",
+        "specificity": 1
+      },
+      {
+        "selector": "64%",
+        "specificity": 1
+      },
+      {
+        "selector": "80%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "16%",
+        "specificity": 1
+      },
+      {
+        "selector": "32%",
+        "specificity": 1
+      },
+      {
+        "selector": "48%",
+        "specificity": 1
+      },
+      {
+        "selector": "64%",
+        "specificity": 1
+      },
+      {
+        "selector": "80%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "16%",
+        "specificity": 1
+      },
+      {
+        "selector": "32%",
+        "specificity": 1
+      },
+      {
+        "selector": "48%",
+        "specificity": 1
+      },
+      {
+        "selector": "64%",
+        "specificity": 1
+      },
+      {
+        "selector": "80%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": ".ripple",
+        "specificity": 10
+      },
+      {
+        "selector": ".ripple-effect",
+        "specificity": 10
+      },
+      {
+        "selector": "from",
+        "specificity": 1
+      },
+      {
+        "selector": "to",
+        "specificity": 1
+      },
+      {
+        "selector": "from",
+        "specificity": 1
+      },
+      {
+        "selector": "to",
+        "specificity": 1
+      },
+      {
+        "selector": "from",
+        "specificity": 1
+      },
+      {
+        "selector": "to",
+        "specificity": 1
+      },
+      {
+        "selector": "from",
+        "specificity": 1
+      },
+      {
+        "selector": "to",
+        "specificity": 1
+      },
+      {
+        "selector": ".warning",
+        "specificity": 10
+      },
+      {
+        "selector": ".warning img",
+        "specificity": 11
+      },
+      {
+        "selector": "audio",
+        "specificity": 1
+      },
+      {
+        "selector": "svg",
+        "specificity": 1
+      },
+      {
+        "selector": ".countdown",
+        "specificity": 10
+      },
+      {
+        "selector": ".countdown-number",
+        "specificity": 10
+      },
+      {
+        "selector": ".svg-countdown",
+        "specificity": 10
+      },
+      {
+        "selector": ".svg-countdown circle",
+        "specificity": 11
+      },
+      {
+        "selector": "from",
+        "specificity": 1
+      },
+      {
+        "selector": "to",
+        "specificity": 1
+      },
+      {
+        "selector": "from",
+        "specificity": 1
+      },
+      {
+        "selector": "to",
+        "specificity": 1
+      },
+      {
+        "selector": "from",
+        "specificity": 1
+      },
+      {
+        "selector": "to",
+        "specificity": 1
+      },
+      {
+        "selector": "from",
+        "specificity": 1
+      },
+      {
+        "selector": "to",
+        "specificity": 1
+      },
+      {
+        "selector": ".header",
+        "specificity": 10
+      },
+      {
+        "selector": ".header__logo",
+        "specificity": 10
+      },
+      {
+        "selector": ".meta__navigation",
+        "specificity": 10
+      },
+      {
+        "selector": ".meta__navigation.show",
+        "specificity": 20
+      },
+      {
+        "selector": ".meta__navigation .header__counter",
+        "specificity": 20
+      },
+      {
+        "selector": ".meta__navigation .header__hint",
+        "specificity": 20
+      },
+      {
+        "selector": ".meta__navigation .header__score",
+        "specificity": 20
+      },
+      {
+        "selector": ".meta__navigation .header__time",
+        "specificity": 20
+      },
+      {
+        "selector": ".meta__navigation .header__counter svg",
+        "specificity": 21
+      },
+      {
+        "selector": ".meta__navigation .header__hint svg",
+        "specificity": 21
+      },
+      {
+        "selector": ".meta__navigation .header__score svg",
+        "specificity": 21
+      },
+      {
+        "selector": ".meta__navigation .header__time svg",
+        "specificity": 21
+      },
+      {
+        "selector": ".meta__navigation .header__hint",
+        "specificity": 20
+      },
+      {
+        "selector": ".meta__navigation .header__hint.show",
+        "specificity": 30
+      },
+      {
+        "selector": ".meta__navigation .header__hint svg",
+        "specificity": 21
+      },
+      {
+        "selector": ".meta__navigation .header__score",
+        "specificity": 20
+      },
+      {
+        "selector": ".meta__navigation .header__score span",
+        "specificity": 21
+      },
+      {
+        "selector": ".meta__navigation .header__counter",
+        "specificity": 20
+      },
+      {
+        "selector": ".meta__navigation .header__counter .counter__inner",
+        "specificity": 30
+      },
+      {
+        "selector": ".meta__navigation .header__counter span",
+        "specificity": 21
+      },
+      {
+        "selector": ".hint__backdrop.show",
+        "specificity": 20
+      },
+      {
+        "selector": ".hint",
+        "specificity": 10
+      },
+      {
+        "selector": ".hint .content",
+        "specificity": 20
+      },
+      {
+        "selector": ".hint:before",
+        "specificity": 11
+      },
+      {
+        "selector": ".hint.show",
+        "specificity": 20
+      },
+      {
+        "selector": ".hint.show .close",
+        "specificity": 30
+      },
+      {
+        "selector": ".hint .close",
+        "specificity": 20
+      },
+      {
+        "selector": ".hint .close::before",
+        "specificity": 21
+      },
+      {
+        "selector": ".time__disturber",
+        "specificity": 10
+      },
+      {
+        "selector": ".time__disturber.active",
+        "specificity": 20
+      },
+      {
+        "selector": "#svgSj6f1gmacd7",
+        "specificity": 100
+      },
+      {
+        "selector": ".btn",
+        "specificity": 10
+      },
+      {
+        "selector": ".btn--white",
+        "specificity": 10
+      },
+      {
+        "selector": ".btn--white--large",
+        "specificity": 10
+      },
+      {
+        "selector": ".btn.start",
+        "specificity": 20
+      },
+      {
+        "selector": ".start.btn--white",
+        "specificity": 20
+      },
+      {
+        "selector": ".start.btn--white--large",
+        "specificity": 20
+      },
+      {
+        "selector": ".btn.start[disabled]",
+        "specificity": 30
+      },
+      {
+        "selector": ".start[disabled].btn--white",
+        "specificity": 30
+      },
+      {
+        "selector": ".start[disabled].btn--white--large",
+        "specificity": 30
+      },
+      {
+        "selector": ".btn.start::before",
+        "specificity": 21
+      },
+      {
+        "selector": ".start.btn--white--large::before",
+        "specificity": 21
+      },
+      {
+        "selector": ".start.btn--white::before",
+        "specificity": 21
+      },
+      {
+        "selector": ".btn.start.ready",
+        "specificity": 30
+      },
+      {
+        "selector": ".start.ready.btn--white",
+        "specificity": 30
+      },
+      {
+        "selector": ".start.ready.btn--white--large",
+        "specificity": 30
+      },
+      {
+        "selector": ".btn.start.ready::before",
+        "specificity": 31
+      },
+      {
+        "selector": ".start.ready.btn--white--large::before",
+        "specificity": 31
+      },
+      {
+        "selector": ".start.ready.btn--white::before",
+        "specificity": 31
+      },
+      {
+        "selector": ".btn.start svg",
+        "specificity": 21
+      },
+      {
+        "selector": ".start.btn--white svg",
+        "specificity": 21
+      },
+      {
+        "selector": ".start.btn--white--large svg",
+        "specificity": 21
+      },
+      {
+        "selector": ".btn.question",
+        "specificity": 20
+      },
+      {
+        "selector": ".question.btn--white",
+        "specificity": 20
+      },
+      {
+        "selector": ".question.btn--white--large",
+        "specificity": 20
+      },
+      {
+        "selector": ".btn.question span",
+        "specificity": 21
+      },
+      {
+        "selector": ".question.btn--white span",
+        "specificity": 21
+      },
+      {
+        "selector": ".question.btn--white--large span",
+        "specificity": 21
+      },
+      {
+        "selector": ".answer",
+        "specificity": 10
+      },
+      {
+        "selector": "#fullpage",
+        "specificity": 100
+      },
+      {
+        "selector": ".header",
+        "specificity": 10
+      },
+      {
+        "selector": ".section",
+        "specificity": 10
+      },
+      {
+        "selector": ".section.active .hint",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.intro .header-text",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.intro .header-text h1",
+        "specificity": 31
+      },
+      {
+        "selector": ".section.intro .header-text p",
+        "specificity": 31
+      },
+      {
+        "selector": ".section.intro .question__wrapper",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.intro .question__wrapper p",
+        "specificity": 31
+      },
+      {
+        "selector": ".section.intro .question__wrapper .intro__description",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.intro .question__wrapper .question__wrapper-inner",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.intro h2",
+        "specificity": 21
+      },
+      {
+        "selector": ".section.intro .intro__description-wrapper",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.intro .answer__wrapper",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.intro .answer__wrapper--nobackground",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.intro .description__box",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.intro .description__box .box__image",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.intro .description__box .box__image",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.intro .description__box p",
+        "specificity": 31
+      },
+      {
+        "selector": ".section.intro .description__box p",
+        "specificity": 31
+      },
+      {
+        "selector": ".section.intro h1",
+        "specificity": 21
+      },
+      {
+        "selector": ".section .question__wrapper",
+        "specificity": 20
+      },
+      {
+        "selector": ".section .question__wrapper .question__wrapper-inner",
+        "specificity": 30
+      },
+      {
+        "selector": ".section .answer__wrapper",
+        "specificity": 20
+      },
+      {
+        "selector": ".section .answer__wrapper--nobackground",
+        "specificity": 20
+      },
+      {
+        "selector": ".section .answer__wrapper--nobackground",
+        "specificity": 20
+      },
+      {
+        "selector": ".section.section1 .question__wrapper",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section1 .ripple-effect",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section1 .answer__wrapper",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section1 .answer__wrapper--nobackground",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section1 .answer__wrapper .question:first-child",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section1 .answer__wrapper--nobackground .question:first-child",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section1 .answer__wrapper .question:nth-child(2) span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section1 .answer__wrapper--nobackground .question:nth-child(2) span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section2 .question__wrapper",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section2 .question__wrapper .question__wrapper-inner",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.section2 .ripple-effect",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section2 .answer__wrapper",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section2 .answer__wrapper--nobackground",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section2 .answer__wrapper .question:last-child span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section2 .answer__wrapper--nobackground .question:last-child span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section3 .question__wrapper",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section3 .question__wrapper .question__wrapper-inner",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.section3 .ripple-effect",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section3 .answer__wrapper",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section3 .answer__wrapper--nobackground",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section3 .answer__wrapper .question:first-child span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section3 .answer__wrapper .question:last-child span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section3 .answer__wrapper--nobackground .question:first-child span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section3 .answer__wrapper--nobackground .question:last-child span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section3 .answer__wrapper .question:nth-child(2) span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section3 .answer__wrapper .question:nth-child(3) span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section3 .answer__wrapper--nobackground .question:nth-child(2) span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section3 .answer__wrapper--nobackground .question:nth-child(3) span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section4",
+        "specificity": 20
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide__inner",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .question__wrapper",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .question__wrapper .question__wrapper-inner",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .fp-tableCell",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide1 .ripple-effect",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide1 .question__wrapper",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide1 .question__wrapper .question__wrapper-inner",
+        "specificity": 60
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide1 .answer__wrapper",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide1 .answer__wrapper--nobackground",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide1 .answer__wrapper--nobackground",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide1 .question:first-child",
+        "specificity": 60
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide1 .question:nth-child(3)",
+        "specificity": 60
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .question__wrapper",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .question__wrapper .question__wrapper-inner",
+        "specificity": 60
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .ripple-effect",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper .btn.question",
+        "specificity": 70
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper .question.btn--white",
+        "specificity": 70
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper .question.btn--white--large",
+        "specificity": 70
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground .btn.question",
+        "specificity": 70
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground .question.btn--white",
+        "specificity": 70
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground .question.btn--white--large",
+        "specificity": 70
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper .btn.question span",
+        "specificity": 71
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper .question.btn--white span",
+        "specificity": 71
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper .question.btn--white--large span",
+        "specificity": 71
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground .btn.question span",
+        "specificity": 71
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground .question.btn--white span",
+        "specificity": 71
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground .question.btn--white--large span",
+        "specificity": 71
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper .btn.question:first-child span",
+        "specificity": 81
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper .question.btn--white--large:first-child span",
+        "specificity": 81
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper .question.btn--white:first-child span",
+        "specificity": 81
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground .btn.question:first-child span",
+        "specificity": 81
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground .question.btn--white--large:first-child span",
+        "specificity": 81
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide2 .answer__wrapper--nobackground .question.btn--white:first-child span",
+        "specificity": 81
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide3 .question__wrapper",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide3 .ripple-effect",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide3 .answer__wrapper",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide3 .answer__wrapper--nobackground",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide3 .answer__wrapper .question span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section4 .fp-slidesContainer .slide3 .answer__wrapper--nobackground .question span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section6 .question__wrapper",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section6 .question__wrapper .question__wrapper-inner",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.section6 .ripple-effect",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section6 .answer__wrapper",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section6 .answer__wrapper--nobackground",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section6 .answer__wrapper .question:nth-child(2) span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section6 .answer__wrapper--nobackground .question:nth-child(2) span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section5.lightning .question__wrapper p",
+        "specificity": 41
+      },
+      {
+        "selector": ".section.section5.lightning .ripple-effect",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.section5.lightning .answer__wrapper .btn.question",
+        "specificity": 60
+      },
+      {
+        "selector": ".section.section5.lightning .answer__wrapper .question.btn--white",
+        "specificity": 60
+      },
+      {
+        "selector": ".section.section5.lightning .answer__wrapper .question.btn--white--large",
+        "specificity": 60
+      },
+      {
+        "selector": ".section.section5.lightning .answer__wrapper--nobackground .btn.question",
+        "specificity": 60
+      },
+      {
+        "selector": ".section.section5.lightning .answer__wrapper--nobackground .question.btn--white",
+        "specificity": 60
+      },
+      {
+        "selector": ".section.section5.lightning .answer__wrapper--nobackground .question.btn--white--large",
+        "specificity": 60
+      },
+      {
+        "selector": ".section.section5.lightning .answer__wrapper .btn.question span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5.lightning .answer__wrapper .question.btn--white span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5.lightning .answer__wrapper .question.btn--white--large span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5.lightning .answer__wrapper--nobackground .btn.question span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5.lightning .answer__wrapper--nobackground .question.btn--white span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5.lightning .answer__wrapper--nobackground .question.btn--white--large span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .question__wrapper",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section5 .question__wrapper .question__wrapper-inner",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.section5 .question__wrapper p",
+        "specificity": 31
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper--nobackground",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper .btn.question",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper .question.btn--white",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper .question.btn--white--large",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper--nobackground .btn.question",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper--nobackground .question.btn--white",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper--nobackground .question.btn--white--large",
+        "specificity": 50
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper .btn.question span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper .question.btn--white span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper .question.btn--white--large span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper--nobackground .btn.question span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper--nobackground .question.btn--white span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper--nobackground .question.btn--white--large span",
+        "specificity": 51
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper .btn.question:first-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper .question.btn--white--large:first-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper .question.btn--white:first-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper--nobackground .btn.question:first-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper--nobackground .question.btn--white--large:first-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper--nobackground .question.btn--white:first-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper .btn.question:last-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper .question.btn--white--large:last-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper .question.btn--white:last-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper--nobackground .btn.question:last-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper--nobackground .question.btn--white--large:last-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper--nobackground .question.btn--white:last-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper .btn.question:nth-child(2) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper .question.btn--white--large:nth-child(2) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper .question.btn--white:nth-child(2) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper--nobackground .btn.question:nth-child(2) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper--nobackground .question.btn--white--large:nth-child(2) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper--nobackground .question.btn--white:nth-child(2) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper .btn.question:nth-child(3) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper .question.btn--white--large:nth-child(3) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper .question.btn--white:nth-child(3) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper--nobackground .btn.question:nth-child(3) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper--nobackground .question.btn--white--large:nth-child(3) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section5 .answer__wrapper--nobackground .question.btn--white:nth-child(3) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section7 .question__wrapper",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section7 .ripple-effect",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section7 .answer__wrapper",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section7 .answer__wrapper--nobackground",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section7 .answer__wrapper .btn span",
+        "specificity": 41
+      },
+      {
+        "selector": ".section.section7 .answer__wrapper .btn--white span",
+        "specificity": 41
+      },
+      {
+        "selector": ".section.section7 .answer__wrapper .btn--white--large span",
+        "specificity": 41
+      },
+      {
+        "selector": ".section.section7 .answer__wrapper--nobackground .btn span",
+        "specificity": 41
+      },
+      {
+        "selector": ".section.section7 .answer__wrapper--nobackground .btn--white span",
+        "specificity": 41
+      },
+      {
+        "selector": ".section.section7 .answer__wrapper--nobackground .btn--white--large span",
+        "specificity": 41
+      },
+      {
+        "selector": ".section.section8 .question__wrapper",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section8 .question__wrapper .question__wrapper-inner",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.section8 .ripple-effect",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper--nobackground",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper .btn",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper .btn--white",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper .btn--white--large",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper--nobackground .btn",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper--nobackground .btn--white",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper--nobackground .btn--white--large",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper .btn.question:first-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper .btn.question:nth-child(3) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper .question.btn--white--large:first-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper .question.btn--white--large:nth-child(3) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper .question.btn--white:first-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper .question.btn--white:nth-child(3) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper--nobackground .btn.question:first-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper--nobackground .btn.question:nth-child(3) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper--nobackground .question.btn--white--large:first-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper--nobackground .question.btn--white--large:nth-child(3) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper--nobackground .question.btn--white:first-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper--nobackground .question.btn--white:nth-child(3) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper .btn.question:nth-child(2) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper .question.btn--white--large:nth-child(2) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper .question.btn--white:nth-child(2) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper--nobackground .btn.question:nth-child(2) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper--nobackground .question.btn--white--large:nth-child(2) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper--nobackground .question.btn--white:nth-child(2) span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper .btn.question:last-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper .question.btn--white--large:last-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper .question.btn--white:last-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper--nobackground .btn.question:last-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper--nobackground .question.btn--white--large:last-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.section8 .answer__wrapper--nobackground .question.btn--white:last-child span",
+        "specificity": 61
+      },
+      {
+        "selector": ".section.result.active .result__box-inner",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.result",
+        "specificity": 20
+      },
+      {
+        "selector": ".section.result .result__score",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.result .result__text",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.result .result__box",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.result .result__box .result-box__top",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.result .result__box .result-box__bottom",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.result .result__box .result__box-inner",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.result .result__box .result__box-inner h2",
+        "specificity": 41
+      },
+      {
+        "selector": ".section.result .result__box .result__box-inner p",
+        "specificity": 41
+      },
+      {
+        "selector": ".section.result .result__box .result__box-inner p",
+        "specificity": 41
+      },
+      {
+        "selector": ".section.result .result__footer",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.result .result__footer .footer__info",
+        "specificity": 40
+      },
+      {
+        "selector": ".section.result .result__footer p",
+        "specificity": 31
+      },
+      {
+        "selector": ".section.result .result__footer strong",
+        "specificity": 31
+      },
+      {
+        "selector": ".section.result .result__footer a",
+        "specificity": 31
+      },
+      {
+        "selector": ".section.result .share__wrapper",
+        "specificity": 30
+      },
+      {
+        "selector": ".section.result .share__wrapper a",
+        "specificity": 31
+      },
+      {
+        "selector": ".section.result .share__wrapper a:last-child",
+        "specificity": 41
+      },
+      {
+        "selector": ".in-front-of-illustration",
+        "specificity": 10
+      },
+      {
+        "selector": ".content__wrapper",
+        "specificity": 10
+      },
+      {
+        "selector": ".splitscreen-wrapper",
+        "specificity": 10
+      },
+      {
+        "selector": ".splitscreen-wrapper .half",
+        "specificity": 20
+      },
+      {
+        "selector": ".btn",
+        "specificity": 10
+      },
+      {
+        "selector": ".btn--white",
+        "specificity": 10
+      },
+      {
+        "selector": ".btn--white--large",
+        "specificity": 10
+      },
+      {
+        "selector": ".btn--white--large:hover",
+        "specificity": 20
+      },
+      {
+        "selector": ".btn--white:hover",
+        "specificity": 20
+      },
+      {
+        "selector": ".btn:hover",
+        "specificity": 20
+      },
+      {
+        "selector": ".btn--white",
+        "specificity": 10
+      },
+      {
+        "selector": ".btn--white--large",
+        "specificity": 10
+      },
+      {
+        "selector": ".btn--white--large",
+        "specificity": 10
+      },
+      {
+        "selector": ".signup .signup-form",
+        "specificity": 20
+      },
+      {
+        "selector": ".signup .signup-form .form-error",
+        "specificity": 30
+      },
+      {
+        "selector": ".signup .signup-form input",
+        "specificity": 21
+      },
+      {
+        "selector": ".signup .signup__image-wrapper",
+        "specificity": 20
+      },
+      {
+        "selector": ".signup .signup-form__content-wrapper",
+        "specificity": 20
+      },
+      {
+        "selector": ".thanks h1",
+        "specificity": 11
+      },
+      {
+        "selector": ".thanks .btn-wrapper",
+        "specificity": 20
+      },
+      {
+        "selector": ".section .score",
+        "specificity": 20
+      },
+      {
+        "selector": ".section .signup",
+        "specificity": 20
+      },
+      {
+        "selector": ".section .thanks",
+        "specificity": 20
+      },
+      {
+        "selector": "#time__disturber",
+        "specificity": 100
+      },
+      {
+        "selector": ".result_canvas__top",
+        "specificity": 10
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": "0%",
+        "specificity": 1
+      },
+      {
+        "selector": "100%",
+        "specificity": 1
+      },
+      {
+        "selector": ".warning",
+        "specificity": 10
+      },
+      {
+        "selector": ".warning .background-stars",
+        "specificity": 20
+      },
+      {
+        "selector": ".warning .background-stars--slow",
+        "specificity": 20
+      },
+      {
+        "selector": ".header",
+        "specificity": 10
+      },
+      {
+        "selector": ".hint .content",
+        "specificity": 20
+      },
+      {
+        "selector": ".warning",
+        "specificity": 10
+      },
+      {
+        "selector": ".warning .background-stars",
+        "specificity": 20
+      },
+      {
+        "selector": ".warning .background-stars--slow",
+        "specificity": 20
+      },
+      {
+        "selector": ".header",
+        "specificity": 10
+      }
+    ]
+  },
+  "2a025e": {
+    "size": 2,
+    "gzipSize": 22,
+    "humanizedSize": "2B",
+    "humanizedGzipSize": "22B",
+    "rules": {
+      "total": 0,
+      "size": {
+        "graph": [],
+        "max": 0,
+        "average": 0
+      }
+    },
+    "selectors": {
+      "total": 0,
+      "type": 0,
+      "class": 0,
+      "id": 0,
+      "pseudoClass": 0,
+      "pseudoElement": 0,
+      "values": [],
+      "specificity": {
+        "max": 0,
+        "average": 0
+      }
+    },
+    "declarations": {
+      "total": 0,
+      "unique": 0,
+      "properties": {}
+    },
+    "mediaQueries": {
+      "total": 0,
+      "unique": 0,
+      "values": [],
+      "contents": []
+    },
+    "fullUrl": "http://hello.myfonts.net/count/2a025e",
+    "specificityGraph": false,
+    "specificityValues": []
+  }
+}

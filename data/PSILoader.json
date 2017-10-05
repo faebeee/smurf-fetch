@@ -1,0 +1,2239 @@
+{
+  "kind": "pagespeedonline#result",
+  "id": "http://zkm-game.geyster.ch/",
+  "responseCode": 200,
+  "title": "zkm-«Lehrer-Stress-Test»",
+  "ruleGroups": {
+    "SPEED": {
+      "score": 43
+    }
+  },
+  "pageStats": {
+    "numberResources": 62,
+    "numberHosts": 2,
+    "totalRequestBytes": "4223",
+    "numberStaticResources": 58,
+    "htmlResponseBytes": "33857",
+    "cssResponseBytes": "82980",
+    "imageResponseBytes": "149668",
+    "javascriptResponseBytes": "1047081",
+    "otherResponseBytes": "36868",
+    "numberJsResources": 20,
+    "numberCssResources": 3
+  },
+  "formattedResults": {
+    "locale": "en_US",
+    "ruleResults": {
+      "AvoidLandingPageRedirects": {
+        "localizedRuleName": "Avoid landing page redirects",
+        "ruleImpact": 0,
+        "groups": [
+          "SPEED"
+        ],
+        "summary": {
+          "format": "Your page has no redirects. Learn more about {{BEGIN_LINK}}avoiding landing page redirects{{END_LINK}}.",
+          "args": [
+            {
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/speed/docs/insights/AvoidRedirects"
+            }
+          ]
+        }
+      },
+      "EnableGzipCompression": {
+        "localizedRuleName": "Enable compression",
+        "ruleImpact": 98.83130000000003,
+        "groups": [
+          "SPEED"
+        ],
+        "summary": {
+          "format": "Compressing resources with gzip or deflate can reduce the number of bytes sent over the network."
+        },
+        "urlBlocks": [
+          {
+            "header": {
+              "format": "{{BEGIN_LINK}}Enable compression{{END_LINK}} for the following resources to reduce their transfer size by {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+              "args": [
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/EnableCompression"
+                },
+                {
+                  "type": "BYTES",
+                  "key": "SIZE_IN_BYTES",
+                  "value": "963.1KiB"
+                },
+                {
+                  "type": "PERCENTAGE",
+                  "key": "PERCENTAGE",
+                  "value": "76%"
+                }
+              ]
+            },
+            "urls": [
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/lib/lib.min.js"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "173.5KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "68%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-13.json"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "80.3KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "85%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/style/style.min.css"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "68.8KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "89%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-4.json"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "59.7KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "84%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/lib/snap.svg-min.js"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "48.7KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "65%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-4-globus.json"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "45.5KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "81%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/lib/soundjs-0.6.2.min.js"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "45.2KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "77%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-6.json"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "39.3KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "82%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-2.json"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "33.8KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "90%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/zwischen_screen_zeit.json"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "31.1KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "81%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-5.json"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "30.5KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "83%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-7.json"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "26.5KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "82%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-2-rechts.json"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "26.1KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "89%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-7-maedchen.json"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "26KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "81%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "25.8KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "78%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-12-junge.json"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "25.6KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "79%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/lib/snap_svg_animator.min.js"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "21.1KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "76%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-3.json"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "20.4KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "84%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-1.json"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "15.9KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "79%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/lib/raven.min.js"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "15.2KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "61%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/js/script.min.js"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "13.4KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "74%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-12.json"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "11.4KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "82%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/people_6.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "8.1KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "58%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/people_1.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "6.3KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "56%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/people_5.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "6.2KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "56%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/registration.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "6.1KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "62%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/people_2.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "5.7KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "56%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/logo_zkm.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "5.5KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "59%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/people_3.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "5.4KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "56%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/people_4.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "5.2KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "53%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/hands-left.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "3.3KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "82%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/slide2_girl.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "3.2KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "55%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/hands-right.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "3KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "80%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/lib/lib.min.css"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "2.5KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "69%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/slide5_balloon1.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "2.4KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "58%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/slide5_balloon2.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "2.2KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "56%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/slide4_balloon2.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "2.1KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "58%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/rotate_screen_stars.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "1.6KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "52%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/rotate_screen.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "1.6KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "49%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/bulb_on.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "1.4KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "50%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/light_switch_off.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "1.4KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "59%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/light_switch_on.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "1.3KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "58%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/counter.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "956B"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "58%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/rotate_screen_stars2.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "877B"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "58%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/announcement.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "851B"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "50%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/slide4_balloon1.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "772B"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "46%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/example_score.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "769B"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "61%"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "Compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/bulb_off.svg"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "671B"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "49%"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "LeverageBrowserCaching": {
+        "localizedRuleName": "Leverage browser caching",
+        "ruleImpact": 29,
+        "groups": [
+          "SPEED"
+        ],
+        "summary": {
+          "format": "Setting an expiry date or a maximum age in the HTTP headers for static resources instructs the browser to load previously downloaded resources from local disk rather than over the network."
+        },
+        "urlBlocks": [
+          {
+            "header": {
+              "format": "{{BEGIN_LINK}}Leverage browser caching{{END_LINK}} for the following cacheable resources:",
+              "args": [
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/LeverageBrowserCaching"
+                }
+              ]
+            },
+            "urls": [
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/announcement.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/btn-large.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/btn.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/bulb_off.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/bulb_on.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/canvas_bottom.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/canvas_top.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/counter.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/example_score.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/hands-left.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/hands-right.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/hint_drawer.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/icon_progress.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/icon_replay.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/icon_score.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/icon_share_facebook.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/icon_share_mail.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/light_switch_off.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/light_switch_on.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/logo_zkm.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/people_1.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/people_2.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/people_3.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/people_4.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/people_5.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/people_6.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/registration.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/rotate_screen.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/rotate_screen_stars.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/rotate_screen_stars2.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/score.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/slide2_girl.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/slide4_balloon1.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/slide4_balloon2.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/slide5_balloon1.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/img/slide5_balloon2.svg"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/js/script.min.js"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-1.json"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-12-junge.json"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-12.json"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-13.json"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-2-rechts.json"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-2.json"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-3.json"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-4-globus.json"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-4.json"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-5.json"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-6.json"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-7-maedchen.json"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/screen-7.json"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/json/zwischen_screen_zeit.json"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/lib/lib.min.css"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/lib/lib.min.js"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/lib/raven.min.js"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/lib/snap.svg-min.js"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/lib/snap_svg_animator.min.js"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/lib/soundjs-0.6.2.min.js"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}} (expiration not specified)",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/style/style.min.css"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "MainResourceServerResponseTime": {
+        "localizedRuleName": "Reduce server response time",
+        "ruleImpact": 0,
+        "groups": [
+          "SPEED"
+        ],
+        "summary": {
+          "format": "Your server responded quickly. Learn more about {{BEGIN_LINK}}server response time optimization{{END_LINK}}.",
+          "args": [
+            {
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/speed/docs/insights/Server"
+            }
+          ]
+        }
+      },
+      "MinifyCss": {
+        "localizedRuleName": "Minify CSS",
+        "ruleImpact": 0,
+        "groups": [
+          "SPEED"
+        ],
+        "summary": {
+          "format": "Your CSS is minified. Learn more about {{BEGIN_LINK}}minifying CSS{{END_LINK}}.",
+          "args": [
+            {
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+            }
+          ]
+        }
+      },
+      "MinifyHTML": {
+        "localizedRuleName": "Minify HTML",
+        "ruleImpact": 1.1327,
+        "groups": [
+          "SPEED"
+        ],
+        "summary": {
+          "format": "Compacting HTML code, including any inline JavaScript and CSS contained in it, can save many bytes of data and speed up download and parse times."
+        },
+        "urlBlocks": [
+          {
+            "header": {
+              "format": "{{BEGIN_LINK}}Minify HTML{{END_LINK}} for the following resources to reduce their size by {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+              "args": [
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+                },
+                {
+                  "type": "BYTES",
+                  "key": "SIZE_IN_BYTES",
+                  "value": "11.1KiB"
+                },
+                {
+                  "type": "PERCENTAGE",
+                  "key": "PERCENTAGE",
+                  "value": "34%"
+                }
+              ]
+            },
+            "urls": [
+              {
+                "result": {
+                  "format": "Minifying {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "11.1KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "34%"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "MinifyJavaScript": {
+        "localizedRuleName": "Minify JavaScript",
+        "ruleImpact": 0.7249,
+        "groups": [
+          "SPEED"
+        ],
+        "summary": {
+          "format": "Compacting JavaScript code can save many bytes of data and speed up downloading, parsing, and execution time."
+        },
+        "urlBlocks": [
+          {
+            "header": {
+              "format": "{{BEGIN_LINK}}Minify JavaScript{{END_LINK}} for the following resources to reduce their size by {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+              "args": [
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+                },
+                {
+                  "type": "BYTES",
+                  "key": "SIZE_IN_BYTES",
+                  "value": "7.1KiB"
+                },
+                {
+                  "type": "PERCENTAGE",
+                  "key": "PERCENTAGE",
+                  "value": "26%"
+                }
+              ]
+            },
+            "urls": [
+              {
+                "result": {
+                  "format": "Minifying {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/lib/snap_svg_animator.min.js"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "7.1KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "26%"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "MinimizeRenderBlockingResources": {
+        "localizedRuleName": "Eliminate render-blocking JavaScript and CSS in above-the-fold content",
+        "ruleImpact": 14,
+        "groups": [
+          "SPEED"
+        ],
+        "summary": {
+          "format": "Your page has {{NUM_SCRIPTS}} blocking script resources and {{NUM_CSS}} blocking CSS resources. This causes a delay in rendering your page.",
+          "args": [
+            {
+              "type": "INT_LITERAL",
+              "key": "NUM_SCRIPTS",
+              "value": "6"
+            },
+            {
+              "type": "INT_LITERAL",
+              "key": "NUM_CSS",
+              "value": "3"
+            }
+          ]
+        },
+        "urlBlocks": [
+          {
+            "header": {
+              "format": "None of the above-the-fold content on your page could be rendered without waiting for the following resources to load. Try to defer or asynchronously load blocking resources, or inline the critical portions of those resources directly in the HTML."
+            }
+          },
+          {
+            "header": {
+              "format": "{{BEGIN_LINK}}Remove render-blocking JavaScript{{END_LINK}}:",
+              "args": [
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/BlockingJS"
+                }
+              ]
+            },
+            "urls": [
+              {
+                "result": {
+                  "format": "{{URL}}",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/lib/raven.min.js"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}}",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/lib/lib.min.js"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}}",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/lib/soundjs-0.6.2.min.js"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}}",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/lib/snap_svg_animator.min.js"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}}",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/lib/snap.svg-min.js"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}}",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/js/script.min.js"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "header": {
+              "format": "{{BEGIN_LINK}}Optimize CSS Delivery{{END_LINK}} of the following:",
+              "args": [
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery"
+                }
+              ]
+            },
+            "urls": [
+              {
+                "result": {
+                  "format": "{{URL}}",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/lib/lib.min.css"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}}",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://zkm-game.geyster.ch/dist/style/style.min.css"
+                    }
+                  ]
+                }
+              },
+              {
+                "result": {
+                  "format": "{{URL}}",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://hello.myfonts.net/count/2a025e"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "OptimizeImages": {
+        "localizedRuleName": "Optimize images",
+        "ruleImpact": 0,
+        "groups": [
+          "SPEED"
+        ],
+        "summary": {
+          "format": "Your images are optimized. Learn more about {{BEGIN_LINK}}optimizing images{{END_LINK}}.",
+          "args": [
+            {
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/speed/docs/insights/OptimizeImages"
+            }
+          ]
+        }
+      },
+      "PrioritizeVisibleContent": {
+        "localizedRuleName": "Prioritize visible content",
+        "ruleImpact": 2,
+        "groups": [
+          "SPEED"
+        ],
+        "summary": {
+          "format": "Your page requires additional network round trips to render the above-the-fold content. For best performance, reduce the amount of HTML needed to render above-the-fold content."
+        },
+        "urlBlocks": [
+          {
+            "header": {
+              "format": "The entire HTML response was not sufficient to render the above-the-fold content. This usually indicates that additional resources, loaded after HTML parsing, were required to render above-the-fold content. {{BEGIN_LINK}}Prioritize visible content{{END_LINK}} that is needed for rendering above-the-fold by including it directly in the HTML response.",
+              "args": [
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/PrioritizeVisibleContent"
+                }
+              ]
+            },
+            "urls": [
+              {
+                "result": {
+                  "format": "Only about {{PERCENTAGE}} of the final above-the-fold content could be rendered with the full HTML response {{SCREENSHOT}}.",
+                  "args": [
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "51%"
+                    },
+                    {
+                      "type": "SNAPSHOT_RECT",
+                      "key": "SCREENSHOT",
+                      "value": "snapshot:11"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "version": {
+    "major": 1,
+    "minor": 15
+  }
+}

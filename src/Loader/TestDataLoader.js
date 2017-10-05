@@ -1,23 +1,22 @@
 'use stict'
-const AbstractLoader = require('./AbstractLoader')
+const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class AnalyzeCssLoader extends AbstractLoader {
 
-    constructor (key, url, config) {
-        super(key, url, config)
+    constructor(key, url, config) {
+        super(key, url, config);
         this.key = key;
         this.data = {};
     }
 
-    load () {
+    load() {
         return new Promise((res, rej) => {
             try {
-                console.log('Load', "../../../data/" + this.key + ".json");
-                this.data = require("../../../data/" + this.key + ".json");
-            }catch( e) {
+                this.data = require("../../data/" + this.key + ".json");
+            } catch (e) {
                 console.error(e);
             }
             return res();
         })
     }
-}
+};

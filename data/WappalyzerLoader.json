@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Moment.js",
+    "confidence": "100",
+    "version": "",
+    "icon": "Moment.js.png",
+    "website": "http://momentjs.com",
+    "categories": [
+      {
+        "12": "JavaScript Frameworks"
+      }
+    ]
+  },
+  {
+    "name": "SWFObject",
+    "confidence": "100",
+    "version": "",
+    "icon": "SWFObject.png",
+    "website": "http://github.com/swfobject/swfobject",
+    "categories": [
+      {
+        "19": "Miscellaneous"
+      }
+    ]
+  },
+  {
+    "name": "Snap.svg",
+    "confidence": "100",
+    "version": "",
+    "icon": "Snap.svg.png",
+    "website": "http://snapsvg.io",
+    "categories": [
+      {
+        "12": "JavaScript Frameworks"
+      }
+    ]
+  },
+  {
+    "name": "SoundManager",
+    "confidence": "100",
+    "version": "",
+    "icon": "SoundManager.png",
+    "website": "http://www.schillmania.com/projects/soundmanager2",
+    "categories": [
+      {
+        "12": "JavaScript Frameworks"
+      }
+    ]
+  },
+  {
+    "name": "jQuery",
+    "confidence": "100",
+    "version": "",
+    "icon": "jQuery.svg",
+    "website": "http://jquery.com",
+    "categories": [
+      {
+        "12": "JavaScript Frameworks"
+      }
+    ]
+  }
+]
