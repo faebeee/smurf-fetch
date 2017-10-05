@@ -1,7 +1,5 @@
 'use strict'
 
-const ipc = require('../../../smurf/src/Reporter/Util/IPC');
-
 module.exports = class AbstractLoader {
     /**
      *
@@ -14,14 +12,6 @@ module.exports = class AbstractLoader {
         this.config = config;
         this.key = key;
         this.data = null;
-
-        ipc.on(this.key, (arg) => {
-            return {
-                data: this.data,
-                config: this.config,
-            };
-        });
-
     }
 
     getKey() {

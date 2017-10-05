@@ -55,9 +55,6 @@ module.exports = class Reporter {
                     loaders: this.enabledLoaders
                 }
             })
-            .catch((e) => {
-                console.error(e);
-            })
     }
 
     /**
@@ -65,7 +62,6 @@ module.exports = class Reporter {
      * @returns {[string,string,string,string,string,string,string]}
      */
     getAvailableLoaders() {
-        console.log('hello');
         if (!this.report) {
             return;
         }
@@ -80,11 +76,26 @@ module.exports = class Reporter {
             "HARLoader",
         ];
 
-        if(this.config.webPageTestApiKey){
+        if (this.config.webPageTestApiKey) {
             loaders.push('WebPageTestLoader');
         }
 
         return loaders;
+    }
+
+    /**
+     *
+     * @param loaderName
+     * @returns {Promise}
+     */
+    getLoaderData(loaderName) {
+        return new Promise((res, rej) => {
+            if(!this.report){
+                res(null);
+            }
+            res(this.report.get(loaderName));
+
+        });
     }
 
     /**

@@ -12,7 +12,7 @@ module.exports = class WebPageTestLoader extends AbstractLoader {
     load() {
 
         return new Promise((res, rej) => {
-            let key = this.config.apiKey;
+            let key = this.config.webPageTestApiKey;
             if (!key) {
                 throw new Error('API Key not set');
             }
