@@ -2,10 +2,8 @@
 
 const Promise = require('bluebird');
 const TestDataLoader = require('../Loader/TestDataLoader');
-const Logger = require('../Logger/Log');
 const fs = require('fs');
 const Path = require('path');
-const {webContents} = require('electron');
 
 
 module.exports = class Report {

@@ -4,7 +4,7 @@
   "description": "",
   "main": "./src/Reporter.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha test --recursive"
   },
   "dependencies": {
     "analyze-css": "^0.12.5",
@@ -30,5 +30,9 @@
     "xhr": "^2.4.0"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^4.0.0",
+    "unit.js": "^2.0.0"
+  }
 }
