@@ -1,13 +1,13 @@
 {
   "name": "smurf-fetch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "./src/Reporter.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha test --recursive"
   },
   "engines": {
-    "node" : ">= 6"
+    "node": ">= 6"
   },
   "dependencies": {
     "analyze-css": "^0.12.5",
