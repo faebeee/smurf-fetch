@@ -22,8 +22,7 @@ module.exports = class WebPageTestLoader extends AbstractLoader {
                 pollResults: 5, timeout: 120
             }, (err, data) => {
                 if (err) {
-                    console.error(err);
-                    return rej(err)
+                    throw err;
                 }
                 this.data = data;
                 return res(data);

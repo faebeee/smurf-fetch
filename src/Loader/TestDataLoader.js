@@ -14,7 +14,7 @@ module.exports = class AnalyzeCssLoader extends AbstractLoader {
             try {
                 this.data = require("../../data/" + this.key + ".json");
             } catch (e) {
-                console.error(e);
+                throw e;
             }
             return res();
         })

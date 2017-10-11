@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = class AbstractLoader {
     /**
@@ -12,6 +12,8 @@ module.exports = class AbstractLoader {
         this.config = config;
         this.key = key;
         this.data = null;
+        this.isLoading = false;
+        this.errorMessage = null;
     }
 
     getKey() {

@@ -1,8 +1,8 @@
-'use stict'
+'use stict';
 
-const pa11y = require('pa11y')
+const pa11y = require('pa11y');
 
-const AbstractLoader = require('./AbstractLoader')
+const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class Pa11yLoader extends AbstractLoader {
     constructor (url, config) {
@@ -10,16 +10,15 @@ module.exports = class Pa11yLoader extends AbstractLoader {
     }
 
     load () {
-        let test = pa11y({})
+        let test = pa11y({});
         return new Promise((res, rej) => {
-
             test.run(this.url, (err, results) => {
                 if (err) {
                     throw err
                 }
-                this.data = results
+                this.data = results;
                 return res()
             })
         })
     }
-}
+};

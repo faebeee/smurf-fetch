@@ -54,7 +54,14 @@ module.exports = class Reporter {
                     url: this.report.url,
                     loaders: this.enabledLoaders
                 }
-            })
+            });
+
+        return Promise.resolve({
+            isLoaded: this.report.isComplete,
+            createdAt: this.report.createdAt,
+            url: this.report.url,
+            loaders: this.enabledLoaders
+        });
     }
 
     /**
@@ -74,6 +81,8 @@ module.exports = class Reporter {
             "Pa11yLoader",
             "PSILoader",
             "HARLoader",
+            "W3CLoader",
+            //"WappalyzerLoader",
         ];
 
         if (this.config.webPageTestApiKey) {
@@ -93,7 +102,8 @@ module.exports = class Reporter {
             if(!this.report){
                 res(null);
             }
-            res(this.report.get(loaderName));
+            let loader = this.report.get(loaderName);
+            res(loader);
 
         });
     }
@@ -107,6 +117,7 @@ module.exports = class Reporter {
             isLoaded: this.report.isComplete,
             createdAt: this.report.createdAt,
             url: this.report.url,
+            isCompleted: this.report.isCompleted,
             loaders: this.enabledLoaders
         };
     }

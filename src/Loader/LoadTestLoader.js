@@ -25,6 +25,10 @@ module.exports = class LoadTestLoader extends AbstractLoader {
             concurrency: 2,
             requestsPerSecond: 1,
             statusCallback: (error, result, latency) => {
+                if (error) {
+                    this.errorMessage = error.message;
+                }
+
                 if (!this.data) {
                     this.data = {
                         meanLatencyMs: [],
@@ -43,20 +47,20 @@ module.exports = class LoadTestLoader extends AbstractLoader {
                     this.data.totalErrors.shift()
                 }
 
-                this.data.meanLatencyMs.push(latency.meanLatencyMs)
-                this.data.maxLatencyMs.push(latency.maxLatencyMs)
-                this.data.totalErrors.push(latency.totalErrors)
+                this.data.meanLatencyMs.push(latency.meanLatencyMs);
+                this.data.maxLatencyMs.push(latency.maxLatencyMs);
+                this.data.totalErrors.push(latency.totalErrors);
             },
-        }
+        };
 
         loadtest.loadTest(options, (error, results) => {
             if (error) {
-                return console.error('Got an error: %s', error)
+                this.errorMessage = error.message;
             }
-        })
+        });
 
         return new Promise((res, rej) => {
             res()
         })
     }
-}
+};

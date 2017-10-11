@@ -34,5 +34,13 @@
   {
     "file" : "./src/Loader/HARLoader",
     "config" : {}
+  },
+  {
+    "file" : "./src/Loader/W3CLoader",
+    "config" : {}
+  },
+  {
+    "file" : "./src/Loader/WappalyzerLoader",
+    "config" : {}
   }
 ]

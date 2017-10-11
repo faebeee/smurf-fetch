@@ -1,4 +1,4 @@
-'use stict'
+"use stict";
 
 const wappalyzer = require('wappalyzer');
 const AbstractLoader = require('./AbstractLoader');
@@ -13,11 +13,7 @@ module.exports = class WappalyzerLoader extends AbstractLoader {
         return wappalyzer.analyze(this.url)
             .then(json => {
                 this.data = json;
-                return this.data;
+                return json;
             })
-            .catch( (e) => {
-                console.log(e);
-            })
-
     }
 };

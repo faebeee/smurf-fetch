@@ -1,0 +1,16 @@
+{
+  "url": "http://www.mundwiler-juwelen.ch",
+  "messages": [
+    {
+      "type": "error",
+      "lastLine": 12,
+      "lastColumn": 66,
+      "firstColumn": 5,
+      "message": "A “meta” element with an “http-equiv” attribute whose value is “X-UA-Compatible” must have a “content” attribute with the value “IE=edge”.",
+      "extract": "f-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n    <",
+      "hiliteStart": 10,
+      "hiliteLength": 62
+    }
+  ],
+  "context": "http://www.mundwiler-juwelen.ch"
+}
