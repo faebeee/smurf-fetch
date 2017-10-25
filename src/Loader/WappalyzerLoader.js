@@ -12,8 +12,9 @@ module.exports = class WappalyzerLoader extends AbstractLoader {
     load () {
         return wappalyzer.analyze(this.url)
             .then(json => {
+                console.log(json);
                 this.data = json;
-                return json;
+                return;
             })
     }
 };

@@ -40,7 +40,7 @@
     "config" : {}
   },
   {
-    "file" : "./src/Loader/WappalyzerLoader",
+    "file" : "./src/Loader/SEOLoader",
     "config" : {}
   }
 ]

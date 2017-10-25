@@ -73,6 +73,8 @@ module.exports = class Reporter {
             return;
         }
 
+
+
         let loaders = [
             "CSSAnalyzeLoader",
             "CSSStatsLoader",
@@ -82,6 +84,7 @@ module.exports = class Reporter {
             "PSILoader",
             "HARLoader",
             "W3CLoader",
+            "SEOLoader",
             //"WappalyzerLoader",
         ];
 
