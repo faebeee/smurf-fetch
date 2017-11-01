@@ -111,11 +111,28 @@ module.exports = class Report {
     }
 
     /**
+     *
+     * @returns {{}|*}
+     */
+    getLoaders(){
+        return this.loaders;
+    }
+
+    /**
      * Get loader by key
      * @param key
      * @returns {Object}
      */
     get(key) {
         return this.loaders[key];
+    }
+
+    /**
+     *
+     * @param {String} loader
+     * @param {Object} data
+     */
+    setLoaderData (data){
+        this.loaders = data;
     }
 };

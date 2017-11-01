@@ -38,7 +38,14 @@ module.exports = class Reporter {
      *
      */
     getJson() {
-        return this.report.toJson();
+        return JSON.stringify({
+            isLoaded: this.report.isComplete,
+            createdAt: this.report.createdAt,
+            url: this.report.url,
+            isCompleted: this.report.isCompleted,
+            loaders: this.enabledLoaders,
+            data : this.report.getLoaders()
+        });
     }
 
     /**
@@ -56,12 +63,7 @@ module.exports = class Reporter {
                 }
             });
 
-        return Promise.resolve({
-            isLoaded: this.report.isComplete,
-            createdAt: this.report.createdAt,
-            url: this.report.url,
-            loaders: this.enabledLoaders
-        });
+        return this.getData();
     }
 
     /**
@@ -109,6 +111,24 @@ module.exports = class Reporter {
             res(loader);
 
         });
+    }
+
+    /**
+     *
+     * @param {Object} json
+     */
+    setData(json){
+        let loaderKeys = Object.keys(json.data);
+
+        this.report = new Report(json.url, this._loadLoaders());
+        this.report.isComplete = json.isComplete;
+        this.report.isLoaded = json.isComplete;
+        this.report.createdAt = json.createdAt;
+        this.report.url = json.url;
+        this.report.loaders = json.loaders;
+
+        this.enabledLoaders = loaderKeys;
+        this.report.loaders = json.data;
     }
 
     /**
