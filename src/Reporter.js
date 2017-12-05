@@ -54,7 +54,7 @@ module.exports = class Reporter {
      */
     start(loaders) {
         this.enabledLoaders = loaders;
-        return this.report.create(loaders)
+        return this.report.create(loaders, 3)
             .then(() => {
                 return {
                     isLoaded: this.report.isComplete,

@@ -55,6 +55,7 @@ module.exports = class ChunkedReport extends AbstractReport {
      * @param {Number} chunkSize
      */
     create(enabledLoaders, chunkSize) {
+        chunkSize = chunkSize || 3;
         this.isCompleted = false;
         let loaders = Object.values(this.loaders).splice(0);
         let loadersToProcess = [];
