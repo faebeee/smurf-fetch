@@ -81,7 +81,7 @@ module.exports = class Report {
 
     /**
      * run all loaders to create a report
-     * @param {Array} loaders array of loader names
+     * @param {Array} enabledLoaders array of loader names
      */
     create(enabledLoaders) {
         this.isCompleted = false;
