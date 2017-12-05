@@ -16,7 +16,7 @@ module.exports = class Reporter {
     }
 
     /**
-     *
+     * initialize all configured loaders
      */
     _loadLoaders() {
         let loaders = [];
@@ -36,20 +36,6 @@ module.exports = class Reporter {
     }
 
     /**
-     *
-     */
-    getJson() {
-        return JSON.stringify({
-            isLoaded: this.report.isComplete,
-            createdAt: this.report.createdAt,
-            url: this.report.url,
-            isCompleted: this.report.isCompleted,
-            loaders: this.enabledLoaders,
-            data : this.report.getLoaders()
-        });
-    }
-
-    /**
      * crate report
      *
      * @params {Array} loaders
@@ -59,28 +45,16 @@ module.exports = class Reporter {
         this.enabledLoaders = loaders;
         return this.report.create(loaders, chunksize)
             .then(() => {
-                return {
-                    isLoaded: this.report.isComplete,
-                    createdAt: this.report.createdAt,
-                    url: this.report.url,
-                    loaders: this.enabledLoaders
-                }
+                return this.getData();
             });
 
-        return this.getData();
     }
 
     /**
      *
      * @returns {[string,string,string,string,string,string,string]}
      */
-    getAvailableLoaders() {
-        if (!this.report) {
-            return;
-        }
-
-
-
+    static getAvailableLoaders() {
         let loaders = [
             "CSSAnalyzeLoader",
             "CSSStatsLoader",
@@ -92,11 +66,8 @@ module.exports = class Reporter {
             "W3CLoader",
             "SEOLoader",
             //"WappalyzerLoader",
+            "WebPageTestLoader"
         ];
-
-        if (this.config.webPageTestApiKey) {
-            loaders.push('WebPageTestLoader');
-        }
 
         return loaders;
     }
@@ -125,11 +96,11 @@ module.exports = class Reporter {
         let loaderKeys = Object.keys(json.data);
 
         this.report = new Report(json.url, this._loadLoaders());
-        this.report.isComplete = json.isComplete;
-        this.report.isLoaded = json.isComplete;
+        this.report.isCompleted = json.isCompleted;
+        this.report.isLoaded = json.isCompleted;
         this.report.createdAt = json.createdAt;
         this.report.url = json.url;
-        this.report.loaders = json.loaders;
+        //this.report.loaders = json.loaders;
 
         this.enabledLoaders = loaderKeys;
         this.report.loaders = json.data;
@@ -145,7 +116,15 @@ module.exports = class Reporter {
             createdAt: this.report.createdAt,
             url: this.report.url,
             isCompleted: this.report.isCompleted,
-            loaders: this.enabledLoaders
+            loaders: this.enabledLoaders,
+            data : this.report.getLoaders()
         };
+    }
+
+    /**
+     *
+     */
+    getJson() {
+        return JSON.stringify(this.getData());
     }
 };

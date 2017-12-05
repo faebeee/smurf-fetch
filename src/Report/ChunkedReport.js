@@ -67,6 +67,14 @@ module.exports = class ChunkedReport extends AbstractReport {
         }
         loadersToProcess = chunk(loadersToProcess, chunkSize);
         return this._processChunks(loadersToProcess)
+            .then(() => {
+                this.createdAt = Date.now();
+                this.isCompleted = true;
+            })
+            .catch((e) => {
+                this.isCompleted = false;
+                throw e;
+            })
 
 
     }
