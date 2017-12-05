@@ -1,7 +1,8 @@
 'use strict';
 
 const Path = require('path');
-const Report = require('./Report/Report');
+//const Report = require('./Report/SingleReport');
+const Report = require('./Report/ChunkedReport');
 
 module.exports = class Reporter {
     constructor(url, config) {
