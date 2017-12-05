@@ -51,10 +51,13 @@ module.exports = class Reporter {
 
     /**
      * crate report
+     *
+     * @params {Array} loaders
+     * @params {Number} chunksize
      */
-    start(loaders) {
+    start(loaders, chunksize) {
         this.enabledLoaders = loaders;
-        return this.report.create(loaders, 3)
+        return this.report.create(loaders, chunksize)
             .then(() => {
                 return {
                     isLoaded: this.report.isComplete,
