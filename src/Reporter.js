@@ -66,7 +66,8 @@ module.exports = class Reporter {
             "W3CLoader",
             "SEOLoader",
             //"WappalyzerLoader",
-            "WebPageTestLoader"
+            "WebPageTestLoader",
+            "SonarwhalLoader"
         ];
 
         return loaders;

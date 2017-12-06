@@ -42,5 +42,9 @@
   {
     "file" : "./src/Loader/SEOLoader",
     "config" : {}
+  },
+  {
+    "file" : "./src/Loader/SonarwhalLoader",
+    "config" : {}
   }
 ]
