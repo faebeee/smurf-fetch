@@ -1,4 +1,4 @@
-'use stict'
+'use strict';
 
 let loadtest = require('loadtest');
 
@@ -7,7 +7,7 @@ const AbstractLoader = require('./AbstractLoader');
 module.exports = class LoadTestLoader extends AbstractLoader {
 
     constructor (url, config) {
-        super('LoadTestLoader', url, config);
+        super(url, config);
 
         this.max = config.max;
         this.data = {
@@ -15,6 +15,10 @@ module.exports = class LoadTestLoader extends AbstractLoader {
             maxLatencyMs: [],
             totalErrors: []
         }
+    }
+
+    static getKey(){
+        return 'LoadTestLoader';
     }
 
     load () {

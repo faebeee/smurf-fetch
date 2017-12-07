@@ -1,12 +1,16 @@
 'use stict'
 const AbstractLoader = require('./AbstractLoader');
 
-module.exports = class AnalyzeCssLoader extends AbstractLoader {
+module.exports = class TestDataLoader extends AbstractLoader {
 
     constructor(key, url, config) {
         super(key, url, config);
         this.key = key;
         this.data = {};
+    }
+
+    static getKey(){
+        return 'LightHouseLoader';
     }
 
     load() {

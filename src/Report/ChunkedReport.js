@@ -61,7 +61,7 @@ module.exports = class ChunkedReport extends AbstractReport {
         let loadersToProcess = [];
 
         for(let i = 0; i < loaders.length; i++){
-            if (!!~enabledLoaders.indexOf(loaders[i].getKey())) {
+            if (!!~enabledLoaders.indexOf(loaders[i].constructor.getKey())) {
                 loadersToProcess.push(loaders[i]);
             }
         }

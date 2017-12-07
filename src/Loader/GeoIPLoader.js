@@ -1,16 +1,18 @@
-"use stict";
+'use strict';
 
-const psi = require('psi');
 const dns = require('dns');
 const url = require('url');
 const satelize = require('satelize');
 
-
 const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class GeoIPLoader extends AbstractLoader {
-    constructor (url, config){
-        super ('GeoIPLoader', url, config)
+    constructor(url, config) {
+        super(url, config);
+    }
+
+    static getKey(){
+        return 'GeoIPLoader';
     }
 
     load() {

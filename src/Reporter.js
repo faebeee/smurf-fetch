@@ -54,21 +54,16 @@ module.exports = class Reporter {
      *
      * @returns {[string,string,string,string,string,string,string]}
      */
-    static getAvailableLoaders() {
-        let loaders = [
-            "CSSAnalyzeLoader",
-            "CSSStatsLoader",
-            "LightHouseLoader",
-            "LoadTestLoader",
-            "Pa11yLoader",
-            "PSILoader",
-            "HARLoader",
-            "W3CLoader",
-            "SEOLoader",
-            //"WappalyzerLoader",
-            "WebPageTestLoader"
-        ];
+     static getAvailableLoaders() {
+        let loaderConf = require(Path.resolve(__dirname, '../config/loaders.json'));
+        let loaders = [];
 
+        for (let i = 0; i < loaderConf.length; i++) {
+            let conf = loaderConf[i];
+            let file = Path.resolve(Path.join(__dirname, '../'), conf.file);
+            let LoaderClass = require(file);
+            loaders.push(LoaderClass.getKey());
+        }
         return loaders;
     }
 

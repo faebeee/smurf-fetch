@@ -1,12 +1,15 @@
-"use stict";
+'use strict';
 
 const wappalyzer = require('wappalyzer');
 const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class WappalyzerLoader extends AbstractLoader {
+    constructor(url, config) {
+        super(url, config);
+    }
 
-    constructor (url, config) {
-        super('WappalyzerLoader', url, config)
+    static getKey(){
+        return 'WappalyzerLoader';
     }
 
     load () {

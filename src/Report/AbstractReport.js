@@ -34,16 +34,17 @@ module.exports = class Report {
             let loaderConf = this.loaderClasses[i];
             let Loader = loaderConf.class;
             let loader = new Loader(this.url, loaderConf.config);
+            let loaderKey = Loader.getKey();
 
-            let jsonFile = Path.resolve(Path.join(__dirname, '../../', 'data'), loader.getKey() + ".json");
+            let jsonFile = Path.resolve(Path.join(__dirname, '../../', 'data'), loaderKey + ".json");
 
             if (process.env.NODE_ENV === 'dev' && fs.existsSync(jsonFile)) {
-                console.log('Load local data file for ', loader.getKey());
-                let testLoader = new TestDataLoader(loader.getKey(), this.url, loaderConf.config);
-                this.loaders[testLoader.getKey()] = testLoader;
+                console.log('Load local data file for ', loaderKey);
+                let testLoader = new TestDataLoader(loaderKey, this.url, loaderConf.config);
+                this.loaders[loaderKey] = testLoader;
             } else {
                 loader.data = null;
-                this.loaders[loader.getKey()] = loader;
+                this.loaders[loaderKey] = loader;
             }
         }
     }

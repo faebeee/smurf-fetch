@@ -1,11 +1,15 @@
-'use stict';
+'use strict';
 
 const captureHar = require('capture-har');
 const AbstractLoader = require('./AbstractLoader');
 
-module.exports = class XHRLoader extends AbstractLoader {
+module.exports = class HARLoader extends AbstractLoader {
     constructor(url, config) {
-        super('HARLoader', url, config);
+        super(url, config);
+    }
+
+    static getKey(){
+        return 'HARLoader';
     }
 
     load() {

@@ -1,4 +1,4 @@
-'use stict'
+'use strict';
 
 const WebPageTest = require('webpagetest');
 
@@ -6,7 +6,11 @@ const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class WebPageTestLoader extends AbstractLoader {
     constructor(url, config) {
-        super('WebPageTestLoader', url, config);
+        super(url, config);
+    }
+
+    static getKey(){
+        return 'WebPageTestLoader';
     }
 
     load() {

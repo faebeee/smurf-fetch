@@ -15,6 +15,7 @@
     "node": ">= 6"
   },
   "dependencies": {
+    "access-sniff": "^3.1.0",
     "analyze-css": "^0.12.5",
     "bluebird": "^3.5.0",
     "capture-har": "^0.4.0",

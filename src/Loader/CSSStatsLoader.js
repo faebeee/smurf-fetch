@@ -1,16 +1,18 @@
-"use stict";
+'use strict';
 
 const cssstats = require('cssstats');
 const getCss = require('get-css');
 const path = require('path');
 
-
 const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class CSSStatsLoader extends AbstractLoader{
+    constructor(url, config) {
+        super(url, config);
+    }
 
-    constructor (url, config){
-        super ('CSSStatsLoader', url, config)
+    static getKey(){
+        return 'CSSStatsLoader';
     }
 
     load() {

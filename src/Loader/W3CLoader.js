@@ -1,4 +1,4 @@
-'use stict'
+'use strict';
 
 const w3c = require('w3cjs');
 const Promise = require('bluebird');
@@ -7,7 +7,11 @@ const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class W3CLoader extends AbstractLoader {
     constructor(url, config) {
-        super('W3CLoader', url, config);
+        super(url, config);
+    }
+
+    static getKey(){
+        return 'W3CLoader';
     }
 
     load() {

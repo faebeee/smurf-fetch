@@ -1,4 +1,4 @@
-'use stict';
+'use strict';
 
 const psi = require('psi');
 
@@ -6,7 +6,11 @@ const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class PSILoader extends AbstractLoader {
     constructor(url, config) {
-        super('PSILoader', url, config);
+        super(url, config);
+    }
+
+    static getKey(){
+        return 'PSILoader';
     }
 
     load() {

@@ -1,13 +1,12 @@
-'use stict';
-
-const PWMetrics = require('pwmetrics');
+'use strict';
+const PWMetricsPWMetrics = require('pwmetrics');
+const fs = require('fs');
 
 const lighthouse = require('lighthouse');
 const chromeLauncher = require('lighthouse/chrome-launcher');
 
 const AbstractLoader = require('./AbstractLoader');
 const perfConfig = {
-
   onlyAudits: [
     'works-offline',
     'first-meaningful-paint',
@@ -16,12 +15,15 @@ const perfConfig = {
     'first-interactive',
     'consistently-interactive',
   ]
-}
-const fs = require('fs');
+};
 
-module.exports = class LightHouseLoader extends AbstractLoader {
+class LightHouseLoader extends AbstractLoader {
     constructor(url, config) {
-        super('LightHouseLoader', url, config)
+        super(url, config);
+    }
+
+    static getKey(){
+        return 'LightHouseLoader';
     }
 
     load() {
@@ -43,4 +45,6 @@ module.exports = class LightHouseLoader extends AbstractLoader {
                     })
         });
     }
-};
+}
+
+module.exports = LightHouseLoader;

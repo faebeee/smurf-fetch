@@ -7,17 +7,17 @@ module.exports = class AbstractLoader {
      * @param url
      * @param config
      */
-    constructor(key, url, config) {
+    constructor(url, config) {
         this.url = url;
         this.config = config;
-        this.key = key;
         this.data = null;
+        this.key = this.constructor.getKey();
         this.isLoading = false;
         this.errorMessage = null;
     }
 
-    getKey() {
-        return this.key;
+    static getKey() {
+        throw new Error('Method not implemented')
     }
 
     /**

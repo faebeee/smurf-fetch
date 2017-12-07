@@ -1,0 +1,165 @@
+{
+  "https://faebeee.github.io/smurf-fetch/": {
+    "counters": {
+      "error": 2,
+      "notice": 8,
+      "warning": 1
+    },
+    "messageLog": [
+      {
+        "heading": "NOTICE",
+        "issue": "WCAG2AAA.Principle2.Guideline2_4.2_4_2.H25.2",
+        "description": "Check that the title element describes the document.",
+        "position": {
+          "lineNumber": 7,
+          "columnNumber": 0
+        },
+        "element": {
+          "node": "<title>smurf-fetch</title>",
+          "class": "",
+          "id": ""
+        }
+      },
+      {
+        "heading": "WARNING",
+        "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage",
+        "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+        "position": {
+          "lineNumber": 25,
+          "columnNumber": 6
+        },
+        "element": {
+          "node": "<h1 class=\"project-name\">smurf-fetch</h1>",
+          "class": "project-name",
+          "id": ""
+        }
+      },
+      {
+        "heading": "ERROR",
+        "issue": "WCAG2AAA.Principle1.Guideline1_3.1_3_1.H42.2",
+        "description": "Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.",
+        "position": {
+          "lineNumber": 26,
+          "columnNumber": 6
+        },
+        "element": {
+          "node": "<h2 class=\"project-tagline\"></h2>",
+          "class": "project-tagline",
+          "id": ""
+        }
+      },
+      {
+        "heading": "ERROR",
+        "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+        "description": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of 1:1. Recommendation: change text colour to #595959.",
+        "position": {
+          "lineNumber": 28,
+          "columnNumber": 8
+        },
+        "element": {
+          "node": "<a href=\"https://github.com/faebeee/smurf-fetch\" class=\"btn\">View on GitHub</a>",
+          "class": "btn",
+          "id": ""
+        }
+      },
+      {
+        "heading": "NOTICE",
+        "issue": "WCAG2AAA.Principle2.Guideline2_4.2_4_9.H30",
+        "description": "Check that text of the link describes the purpose of the link.",
+        "position": {
+          "lineNumber": 28,
+          "columnNumber": 8
+        },
+        "element": {
+          "node": "<a href=\"https://github.com/faebeee/smurf-fetch\" class=\"btn\">View on GitHub</a>",
+          "class": "btn",
+          "id": ""
+        }
+      },
+      {
+        "heading": "NOTICE",
+        "issue": "WCAG2AAA.Principle2.Guideline2_4.2_4_9.H30",
+        "description": "Check that text of the link describes the purpose of the link.",
+        "position": {
+          "lineNumber": 1,
+          "columnNumber": 0
+        },
+        "element": {
+          "node": "<a href=\"https://circleci.com/gh/faebeee/smurf-fetch\"><img src=\"https://circleci.com/gh/faebeee/smurf-fetch.svg?style=svg&amp;circle-token=e124566b18a14b88efd987dba34462c9ae970696\" alt=\"CircleCI\"></a>",
+          "class": "",
+          "id": ""
+        }
+      },
+      {
+        "heading": "NOTICE",
+        "issue": "WCAG2AAA.Principle1.Guideline1_1.1_1_1.G94.Image",
+        "description": "Ensure that the img element's alt text serves the same purpose and presents the same information as the image.",
+        "position": {
+          "lineNumber": 1,
+          "columnNumber": 0
+        },
+        "element": {
+          "node": "<img src=\"https://circleci.com/gh/faebeee/smurf-fetch.svg?style=svg&amp;circle-token=e124566b18a14b88efd987dba34462c9ae970696\" alt=\"CircleCI\">",
+          "class": "",
+          "id": ""
+        }
+      },
+      {
+        "heading": "NOTICE",
+        "issue": "WCAG2AAA.Principle1.Guideline1_1.1_1_1.G73,G74",
+        "description": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+        "position": {
+          "lineNumber": 1,
+          "columnNumber": 0
+        },
+        "element": {
+          "node": "<img src=\"https://circleci.com/gh/faebeee/smurf-fetch.svg?style=svg&amp;circle-token=e124566b18a14b88efd987dba34462c9ae970696\" alt=\"CircleCI\">",
+          "class": "",
+          "id": ""
+        }
+      },
+      {
+        "heading": "NOTICE",
+        "issue": "WCAG2AAA.Principle2.Guideline2_4.2_4_9.H30",
+        "description": "Check that text of the link describes the purpose of the link.",
+        "position": {
+          "lineNumber": 41,
+          "columnNumber": 42
+        },
+        "element": {
+          "node": "<a href=\"https://github.com/faebeee/smurf-fetch\">smurf-fetch</a>",
+          "class": "",
+          "id": ""
+        }
+      },
+      {
+        "heading": "NOTICE",
+        "issue": "WCAG2AAA.Principle2.Guideline2_4.2_4_9.H30",
+        "description": "Check that text of the link describes the purpose of the link.",
+        "position": {
+          "lineNumber": 41,
+          "columnNumber": 124
+        },
+        "element": {
+          "node": "<a href=\"https://github.com/faebeee\">faebeee</a>",
+          "class": "",
+          "id": ""
+        }
+      },
+      {
+        "heading": "NOTICE",
+        "issue": "WCAG2AAA.Principle2.Guideline2_4.2_4_9.H30",
+        "description": "Check that text of the link describes the purpose of the link.",
+        "position": {
+          "lineNumber": 43,
+          "columnNumber": 69
+        },
+        "element": {
+          "node": "<a href=\"https://pages.github.com\">GitHub Pages</a>",
+          "class": "",
+          "id": ""
+        }
+      }
+    ]
+  }
+}

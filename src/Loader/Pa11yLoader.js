@@ -1,12 +1,16 @@
-'use stict';
+'use strict';
 
 const pa11y = require('pa11y');
 
 const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class Pa11yLoader extends AbstractLoader {
-    constructor (url, config) {
-        super('Pa11yLoader', url, config)
+    constructor(url, config) {
+        super(url, config);
+    }
+
+    static getKey(){
+        return 'Pa11yLoader';
     }
 
     load () {
