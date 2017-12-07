@@ -3,7 +3,6 @@
 const Path = require('path');
 //const Report = require('./Report/SingleReport');
 const Report = require('./Report/ChunkedReport');
-const Stopwatch = require("node-stopwatch").Stopwatch;
 
 
 module.exports = class Reporter {
