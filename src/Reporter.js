@@ -15,7 +15,6 @@ module.exports = class Reporter {
 
         let loaders = this._loadLoaders();
         this.report = new Report(this.url, loaders);
-        this.stopwatch = Stopwatch.create();
 
     }
 
