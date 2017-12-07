@@ -3,6 +3,8 @@
 const Path = require('path');
 //const Report = require('./Report/SingleReport');
 const Report = require('./Report/ChunkedReport');
+const Stopwatch = require("node-stopwatch").Stopwatch;
+
 
 module.exports = class Reporter {
     constructor(url, config) {
@@ -10,9 +12,12 @@ module.exports = class Reporter {
         this.enabledLoaders = [];
         this.url = url;
         this.config = config;
+        this.elapsedMilliseconds = 0;
 
         let loaders = this._loadLoaders();
         this.report = new Report(this.url, loaders);
+        this.stopwatch = Stopwatch.create();
+
     }
 
     /**
@@ -43,8 +48,10 @@ module.exports = class Reporter {
      */
     start(loaders, chunksize) {
         this.enabledLoaders = loaders;
+        let startTimeStamp = ~~(Date.now());
         return this.report.create(loaders, chunksize)
             .then(() => {
+                this.elapsedMilliseconds = (~~(Date.now()))-startTimeStamp;
                 return this.getData();
             });
 
@@ -95,6 +102,7 @@ module.exports = class Reporter {
         this.report.isLoaded = json.isCompleted;
         this.report.createdAt = json.createdAt;
         this.report.url = json.url;
+        this.elapsedMilliseconds = json.elapsedMilliseconds;
         //this.report.loaders = json.loaders;
 
         this.enabledLoaders = loaderKeys;
@@ -112,7 +120,8 @@ module.exports = class Reporter {
             url: this.report.url,
             isCompleted: this.report.isCompleted,
             loaders: this.enabledLoaders,
-            data : this.report.getLoaders()
+            data : this.report.getLoaders(),
+            elapsedMilliseconds:  this.elapsedMilliseconds
         };
     }
 
