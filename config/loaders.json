@@ -1,11 +1,11 @@
 [
   {
-    "file" : "./src/Loader/LoadTestLoader",
-    "config" : {
-      "view" : {
-        "max" : 40
+    "file": "./src/Loader/LoadTestLoader",
+    "config": {
+      "view": {
+        "max": 40
       },
-      "report" : {
+      "report": {
         "maxRequests": 100,
         "timeout": 5000,
         "concurrency": 2,
@@ -14,56 +14,75 @@
     }
   },
   {
-    "file" : "./src/Loader/Pa11yLoader",
-    "config" : {}
+    "file": "./src/Loader/Pa11yLoader",
+    "config": {}
   },
   {
-    "file" : "./src/Loader/CSSStatsLoader",
-    "config" : {}
-  },
-  {
-    "file" : "./src/Loader/CSSAnalyzeLoader",
-    "config" : {}
-  },
-  {
-    "file" : "./src/Loader/PSILoader",
-    "config" : {
-      "strategy" : "desktop"
+    "file": "./src/Loader/CSSStatsLoader",
+    "config": {
+      "timeout": 15000
     }
   },
   {
-    "file" : "./src/Loader/WebPageTestLoader",
-    "config" : {
-      "options" : {
+    "file": "./src/Loader/CSSAnalyzeLoader",
+    "config": {
+      "timeout": 15000
+    }
+  },
+  {
+    "file": "./src/Loader/PSILoader",
+    "config": {
+      "strategy": "desktop"
+    }
+  },
+  {
+    "file": "./src/Loader/WebPageTestLoader",
+    "config": {
+      "options": {
         "pollResults": 5,
         "timeout": 120
       }
     }
   },
   {
-    "file" : "./src/Loader/LightHouseLoader",
-    "config" : {}
+    "file": "./src/Loader/LightHouseLoader",
+    "config": {
+      "onlyAudits": [
+        "works-offline",
+        "first-meaningful-paint",
+        "speed-index-metric",
+        "estimated-input-latency",
+        "first-interactive",
+        "consistently-interactive"
+      ]
+    }
   },
   {
-    "file" : "./src/Loader/HARLoader",
-    "config" : {}
+    "file": "./src/Loader/HARLoader",
+    "config": {}
   },
   {
-    "file" : "./src/Loader/W3CLoader",
-    "config" : {}
+    "file": "./src/Loader/W3CLoader",
+    "config": {}
   },
   {
-    "file" : "./src/Loader/SEOLoader",
-    "config" : {}
+    "file": "./src/Loader/SEOLoader",
+    "config": {}
   },
   {
-    "file" : "./src/Loader/AccessSniffLoader",
-    "config" : {}
+    "file": "./src/Loader/AccessSniffLoader",
+    "config": {
+      "browser": true,
+      "accessibilityLevel": "WCAG2AAA",
+      "reportType": "json",
+      "verbose": false,
+      "force": true
+    }
   },
   {
-    "file" : "./src/Loader/WappalyzerLoader",
-    "config" : {
-      "options" : {
+    "file": "./src/Loader/WappalyzerLoader",
+    "config": {
+      "options": {
         "debug": true,
         "maxDepth": 3,
         "maxUrls": 2,

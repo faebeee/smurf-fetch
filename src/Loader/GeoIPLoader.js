@@ -7,9 +7,6 @@ const satelize = require('satelize');
 const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class GeoIPLoader extends AbstractLoader {
-    constructor(url, config) {
-        super(url, config);
-    }
 
     static getKey(){
         return 'GeoIPLoader';

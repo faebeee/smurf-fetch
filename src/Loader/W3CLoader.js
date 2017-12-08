@@ -6,14 +6,12 @@ const Promise = require('bluebird');
 const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class W3CLoader extends AbstractLoader {
-    constructor(url, config) {
-        super(url, config);
-    }
 
     static getKey(){
         return 'W3CLoader';
     }
 
+    //@todo add validation for URL
     load() {
         return new Promise((res, rej) => {
             w3c.validate({

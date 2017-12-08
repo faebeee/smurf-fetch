@@ -5,9 +5,6 @@ const seochecker = require('seo-checker');
 const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class SEOLoader extends AbstractLoader {
-    constructor(url, config) {
-        super(url, config);
-    }
 
     static getKey(){
         return 'SEOLoader';

@@ -5,9 +5,6 @@ const psi = require('psi');
 const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class PSILoader extends AbstractLoader {
-    constructor(url, config) {
-        super(url, config);
-    }
 
     static getKey(){
         return 'PSILoader';

@@ -24,10 +24,12 @@ module.exports = class LoadTestLoader extends AbstractLoader {
     load () {
         let options = {
             url: this.url,
+
             maxRequests: this.config.report.maxRequests,
-            timeout: 5000,
-            concurrency: 2,
-            requestsPerSecond: 1,
+            timeout: this.config.report.timeout,
+            concurrency: this.config.report.concurrency,
+            requestsPerSecond: this.config.report.requestsPerSecond,
+
             statusCallback: (error, result, latency) => {
                 if (error) {
                     this.errorMessage = error.message;

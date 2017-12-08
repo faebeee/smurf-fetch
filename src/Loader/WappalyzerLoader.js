@@ -5,9 +5,6 @@ const AbstractLoader = require('./AbstractLoader');
 
 
 module.exports = class WappalyzerLoader extends AbstractLoader {
-    constructor(url, config) {
-        super(url, config);
-    }
 
     static getKey(){
         return 'WappalyzerLoader';

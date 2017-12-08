@@ -7,13 +7,16 @@ const AbstractLoader = require('./AbstractLoader')
 module.exports = class SystemInfoLoader extends AbstractLoader {
 
     constructor (url, config) {
-        super('SystemInfoLoader', url, config)
+        super(url, config);
 
         this.data = {
             mem: {},
             currentload: 0
         }
+    }
 
+    static getKey() {
+        return 'SystemInfoLoader';
     }
 
     load () {

@@ -2,20 +2,9 @@
 
 const AccessSniff = require('access-sniff');
 const AbstractLoader = require('./AbstractLoader');
-const CONFIG = {
-    options: {
-        browser: true,
-        accessibilityLevel: 'WCAG2AAA',
-        reportType: 'json',
-        verbose: false,
-        force: true
-    }
-}
+
 
 module.exports = class AccessSniffLoader extends AbstractLoader {
-    constructor(url, config) {
-        super(url, config);
-    }
 
     static getKey(){
         return 'AccessSniffLoader';
@@ -23,7 +12,7 @@ module.exports = class AccessSniffLoader extends AbstractLoader {
 
     load() {
         return AccessSniff
-            .default([this.url], CONFIG.options)
+            .default([this.url], this.config)
             .then((report) => {
                 return AccessSniff.report(report, {
                     reportType: 'json'

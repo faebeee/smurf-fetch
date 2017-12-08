@@ -4,9 +4,6 @@ const captureHar = require('capture-har');
 const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class HARLoader extends AbstractLoader {
-    constructor(url, config) {
-        super(url, config);
-    }
 
     static getKey(){
         return 'HARLoader';

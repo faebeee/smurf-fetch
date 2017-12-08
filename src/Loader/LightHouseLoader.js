@@ -6,28 +6,15 @@ const lighthouse = require('lighthouse');
 const chromeLauncher = require('lighthouse/chrome-launcher');
 
 const AbstractLoader = require('./AbstractLoader');
-const perfConfig = {
-  onlyAudits: [
-    'works-offline',
-    'first-meaningful-paint',
-    'speed-index-metric',
-    'estimated-input-latency',
-    'first-interactive',
-    'consistently-interactive',
-  ]
-};
 
 class LightHouseLoader extends AbstractLoader {
-    constructor(url, config) {
-        super(url, config);
-    }
 
     static getKey(){
         return 'LightHouseLoader';
     }
 
     load() {
-        return this.launchChromeAndRunLighthouse(this.url, perfConfig)
+        return this.launchChromeAndRunLighthouse(this.url, this.config)
             .then(results => {
                 this.data = results.audits;
             })

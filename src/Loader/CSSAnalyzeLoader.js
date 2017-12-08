@@ -1,15 +1,12 @@
 'use strict';
 
-const analyzer = require('analyze-css');
+const Analyzer = require('analyze-css');
 const getCss = require('get-css');
 const path = require('path');
 
 const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class AnalyzeCssLoader extends AbstractLoader{
-    constructor(url, config) {
-        super(url, config);
-    }
 
     static getKey(){
         return 'AnalyzeCssLoader';
@@ -18,15 +15,11 @@ module.exports = class AnalyzeCssLoader extends AbstractLoader{
     load() {
         this.data = {};
 
-        var options = {
-            timeout: 15000
-        };
-
-        return getCss(this.url, options)
+        return getCss(this.url, this.config)
             .then( (response) => {
                 for (let i = 0; i < response.links.length; i++) {
                     let link = response.links[i];
-                    new analyzer(link.css, {},(err, results) => {
+                    new Analyzer(link.css, {},(err, results) => {
                         if(err){
                             throw err;
                         }
