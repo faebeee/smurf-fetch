@@ -1,7 +1,8 @@
 'use strict';
 
-const wappalyzer = require('wappalyzer');
+const Wappalyzer = require('wappalyzer');
 const AbstractLoader = require('./AbstractLoader');
+
 
 module.exports = class WappalyzerLoader extends AbstractLoader {
     constructor(url, config) {
@@ -13,7 +14,9 @@ module.exports = class WappalyzerLoader extends AbstractLoader {
     }
 
     load () {
-        return wappalyzer.analyze(this.url)
+        const wappalyzer = new Wappalyzer(this.url, this.config.options);
+
+        return wappalyzer.analyze()
             .then(json => {
                 console.log(json);
                 this.data = json;

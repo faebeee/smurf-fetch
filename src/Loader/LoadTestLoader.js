@@ -9,7 +9,7 @@ module.exports = class LoadTestLoader extends AbstractLoader {
     constructor (url, config) {
         super(url, config);
 
-        this.max = config.max;
+        this.max = config.view.max;
         this.data = {
             meanLatencyMs: [],
             maxLatencyMs: [],
@@ -24,7 +24,7 @@ module.exports = class LoadTestLoader extends AbstractLoader {
     load () {
         let options = {
             url: this.url,
-            maxRequests: 100,
+            maxRequests: this.config.report.maxRequests,
             timeout: 5000,
             concurrency: 2,
             requestsPerSecond: 1,

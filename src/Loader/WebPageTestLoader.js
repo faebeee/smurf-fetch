@@ -22,9 +22,7 @@ module.exports = class WebPageTestLoader extends AbstractLoader {
             }
 
             const wpt = new WebPageTest('www.webpagetest.org', key);
-            wpt.runTest(this.url, {
-                pollResults: 5, timeout: 120
-            }, (err, data) => {
+            wpt.runTest(this.url, this.config.options, (err, data) => {
                 if (err) {
                     throw err;
                 }
