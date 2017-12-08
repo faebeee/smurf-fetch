@@ -18,7 +18,7 @@ module.exports = class SingleReport extends Report{
 
         if (!!~enabledLoaders.indexOf(loader.getKey())) {
             loader.isLoading = true;
-            return loader.load()
+            return loader.start()
                 .then(() => {
                     loader.isLoading = false;
                     if (loaders.length > 0) {

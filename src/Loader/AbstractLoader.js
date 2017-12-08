@@ -16,19 +16,46 @@ module.exports = class AbstractLoader {
         this.errorMessage = null;
     }
 
+    /**
+     * Get key for loader
+     * 
+     * @returns {String}
+     */
     static getKey() {
         throw new Error('Method not implemented')
     }
 
     /**
-     *
+     * start the loader
+     * 
+     * @returns {Promise}
+     */
+    start() {
+        this.isLoading = true;
+        let promise = this.load();
+        var isPromise = typeof promise.then == 'function';
+        if(!isPromise){
+            throw new Error('load() is not returning a promise');
+        }
+
+        return promise
+            .then( () => {
+                console.log(this.constructor.getKey(), 'completed')
+                this.isLoading = false;
+            })
+    }
+
+    /**
+     * execute the loader
+     * 
+     * @returns {Promise}
      */
     load() {
         throw new Error('Method not implemented')
     }
 
     /**
-     *
+     * Get data 
      * @returns {{}|*}
      */
     getData() {

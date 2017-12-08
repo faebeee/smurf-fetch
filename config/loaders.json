@@ -87,7 +87,7 @@
         "maxDepth": 3,
         "maxUrls": 2,
         "maxWait": 1000,
-        "recursive": true,
+        "recursive": false,
         "userAgent": "Wappalyzer"
       }
     }

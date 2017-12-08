@@ -20,7 +20,7 @@ module.exports = class ChunkedReport extends AbstractReport {
 
         for(let i = 0; i < loaders.length; i++){
             let loader = loaders[i];
-            promises.push(loader.load())
+            promises.push(loader.start())
         }
 
         return Promise.all(promises)

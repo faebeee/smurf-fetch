@@ -3,6 +3,7 @@
 const Path = require('path');
 //const Report = require('./Report/SingleReport');
 const Report = require('./Report/ChunkedReport');
+const ReportValidator = require('./Validator/ReportValidator');
 
 
 module.exports = class Reporter {
@@ -89,22 +90,29 @@ module.exports = class Reporter {
     }
 
     /**
+     * Load report from object
      *
      * @param {Object} json
      */
     setData(json){
-        let loaderKeys = Object.keys(json.data);
+        let validator = new ReportValidator();
+        return validator.validate(json)
+            .then( () => {
+                let loaderKeys = Object.keys(json.data);
 
-        this.report = new Report(json.url, this._loadLoaders());
-        this.report.isCompleted = json.isCompleted;
-        this.report.isLoaded = json.isCompleted;
-        this.report.createdAt = json.createdAt;
-        this.report.url = json.url;
-        this.elapsedMilliseconds = json.elapsedMilliseconds;
-        //this.report.loaders = json.loaders;
+                this.report = new Report(json.url, this._loadLoaders());
+                this.report.isCompleted = json.isCompleted;
+                this.report.isLoaded = json.isCompleted;
+                this.report.createdAt = json.createdAt;
+                this.report.url = json.url;
+                this.elapsedMilliseconds = json.elapsedMilliseconds;
+                this.report.loaders = json.loaders;
 
-        this.enabledLoaders = loaderKeys;
-        this.report.loaders = json.data;
+                this.enabledLoaders = loaderKeys;
+                this.report.data = json.data;
+
+                return this.getData();
+            })
     }
 
     /**
