@@ -12,29 +12,46 @@ module.exports = class Report {
      * @param url
      * @param loaders
      */
-    constructor(url, loaders) {
+    constructor(url, loaderConfig) {
         this.url = url;
-        this.loaderClasses = loaders || [];
+        this.loaderConfig = loaderConfig || [];
         this.createdAt = null;
         this.isCompleted = null;
         this.moduleLoader = new ModuleLoader();
 
         this.loaders = {};
-        this._createLoaders();
     }
 
+    /**
+     * Get config for loader
+     * 
+     * @param {String} key 
+     * @returns 
+     */
+    _getConfig( key ){
+        let len = this.loaderConfig.length;
+        for (let i = 0; i < len; i++) {
+            let loaderConf = this.loaderConfig[i];
+            if(loaderConf.key === key ){
+                return loaderConf;
+            }
+        }
+        return null;
+    }
 
     /**
      * Instanciate all required loaders
      *
+     * @params {Array} enabledLoaders
      * @private
      */
-    _createLoaders() {
+    _createLoaders(enabledLoaders) {
         let p = [];
-        let len = this.loaderClasses.length;
+        let len = enabledLoaders.length;
         for (let i = 0; i < len; i++) {
-            let loaderConf = this.loaderClasses[i];
-            p.push(this.moduleLoader.getClass(loaderConf.key)
+            let loaderKey = enabledLoaders[i];
+            let loaderConf = this._getConfig(loaderKey);
+            p.push(this.moduleLoader.getClass(loaderKey)
                 .then( (Loader) => {
                     let loader = new Loader(this.url, loaderConf.config);
                     let loaderKey = Loader.getKey();
@@ -52,6 +69,19 @@ module.exports = class Report {
             )               
         }
         return Promise.all(p);
+    }
+
+    /**
+     * Start the report
+     * 
+     * @param {Array} enabledLoaders 
+     * @returns 
+     */
+    start( enabledLoaders ){
+        return this._createLoaders(enabledLoaders)
+            .then( () => {
+                return this.create( enabledLoaders );
+            })
     }
 
     /**

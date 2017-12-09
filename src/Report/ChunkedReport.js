@@ -15,17 +15,13 @@ module.exports = class ChunkedReport extends AbstractReport {
      * @private
      */
     _processChunk(loadersChunk){
-        let loaders = loadersChunk;
+        let loaderNames = loadersChunk;
         let promises = [];
 
-        for(let i = 0; i < loaders.length; i++){
-            let loader = loaders[i];
-            console.log(loader);
+        for(let i = 0; i < loaderNames.length; i++){
+            let loaderName = loaderNames[i];
             promises.push(
-                loader.start()
-                .catch( (e) => {
-                    console.error(e);
-                })
+                this.loaders[loaderName].start()
             )
         }
 
@@ -66,21 +62,15 @@ module.exports = class ChunkedReport extends AbstractReport {
         let loaders = Object.values(this.loaders).splice(0);
         let loadersToProcess = [];
 
-        return this.moduleLoader.getClasses(enabledLoaders)
-        .then( (loadersToProcess) => {
-            loadersToProcess = chunk(loadersToProcess, chunkSize);
-            return this._processChunks(loadersToProcess)
-                .then(() => {
-                    this.createdAt = Date.now();
-                    this.isCompleted = true;
-                })
-                .catch((e) => {
-                    this.isCompleted = false;
-                    throw e;
-                })
-        })
-        
-
-
+        enabledLoaders = chunk(enabledLoaders, chunkSize);
+        return this._processChunks(enabledLoaders)
+            .then(() => {
+                this.createdAt = Date.now();
+                this.isCompleted = true;
+            })
+            .catch((e) => {
+                this.isCompleted = false;
+                throw e;
+            })
     }
 };

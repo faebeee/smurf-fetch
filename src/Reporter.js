@@ -15,7 +15,6 @@ module.exports = class Reporter {
         this.config = config || {};
         this.elapsedMilliseconds = 0;
         this.loaderConfig = loaderConfig || require(Path.resolve(__dirname, '../config/default.json'));
-
         this.report = new Report(this.url, this.loaderConfig);
     }
 
@@ -26,10 +25,9 @@ module.exports = class Reporter {
      * @params {Number} chunksize
      */
     start(loaders, chunksize) {
-        
         this.enabledLoaders = loaders;
         let startTimeStamp = ~~(Date.now());
-        return this.report.create(loaders, chunksize)
+        return this.report.start(loaders, chunksize)
             .then(() => {
                 this.elapsedMilliseconds = (~~(Date.now()))-startTimeStamp;
                 return this.getData();
@@ -75,8 +73,8 @@ module.exports = class Reporter {
                 this.report = new Report(json.url);
                 
                 this.report.isCompleted = json.isCompleted;
-                this.report.isLoaded = json.isCompleted;
                 this.report.createdAt = json.createdAt;
+                this.report.loaderConfig = json.loaderConfig;
                 this.report.url = json.url;
                 this.elapsedMilliseconds = json.elapsedMilliseconds;
                 this.report.loaders = json.loaders;
@@ -100,7 +98,8 @@ module.exports = class Reporter {
             isCompleted: this.report.isCompleted,
             loaders: this.enabledLoaders,
             data : this.report.getLoaders(),
-            elapsedMilliseconds:  this.elapsedMilliseconds
+            elapsedMilliseconds:  this.elapsedMilliseconds,
+            loaderConfig:  this.loaderConfig
         };
     }
 

@@ -40,6 +40,7 @@ class ModuleLoder {
         })
     }
 
+
     /**
      * Get class for loader
      * @param {String} key 

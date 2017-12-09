@@ -45,7 +45,6 @@ describe('Reporter', function () {
         let reporter = new Reporter(Config.url, {}, Config.loaderConf);
         reporter.start(Config.loaders)
         .then( (data) => {
-            console.log(data);
             done()
         })
         .catch(done);
