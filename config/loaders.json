@@ -40,7 +40,11 @@
     "config": {
       "options": {
         "pollResults": 5,
-        "timeout": 120
+        "timeout": 120,
+        "runs" : 1,
+        "private" : true,
+        "connectivity" : "Cable",
+        "timeline" : true
       }
     }
   },
