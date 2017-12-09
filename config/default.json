@@ -1,6 +1,6 @@
 [
   {
-    "file": "./src/Loader/LoadTestLoader",
+    "key": "LoadTestLoader",
     "config": {
       "view": {
         "max": 40
@@ -14,29 +14,29 @@
     }
   },
   {
-    "file": "./src/Loader/Pa11yLoader",
+    "key": "Pa11yLoader",
     "config": {}
   },
   {
-    "file": "./src/Loader/CSSStatsLoader",
+    "key": "CSSStatsLoader",
     "config": {
       "timeout": 15000
     }
   },
   {
-    "file": "./src/Loader/CSSAnalyzeLoader",
+    "key": "CSSAnalyzeLoader",
     "config": {
       "timeout": 15000
     }
   },
   {
-    "file": "./src/Loader/PSILoader",
+    "key": "PSILoader",
     "config": {
       "strategy": "desktop"
     }
   },
   {
-    "file": "./src/Loader/WebPageTestLoader",
+    "key": "WebPageTestLoader",
     "config": {
       "options": {
         "pollResults": 5,
@@ -49,7 +49,7 @@
     }
   },
   {
-    "file": "./src/Loader/LightHouseLoader",
+    "key": "LightHouseLoader",
     "config": {
       "onlyAudits": [
         "works-offline",
@@ -62,19 +62,19 @@
     }
   },
   {
-    "file": "./src/Loader/HARLoader",
+    "key": "HARLoader",
     "config": {}
   },
   {
-    "file": "./src/Loader/W3CLoader",
+    "key": "W3CLoader",
     "config": {}
   },
   {
-    "file": "./src/Loader/SEOLoader",
+    "key": "SEOLoader",
     "config": {}
   },
   {
-    "file": "./src/Loader/AccessSniffLoader",
+    "key": "AccessSniffLoader",
     "config": {
       "browser": true,
       "accessibilityLevel": "WCAG2AAA",
@@ -84,7 +84,7 @@
     }
   },
   {
-    "file": "./src/Loader/WappalyzerLoader",
+    "key": "WappalyzerLoader",
     "config": {
       "options": {
         "debug": true,

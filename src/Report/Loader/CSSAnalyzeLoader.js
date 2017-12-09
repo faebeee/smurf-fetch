@@ -6,10 +6,10 @@ const path = require('path');
 
 const AbstractLoader = require('./AbstractLoader');
 
-module.exports = class AnalyzeCssLoader extends AbstractLoader{
+module.exports = class CSSAnalyzeLoader extends AbstractLoader{
 
     static getKey(){
-        return 'AnalyzeCssLoader';
+        return 'CSSAnalyzeLoader';
     }
 
     load() {

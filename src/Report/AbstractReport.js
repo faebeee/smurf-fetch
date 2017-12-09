@@ -1,7 +1,8 @@
 "use strict";
 
 const Promise = require('bluebird');
-const TestDataLoader = require('../Loader/TestDataLoader');
+const TestDataLoader = require('./Loader/TestDataLoader');
+const ModuleLoader = require('../Loader/ModuleLoader');
 const fs = require('fs');
 const Path = require('path');
 
@@ -13,9 +14,10 @@ module.exports = class Report {
      */
     constructor(url, loaders) {
         this.url = url;
-        this.loaderClasses = loaders;
+        this.loaderClasses = loaders || [];
         this.createdAt = null;
         this.isCompleted = null;
+        this.moduleLoader = new ModuleLoader();
 
         this.loaders = {};
         this._createLoaders();
@@ -28,25 +30,28 @@ module.exports = class Report {
      * @private
      */
     _createLoaders() {
-        let promises = [];
+        let p = [];
         let len = this.loaderClasses.length;
         for (let i = 0; i < len; i++) {
             let loaderConf = this.loaderClasses[i];
-            let Loader = loaderConf.class;
-            let loader = new Loader(this.url, loaderConf.config);
-            let loaderKey = Loader.getKey();
-
-            let jsonFile = Path.resolve(Path.join(__dirname, '../../', 'data'), loaderKey + ".json");
-
-            if (process.env.NODE_ENV === 'dev' && fs.existsSync(jsonFile)) {
-                console.log('Load local data file for ', loaderKey);
-                let testLoader = new TestDataLoader(loaderKey, this.url, loaderConf.config);
-                this.loaders[loaderKey] = testLoader;
-            } else {
-                loader.data = null;
-                this.loaders[loaderKey] = loader;
-            }
+            p.push(this.moduleLoader.getClass(loaderConf.key)
+                .then( (Loader) => {
+                    let loader = new Loader(this.url, loaderConf.config);
+                    let loaderKey = Loader.getKey();
+        
+                    if (process.env.NODE_ENV === 'dev' && fs.existsSync(jsonFile)) {
+                        let jsonFile = Path.resolve(Path.join(__dirname, '../../', 'data'), loaderKey + ".json");                    
+                        console.log('Load local data file for ', loaderKey);
+                        loader.data = require(jsonFile);
+                        this.loaders[loaderKey] = loader;
+                    } else {
+                        loader.data = null;
+                        this.loaders[loaderKey] = loader;
+                    }
+                })
+            )               
         }
+        return Promise.all(p);
     }
 
     /**

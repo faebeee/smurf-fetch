@@ -10,10 +10,14 @@ describe('Reporter', function () {
         this.reporter = new Reporter(Config.url);
     });
 
-    it('get list of avaulable loaders', (done) => {
-        let loaderNames = Reporter.getAvailableLoaders();
-        unit.array(loaderNames).isNotEmpty();
-        done();
+    it('get list of available loaders', (done) => {
+        Reporter.getAvailableLoaders()
+        .then( (loaderNames) => {
+            unit.array(loaderNames).isNotEmpty();
+            done();
+        })
+        .catch( done );
+    
     });
 
     it('load data from object', (done) => {
@@ -33,9 +37,18 @@ describe('Reporter', function () {
                 done( new Error('Data should be invalid') );
             })
             .catch( () => {
-                done();
-            } )
+                done()
+             });
+    });
 
+    it('create report', (done) => {
+        let reporter = new Reporter(Config.url, {}, Config.loaderConf);
+        reporter.start(Config.loaders)
+        .then( (data) => {
+            console.log(data);
+            done()
+        })
+        .catch(done);
     });
 
 });

@@ -20,6 +20,7 @@ module.exports = class ChunkedReport extends AbstractReport {
 
         for(let i = 0; i < loaders.length; i++){
             let loader = loaders[i];
+            console.log(loader);
             promises.push(
                 loader.start()
                 .catch( (e) => {
@@ -65,21 +66,20 @@ module.exports = class ChunkedReport extends AbstractReport {
         let loaders = Object.values(this.loaders).splice(0);
         let loadersToProcess = [];
 
-        for(let i = 0; i < loaders.length; i++){
-            if (!!~enabledLoaders.indexOf(loaders[i].constructor.getKey())) {
-                loadersToProcess.push(loaders[i]);
-            }
-        }
-        loadersToProcess = chunk(loadersToProcess, chunkSize);
-        return this._processChunks(loadersToProcess)
-            .then(() => {
-                this.createdAt = Date.now();
-                this.isCompleted = true;
-            })
-            .catch((e) => {
-                this.isCompleted = false;
-                throw e;
-            })
+        return this.moduleLoader.getClasses(enabledLoaders)
+        .then( (loadersToProcess) => {
+            loadersToProcess = chunk(loadersToProcess, chunkSize);
+            return this._processChunks(loadersToProcess)
+                .then(() => {
+                    this.createdAt = Date.now();
+                    this.isCompleted = true;
+                })
+                .catch((e) => {
+                    this.isCompleted = false;
+                    throw e;
+                })
+        })
+        
 
 
     }

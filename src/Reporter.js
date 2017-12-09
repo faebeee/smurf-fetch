@@ -3,40 +3,20 @@
 const Path = require('path');
 //const Report = require('./Report/SingleReport');
 const Report = require('./Report/ChunkedReport');
+const ModuleLoader = require('./Loader/ModuleLoader');
 const ReportValidator = require('./Validator/ReportValidator');
 
 
 module.exports = class Reporter {
-    constructor(url, config) {
+    constructor(url, config, loaderConfig) {
         this.loaders = [];
         this.enabledLoaders = [];
         this.url = url;
-        this.config = config;
+        this.config = config || {};
         this.elapsedMilliseconds = 0;
+        this.loaderConfig = loaderConfig || require(Path.resolve(__dirname, '../config/default.json'));
 
-        let loaders = this._loadLoaders();
-        this.report = new Report(this.url, loaders);
-
-    }
-
-    /**
-     * initialize all configured loaders
-     */
-    _loadLoaders() {
-        let loaders = [];
-        let loaderConf = require(Path.resolve(__dirname, '../config/loaders.json'));
-
-        for (let i = 0; i < loaderConf.length; i++) {
-            let conf = loaderConf[i];
-            let config = Object.assign({}, conf.config, this.config);
-
-            let file = Path.resolve(Path.join(__dirname, '../'), conf.file);
-            loaders.push({
-                class: require(file),
-                config: config
-            })
-        }
-        return loaders;
+        this.report = new Report(this.url, this.loaderConfig);
     }
 
     /**
@@ -46,6 +26,7 @@ module.exports = class Reporter {
      * @params {Number} chunksize
      */
     start(loaders, chunksize) {
+        
         this.enabledLoaders = loaders;
         let startTimeStamp = ~~(Date.now());
         return this.report.create(loaders, chunksize)
@@ -57,20 +38,12 @@ module.exports = class Reporter {
     }
 
     /**
-     *
-     * @returns {[string,string,string,string,string,string,string]}
+     * Get all available keys
+     * @returns {Promise}
      */
      static getAvailableLoaders() {
-        let loaderConf = require(Path.resolve(__dirname, '../config/loaders.json'));
-        let loaders = [];
-
-        for (let i = 0; i < loaderConf.length; i++) {
-            let conf = loaderConf[i];
-            let file = Path.resolve(Path.join(__dirname, '../'), conf.file);
-            let LoaderClass = require(file);
-            loaders.push(LoaderClass.getKey());
-        }
-        return loaders;
+        let loader = new ModuleLoader();
+        return loader.getLoaderKeys();
     }
 
     /**
@@ -99,8 +72,8 @@ module.exports = class Reporter {
         return validator.validate(json)
             .then( () => {
                 let loaderKeys = Object.keys(json.data);
-
-                this.report = new Report(json.url, this._loadLoaders());
+                this.report = new Report(json.url);
+                
                 this.report.isCompleted = json.isCompleted;
                 this.report.isLoaded = json.isCompleted;
                 this.report.createdAt = json.createdAt;
