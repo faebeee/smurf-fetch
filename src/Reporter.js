@@ -8,6 +8,13 @@ const ReportValidator = require('./Validator/ReportValidator');
 
 
 module.exports = class Reporter {
+
+    /**
+     * 
+     * @param {String} url 
+     * @param {Object} config 
+     * @param {Object} loaderConfig 
+     */
     constructor(url, config, loaderConfig) {
         this.loaders = [];
         this.enabledLoaders = [];
@@ -92,7 +99,6 @@ module.exports = class Reporter {
      */
     getData() {
         return {
-            isLoaded: this.report.isComplete,
             createdAt: this.report.createdAt,
             url: this.report.url,
             isCompleted: this.report.isCompleted,

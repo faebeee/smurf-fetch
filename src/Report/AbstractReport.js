@@ -16,7 +16,7 @@ module.exports = class Report {
         this.url = url;
         this.loaderConfig = loaderConfig || [];
         this.createdAt = null;
-        this.isCompleted = null;
+        this.isCompleted = false;
         this.moduleLoader = new ModuleLoader();
 
         this.loaders = {};

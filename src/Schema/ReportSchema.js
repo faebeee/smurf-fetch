@@ -14,4 +14,5 @@ module.exports = {
     elapsedMilliseconds: Joi.number().required(),
     loaders: Joi.array().required(),
     data: Joi.object().required(),
+    loaderConfig: Joi.array(),
 };

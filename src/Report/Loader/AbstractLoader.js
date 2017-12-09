@@ -14,6 +14,7 @@ module.exports = class AbstractLoader {
         this.key = this.constructor.getKey();
         this.isLoading = false;
         this.errorMessage = null;
+        this.error = null;
     }
 
     /**
@@ -40,8 +41,10 @@ module.exports = class AbstractLoader {
 
         return promise
             .then( () => {
-                console.log(this.constructor.getKey(), 'completed')
                 this.isLoading = false;
+            })
+            .catch( (e) => {
+                this.error = e;
             })
     }
 
