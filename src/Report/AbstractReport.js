@@ -1,7 +1,6 @@
 "use strict";
 
 const Promise = require('bluebird');
-const TestDataLoader = require('./Loader/TestDataLoader');
 const ModuleLoader = require('../Loader/ModuleLoader');
 const fs = require('fs');
 const Path = require('path');
@@ -12,8 +11,9 @@ module.exports = class Report {
      * @param url
      * @param loaders
      */
-    constructor(url, loaderConfig) {
+    constructor(url, config, loaderConfig) {
         this.url = url;
+        this.config = config;
         this.loaderConfig = loaderConfig || [];
         this.createdAt = null;
         this.isCompleted = false;
@@ -53,18 +53,18 @@ module.exports = class Report {
             let loaderConf = this._getConfig(loaderKey);
             p.push(this.moduleLoader.getClass(loaderKey)
                 .then( (Loader) => {
-                    let loader = new Loader(this.url, loaderConf.config);
+                    let loader = new Loader(this.url, this.config, loaderConf.config);
                     let loaderKey = Loader.getKey();
         
                     if (process.env.NODE_ENV === 'dev' && fs.existsSync(jsonFile)) {
                         let jsonFile = Path.resolve(Path.join(__dirname, '../../', 'data'), loaderKey + ".json");                    
                         console.log('Load local data file for ', loaderKey);
                         loader.data = require(jsonFile);
-                        this.loaders[loaderKey] = loader;
                     } else {
                         loader.data = null;
-                        this.loaders[loaderKey] = loader;
                     }
+                    
+                    this.loaders[loaderKey] = loader;                    
                 })
             )               
         }

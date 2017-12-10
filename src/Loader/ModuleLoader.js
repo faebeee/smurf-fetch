@@ -95,18 +95,18 @@ class ModuleLoder {
      */
     getLoaderKeys(){
         return this.getFiles()
-        .then( (files) => {
-            if(!files || files.length === 0){
-                throw new Error('No files found');
-            }
-            let loaders = [];
-            for (let i = 0; i < files.length; i++) {
-                let classFile = files[i];
-                let LoaderClass = require(classFile);
-                loaders.push(LoaderClass.getKey());
-            }
-            return loaders;
-        })
+            .then( (files) => {
+                if(!files || files.length === 0){
+                    throw new Error('No files found');
+                }
+                let loaders = [];
+                for (let i = 0; i < files.length; i++) {
+                    let classFile = files[i];
+                    let LoaderClass = require(classFile);
+                    loaders.push(LoaderClass.getKey());
+                }
+                return loaders;
+            })
     }
 }
 

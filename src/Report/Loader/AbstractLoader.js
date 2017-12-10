@@ -7,9 +7,10 @@ module.exports = class AbstractLoader {
      * @param url
      * @param config
      */
-    constructor(url, config) {
+    constructor(url, userConf, config) {
         this.url = url;
         this.config = config;
+        this.userConfg = userConf;
         this.data = null;
         this.key = this.constructor.getKey();
         this.isLoading = false;
@@ -45,6 +46,7 @@ module.exports = class AbstractLoader {
             })
             .catch( (e) => {
                 this.error = e;
+                throw e;
             })
     }
 

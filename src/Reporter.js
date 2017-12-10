@@ -22,7 +22,7 @@ module.exports = class Reporter {
         this.config = config || {};
         this.elapsedMilliseconds = 0;
         this.loaderConfig = loaderConfig || require(Path.resolve(__dirname, '../config/default.json'));
-        this.report = new Report(this.url, this.loaderConfig);
+        this.report = new Report(this.url, this.config, this.loaderConfig);
     }
 
     /**
@@ -59,11 +59,10 @@ module.exports = class Reporter {
     getLoaderData(loaderName) {
         return new Promise((res, rej) => {
             if(!this.report){
-                res(null);
+                throw new Error('Loader '+loaderName+' not found');
             }
             let loader = this.report.get(loaderName);
             res(loader);
-
         });
     }
 
