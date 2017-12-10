@@ -30,7 +30,7 @@ module.exports = class GeoIPLoader extends AbstractLoader {
                         this.data.push({lat: payload.latitude, lon: payload.longitude});
                     })
                 }
-                return res();
+                return res(this.data);
             });
         })
 

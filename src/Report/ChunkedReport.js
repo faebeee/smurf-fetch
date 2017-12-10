@@ -54,13 +54,17 @@ module.exports = class ChunkedReport extends AbstractReport {
     /**
      * run all loaders to create a report
      * @param {Array} enabledLoaders array of loader names
-     * @param {Number} chunkSize
+     * @returns {Promise}
      */
-    create(enabledLoaders, chunkSize) {
-        chunkSize = chunkSize || 3;
+    create(enabledLoaders) {
+        let chunkSize = this.config.chunkSize || 3;
         this.isCompleted = false;
         let loaders = Object.values(this.loaders).splice(0);
         let loadersToProcess = [];
+
+        if(enabledLoaders.length === 0){
+            throw new Error('No loaders given');
+        }
 
         enabledLoaders = chunk(enabledLoaders, chunkSize);
         return this._processChunks(enabledLoaders)

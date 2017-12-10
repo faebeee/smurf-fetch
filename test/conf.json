@@ -1,11 +1,10 @@
 {
   "url" : "https://faebeee.github.io/smurf-fetch/",
-  "loaders" : ["Pa11yLoader", "CSSStatsLoader", "CSSAnalyzeLoader", "PSILoader", "W3CLoader", "SEOLoader"],
+  "loaders" : ["CSSStatsLoader", "CSSAnalyzeLoader", "PSILoader", "W3CLoader", "SEOLoader"],
+  "userConf" : {
+    "chunkSize" : 3
+  },
   "loaderConf" : [
-    {
-      "key": "Pa11yLoader",
-      "config": {}
-    },
     {
       "key": "CSSStatsLoader",
       "config": {

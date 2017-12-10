@@ -6,7 +6,6 @@ const Report = require('./Report/ChunkedReport');
 const ModuleLoader = require('./Loader/ModuleLoader');
 const ReportValidator = require('./Validator/ReportValidator');
 
-
 module.exports = class Reporter {
 
     /**
@@ -15,26 +14,26 @@ module.exports = class Reporter {
      * @param {Object} config 
      * @param {Object} loaderConfig 
      */
-    constructor(url, config, loaderConfig) {
+    constructor(config, loaderConfig) {
         this.loaders = [];
         this.enabledLoaders = [];
-        this.url = url;
         this.config = config || {};
         this.elapsedMilliseconds = 0;
         this.loaderConfig = loaderConfig || require(Path.resolve(__dirname, '../config/default.json'));
-        this.report = new Report(this.url, this.config, this.loaderConfig);
+        this.report = null;
     }
 
     /**
      * crate report
      *
-     * @params {Array} loaders
-     * @params {Number} chunksize
+     * @param {Array} loaders
+     * @param {Number} chunksize
      */
-    start(loaders, chunksize) {
+    start(url, loaders) {
+        this.report = new Report(url, this.config, this.loaderConfig);
         this.enabledLoaders = loaders;
         let startTimeStamp = ~~(Date.now());
-        return this.report.start(loaders, chunksize)
+        return this.report.start(loaders)
             .then(() => {
                 this.elapsedMilliseconds = (~~(Date.now()))-startTimeStamp;
                 return this.getData();
@@ -44,27 +43,53 @@ module.exports = class Reporter {
 
     /**
      * Get all available keys
+     * 
      * @returns {Promise}
      */
-     static getAvailableLoaders() {
-        let loader = new ModuleLoader();
-        return loader.getLoaderKeys();
+     getAvailableLoaders() {
+        let loader = new ModuleLoader();        
+        let configuredLoadersConfig = this.loaderConfig;
+        let configuredLoaders = [];
+        
+        for (var i = 0; i < configuredLoadersConfig.length; i++) {
+            configuredLoaders.push(configuredLoadersConfig[i].key);
+        }
+
+        return loader.getLoaderKeys()
+            .then( (loaders) => {
+                var results = [];
+                
+                for (var i = 0; i < configuredLoaders.length; i++) {
+                    if (loaders.indexOf(configuredLoaders[i]) !== -1) {
+                        results.push(configuredLoaders[i]);
+                    }
+                }
+                
+                return results;                
+            });
     }
 
     /**
-     *
+     *  Get data from loader
+     * 
      * @param loaderName
      * @returns {Promise}
      */
     getLoaderData(loaderName) {
         return new Promise((res, rej) => {
             if(!this.report){
+                throw new Error('Report not created');
+            }
+
+            let loader = this.report.get(loaderName);
+            if(!loader){
                 throw new Error('Loader '+loaderName+' not found');
             }
-            let loader = this.report.get(loaderName);
+
             res(loader);
         });
     }
+
 
     /**
      * Load report from object
@@ -76,7 +101,7 @@ module.exports = class Reporter {
         return validator.validate(json)
             .then( () => {
                 let loaderKeys = Object.keys(json.data);
-                this.report = new Report(json.url);
+                this.report = new Report();
                 
                 this.report.isCompleted = json.isCompleted;
                 this.report.createdAt = json.createdAt;
@@ -93,8 +118,8 @@ module.exports = class Reporter {
     }
 
     /**
-     *
-     * @returns {{isLoaded: *, createdAt: *, url: *, loaders: (Array|*)}}
+     * Get data
+     * @returns {Object}
      */
     getData() {
         return {
@@ -109,7 +134,8 @@ module.exports = class Reporter {
     }
 
     /**
-     *
+     * Transform data to json
+     * @returns {String}
      */
     getJson() {
         return JSON.stringify(this.getData());

@@ -18,7 +18,6 @@ module.exports = class Report {
         this.createdAt = null;
         this.isCompleted = false;
         this.moduleLoader = new ModuleLoader();
-
         this.loaders = {};
     }
 
@@ -36,6 +35,7 @@ module.exports = class Report {
                 return loaderConf;
             }
         }
+        throw new Error('No config for '+key);
         return null;
     }
 

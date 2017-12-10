@@ -6,14 +6,15 @@ const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class LoadTestLoader extends AbstractLoader {
 
-    constructor (url, config) {
-        super(url, config);
+    constructor (url, userConfig, config) {
+        super(url, userConfig, config);
 
         this.max = config.view.max;
         this.data = {
             meanLatencyMs: [],
             maxLatencyMs: [],
-            totalErrors: []
+            totalErrors: [],
+            isCompleted: false,
         }
     }
 
@@ -39,7 +40,8 @@ module.exports = class LoadTestLoader extends AbstractLoader {
                     this.data = {
                         meanLatencyMs: [],
                         maxLatencyMs: [],
-                        totalErrors: []
+                        totalErrors: [],
+                        isCompleted: false,
                     }
                 }
 
@@ -63,6 +65,7 @@ module.exports = class LoadTestLoader extends AbstractLoader {
             if (error) {
                 this.errorMessage = error.message;
             }
+            this.data.isCompleted = true;
         });
 
         return new Promise((res, rej) => {
