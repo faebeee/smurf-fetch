@@ -100,18 +100,16 @@ module.exports = class Reporter {
         let validator = new ReportValidator();
         return validator.validate(json)
             .then( () => {
-                let loaderKeys = Object.keys(json.data);
-                this.report = new Report();
+                this.report = new Report(json.url, json.config, json.loaderConfig);
                 
                 this.report.isCompleted = json.isCompleted;
                 this.report.createdAt = json.createdAt;
-                this.report.loaderConfig = json.loaderConfig;
                 this.report.url = json.url;
                 this.elapsedMilliseconds = json.elapsedMilliseconds;
-                this.report.loaders = json.loaders;
+                //this.report.loaders = json.loaders;
 
-                this.enabledLoaders = loaderKeys;
-                this.report.data = json.data;
+                this.enabledLoaders = json.loaders;
+                this.report.setLoaderData(json.data);
 
                 return this.getData();
             })
@@ -129,7 +127,8 @@ module.exports = class Reporter {
             loaders: this.enabledLoaders,
             data : this.report.getLoaders(),
             elapsedMilliseconds:  this.elapsedMilliseconds,
-            loaderConfig:  this.loaderConfig
+            loaderConfig:  this.loaderConfig,
+            config: this.config
         };
     }
 

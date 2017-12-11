@@ -15,4 +15,5 @@ module.exports = {
     loaders: Joi.array().required(),
     data: Joi.object().required(),
     loaderConfig: Joi.array(),
+    config: Joi.object(),
 };
