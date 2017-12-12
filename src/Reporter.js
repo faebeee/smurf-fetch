@@ -9,10 +9,10 @@ const ReportValidator = require('./Validator/ReportValidator');
 module.exports = class Reporter {
 
     /**
-     * 
-     * @param {String} url 
-     * @param {Object} config 
-     * @param {Object} loaderConfig 
+     *
+     * @param {String} url
+     * @param {Object} config
+     * @param {Object} loaderConfig
      */
     constructor(config, loaderConfig) {
         this.loaders = [];
@@ -26,8 +26,8 @@ module.exports = class Reporter {
     /**
      * crate report
      *
+     * @param {String} url
      * @param {Array} loaders
-     * @param {Number} chunksize
      */
     start(url, loaders) {
         this.report = new Report(url, this.config, this.loaderConfig);
@@ -43,14 +43,14 @@ module.exports = class Reporter {
 
     /**
      * Get all available keys
-     * 
+     *
      * @returns {Promise}
      */
      getAvailableLoaders() {
-        let loader = new ModuleLoader();        
+        let loader = new ModuleLoader();
         let configuredLoadersConfig = this.loaderConfig;
         let configuredLoaders = [];
-        
+
         for (var i = 0; i < configuredLoadersConfig.length; i++) {
             configuredLoaders.push(configuredLoadersConfig[i].key);
         }
@@ -58,20 +58,20 @@ module.exports = class Reporter {
         return loader.getLoaderKeys()
             .then( (loaders) => {
                 var results = [];
-                
+
                 for (var i = 0; i < configuredLoaders.length; i++) {
                     if (loaders.indexOf(configuredLoaders[i]) !== -1) {
                         results.push(configuredLoaders[i]);
                     }
                 }
-                
-                return results;                
+
+                return results;
             });
     }
 
     /**
      *  Get data from loader
-     * 
+     *
      * @param loaderName
      * @returns {Promise}
      */
@@ -101,7 +101,7 @@ module.exports = class Reporter {
         return validator.validate(json)
             .then( () => {
                 this.report = new Report(json.url, json.config, json.loaderConfig);
-                
+
                 this.report.isCompleted = json.isCompleted;
                 this.report.createdAt = json.createdAt;
                 this.report.url = json.url;

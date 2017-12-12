@@ -95,5 +95,11 @@
         "userAgent": "Wappalyzer"
       }
     }
+  },
+  {
+    "key": "BrokenLinkLoader",
+    "config": {
+      "checkLinks" : true,
+    }
   }
 ]

@@ -19,6 +19,7 @@
     "access-sniff": "^3.1.0",
     "analyze-css": "^0.12.5",
     "bluebird": "^3.5.0",
+    "broken-link-checker": "^0.7.6",
     "capture-har": "^0.4.0",
     "chunk": "0.0.2",
     "cssstats": "^3.1.0",

@@ -19,6 +19,9 @@ module.exports = class CSSAnalyzeLoader extends AbstractLoader{
             .then( (response) => {
                 for (let i = 0; i < response.links.length; i++) {
                     let link = response.links[i];
+                    if(!link.css){
+                        continue;
+                    }
                     new Analyzer(link.css, {},(err, results) => {
                         if(err){
                             throw err;
