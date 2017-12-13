@@ -99,7 +99,7 @@
   {
     "key": "BrokenLinkLoader",
     "config": {
-      "checkLinks" : true,
+      "checkLinks" : true
     }
   }
 ]
