@@ -18,7 +18,7 @@ describe('NetsniffLoader', function () {
         ]);
         reporter.start(Config.url, ['NetsniffLoader'])
             .then( (data) => {
-                unit.array(data.data.NetsniffLoader.data).isNotEmpty()
+                unit.object(data.data.NetsniffLoader.data).isNot(null)
                 done();
             })
             .catch( done );

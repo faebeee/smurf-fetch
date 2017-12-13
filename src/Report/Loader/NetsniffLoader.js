@@ -1,6 +1,7 @@
 'use strict';
 
 const phantom = require('phantom');
+const {run} = require('chrome-har-capturer');
 const moment = require('moment');
 
 
@@ -34,12 +35,18 @@ module.exports = class NetsniffLoader extends AbstractLoader {
     }
 
     load() {
-        return this._runPhantom(this.url)
-            .then(data => {
-                console.log(data);
-                this.data = data;
-                return this.data;
+        return new Promise( (res, rej) => {
+            let ev = run([this.url])
+
+            ev.on('har', (har) => {
+                console.log(har)
             })
+            ev.on('done', (url, index, urls) => {
+                console.log(index);
+                res();
+
+            })
+        });
     }
 
     _runPhantom(address) {
@@ -67,6 +74,8 @@ module.exports = class NetsniffLoader extends AbstractLoader {
                 });
 
                 page.on("onResourceReceived", (res) => {
+                      console.log('Receive ' + JSON.stringify(res, undefined, 4));
+
                     if (res.stage === 'start') {
                         resources[res.id].startReply = res;
                     }
@@ -92,10 +101,10 @@ module.exports = class NetsniffLoader extends AbstractLoader {
                         return this._toHAR(address, title, startTime, endTime, resources);
                     })
             })
-            .then((data) => {
-                return instance.exit()
-                    .then( () => data)
-            })
+            // .then((data) => {
+            //     return instance.exit()
+            //         .then( () => data)
+            // })
     }
 
 
@@ -163,8 +172,7 @@ module.exports = class NetsniffLoader extends AbstractLoader {
                 version: '1.2',
                 creator: {
                     name: "PhantomJS",
-                    version: phantom.version.major + '.' + phantom.version.minor +
-                    '.' + phantom.version.patch
+                    version: ''
                 },
                 pages: [{
                     startedDateTime: toISOString(startTime),
