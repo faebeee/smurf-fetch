@@ -31,6 +31,7 @@
     "maxmind": "^2.2.0",
     "moment": "^2.18.1",
     "pa11y": "^4.13.2",
+    "phantom": "^4.0.11",
     "psi": "^3.0.0",
     "pwmetrics": "^3.1.2",
     "satelize": "^0.2.0",
@@ -40,6 +41,7 @@
     "uuid": "^3.1.0",
     "w3cjs": "^0.4.0",
     "wappalyzer": "^5.2.0",
+    "webpage": "^0.3.0",
     "webpagetest": "^0.3.8",
     "webpagetest-mapper": "^1.0.1",
     "xhr": "^2.4.0"

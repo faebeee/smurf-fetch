@@ -25,6 +25,7 @@ module.exports = class ChunkedReport extends AbstractReport {
                     .then( () => {
                         console.log(loaderName, 'completed');
                     })
+                    .catch( console.error )
             )
         }
 
