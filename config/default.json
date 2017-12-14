@@ -14,10 +14,6 @@
     }
   },
   {
-    "key": "Pa11yLoader",
-    "config": {}
-  },
-  {
     "key": "CSSStatsLoader",
     "config": {
       "timeout": 15000
@@ -104,6 +100,12 @@
   },
   {
     "key": "NetsniffLoader",
+    "config": {
+      "delay": 15000
+    }
+  },
+  {
+    "key": "Pa11yLoader",
     "config": {
     }
   }
