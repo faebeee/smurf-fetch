@@ -7,7 +7,7 @@ const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class W3CLoader extends AbstractLoader {
 
-    static getKey(){
+    static getKey() {
         return 'W3CLoader';
     }
 
@@ -18,7 +18,7 @@ module.exports = class W3CLoader extends AbstractLoader {
                 file: this.url,
                 output: 'json', // Defaults to 'json', other option includes html
                 callback: (error, data) => {
-                    if(error){
+                    if (error) {
                         throw error;
                     }
 

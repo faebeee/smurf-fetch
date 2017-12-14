@@ -35,7 +35,7 @@ module.exports = class Reporter {
         let startTimeStamp = ~~(Date.now());
         return this.report.start(loaders)
             .then(() => {
-                this.elapsedMilliseconds = (~~(Date.now()))-startTimeStamp;
+                this.elapsedMilliseconds = (~~(Date.now())) - startTimeStamp;
                 return this.getData();
             });
 
@@ -46,7 +46,7 @@ module.exports = class Reporter {
      *
      * @returns {Promise}
      */
-     getAvailableLoaders() {
+    getAvailableLoaders() {
         let loader = new ModuleLoader();
         let configuredLoadersConfig = this.loaderConfig;
         let configuredLoaders = [];
@@ -56,7 +56,7 @@ module.exports = class Reporter {
         }
 
         return loader.getLoaderKeys()
-            .then( (loaders) => {
+            .then((loaders) => {
                 var results = [];
 
                 for (var i = 0; i < configuredLoaders.length; i++) {
@@ -77,13 +77,13 @@ module.exports = class Reporter {
      */
     getLoaderData(loaderName) {
         return new Promise((res, rej) => {
-            if(!this.report){
+            if (!this.report) {
                 throw new Error('Report not created');
             }
 
             let loader = this.report.get(loaderName);
-            if(!loader){
-                throw new Error('Loader '+loaderName+' not found');
+            if (!loader) {
+                throw new Error('Loader ' + loaderName + ' not found');
             }
 
             res(loader);
@@ -96,10 +96,10 @@ module.exports = class Reporter {
      *
      * @param {Object} json
      */
-    setData(json){
+    setData(json) {
         let validator = new ReportValidator();
         return validator.validate(json)
-            .then( () => {
+            .then(() => {
                 this.report = new Report(json.url, json.config, json.loaderConfig);
 
                 this.report.isCompleted = json.isCompleted;
@@ -125,9 +125,9 @@ module.exports = class Reporter {
             url: this.report.url,
             isCompleted: this.report.isCompleted,
             loaders: this.enabledLoaders,
-            data : this.report.getLoaders(),
-            elapsedMilliseconds:  this.elapsedMilliseconds,
-            loaderConfig:  this.loaderConfig,
+            data: this.report.getLoaders(),
+            elapsedMilliseconds: this.elapsedMilliseconds,
+            loaderConfig: this.loaderConfig,
             config: this.config
         };
     }

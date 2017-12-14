@@ -1,8 +1,14 @@
 "use strict";
 if (!Date.prototype.toISOString) {
     Date.prototype.toISOString = function () {
-        function pad(n) { return n < 10 ? '0' + n : n; }
-        function ms(n) { return n < 10 ? '00'+ n : n < 100 ? '0' + n : n }
+        function pad(n) {
+            return n < 10 ? '0' + n : n;
+        }
+
+        function ms(n) {
+            return n < 10 ? '00' + n : n < 100 ? '0' + n : n
+        }
+
         return this.getFullYear() + '-' +
             pad(this.getMonth() + 1) + '-' +
             pad(this.getDate()) + 'T' +
@@ -13,8 +19,7 @@ if (!Date.prototype.toISOString) {
     }
 }
 
-function createHAR(address, title, startTime, resources)
-{
+function createHAR(address, title, startTime, resources) {
     var entries = [];
 
     resources.forEach(function (resource) {
@@ -30,7 +35,7 @@ function createHAR(address, title, startTime, resources)
         // they aren't included in specification
         if (request.url.match(/(^data:image\/.*)/i)) {
             return;
-	}
+        }
 
         entries.push({
             startedDateTime: request.time.toISOString(),
@@ -79,7 +84,7 @@ function createHAR(address, title, startTime, resources)
             creator: {
                 name: "PhantomJS",
                 version: phantom.version.major + '.' + phantom.version.minor +
-                    '.' + phantom.version.patch
+                '.' + phantom.version.patch
             },
             pages: [{
                 startedDateTime: startTime.toISOString(),
@@ -96,8 +101,8 @@ function createHAR(address, title, startTime, resources)
 
 var page = require('webpage').create();
 
-module.exports = function( url ){
-    new Promise( (res, rej) => {
+module.exports = function (url) {
+    new Promise((res, rej) => {
         page.address = url;
         page.resources = [];
 

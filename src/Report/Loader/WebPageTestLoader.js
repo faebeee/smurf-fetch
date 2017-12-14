@@ -5,7 +5,7 @@ const WebPageTest = require('webpagetest');
 const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class WebPageTestLoader extends AbstractLoader {
-    static getKey(){
+    static getKey() {
         return 'WebPageTestLoader';
     }
 

@@ -3,7 +3,7 @@
 const Promise = require('bluebird');
 const Report = require("./AbstractReport");
 
-module.exports = class SingleReport extends Report{
+module.exports = class SingleReport extends Report {
 
     /**
      *
@@ -26,7 +26,7 @@ module.exports = class SingleReport extends Report{
                     }
                     return null;
                 })
-                .catch( e => {
+                .catch(e => {
                     loader.errorMessage = e.message;
                     console.error(e);
                 })
@@ -46,7 +46,7 @@ module.exports = class SingleReport extends Report{
     create(enabledLoaders) {
         this.isCompleted = false;
         let loaders = Object.values(this.loaders).splice(0);
-        for(let i = 0; i < loaders.length; i++){
+        for (let i = 0; i < loaders.length; i++) {
             if (!!~enabledLoaders.indexOf(loaders[i].getKey())) {
                 loaders[i].isLoading = true;
             }

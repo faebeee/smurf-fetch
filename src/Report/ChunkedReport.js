@@ -14,18 +14,18 @@ module.exports = class ChunkedReport extends AbstractReport {
      * @returns {Promise<T>}
      * @private
      */
-    _processChunk(loadersChunk){
+    _processChunk(loadersChunk) {
         let loaderNames = loadersChunk;
         let promises = [];
 
-        for(let i = 0; i < loaderNames.length; i++){
+        for (let i = 0; i < loaderNames.length; i++) {
             let loaderName = loaderNames[i];
             promises.push(
                 this.loaders[loaderName].start()
-                    .then( () => {
+                    .then(() => {
                         console.log(loaderName, 'completed');
                     })
-                    .catch( console.error )
+                    .catch(console.error)
             )
         }
 
@@ -33,7 +33,7 @@ module.exports = class ChunkedReport extends AbstractReport {
             .then(() => {
                 return null;
             })
-            .catch( e => {
+            .catch(e => {
                 console.error(e);
             });
     }
@@ -43,12 +43,12 @@ module.exports = class ChunkedReport extends AbstractReport {
      * @param {Array[]} loaderChunk
      * @private
      */
-    _processChunks(loaderChunk){
+    _processChunks(loaderChunk) {
         let chunk = loaderChunk.pop();
 
         return this._processChunk(chunk)
-            .then( () => {
-                if(loaderChunk.length > 0){
+            .then(() => {
+                if (loaderChunk.length > 0) {
                     return this._processChunks(loaderChunk);
                 }
                 return null;
@@ -66,7 +66,7 @@ module.exports = class ChunkedReport extends AbstractReport {
         let loaders = Object.values(this.loaders).splice(0);
         let loadersToProcess = [];
 
-        if(enabledLoaders.length === 0){
+        if (enabledLoaders.length === 0) {
             throw new Error('No loaders given');
         }
 

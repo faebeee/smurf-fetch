@@ -7,25 +7,26 @@ const moment = require('moment');
 
 const AbstractLoader = require('./AbstractLoader');
 
-function toISOString (date) {
+function toISOString(date) {
 
     return moment(date).format();
-        function pad(n) {
-            return n < 10 ? '0' + n : n;
-        }
 
-        function ms(n) {
-            return n < 10 ? '00' + n : n < 100 ? '0' + n : n
-        }
-
-        return date.getFullYear() + '-' +
-            pad(date.getMonth() + 1) + '-' +
-            pad(date.getDate()) + 'T' +
-            pad(date.getHours()) + ':' +
-            pad(date.getMinutes()) + ':' +
-            pad(date.getSeconds()) + '.' +
-            ms(date.getMilliseconds()) + 'Z';
+    function pad(n) {
+        return n < 10 ? '0' + n : n;
     }
+
+    function ms(n) {
+        return n < 10 ? '00' + n : n < 100 ? '0' + n : n
+    }
+
+    return date.getFullYear() + '-' +
+        pad(date.getMonth() + 1) + '-' +
+        pad(date.getDate()) + 'T' +
+        pad(date.getHours()) + ':' +
+        pad(date.getMinutes()) + ':' +
+        pad(date.getSeconds()) + '.' +
+        ms(date.getMilliseconds()) + 'Z';
+}
 
 module.exports = class NetsniffLoader extends AbstractLoader {
 
@@ -35,7 +36,7 @@ module.exports = class NetsniffLoader extends AbstractLoader {
     }
 
     load() {
-        return new Promise( (res, rej) => {
+        return new Promise((res, rej) => {
             let ev = run([this.url])
 
             ev.on('har', (har) => {
@@ -74,7 +75,7 @@ module.exports = class NetsniffLoader extends AbstractLoader {
                 });
 
                 page.on("onResourceReceived", (res) => {
-                      console.log('Receive ' + JSON.stringify(res, undefined, 4));
+                    console.log('Receive ' + JSON.stringify(res, undefined, 4));
 
                     if (res.stage === 'start') {
                         resources[res.id].startReply = res;
@@ -101,10 +102,10 @@ module.exports = class NetsniffLoader extends AbstractLoader {
                         return this._toHAR(address, title, startTime, endTime, resources);
                     })
             })
-            // .then((data) => {
-            //     return instance.exit()
-            //         .then( () => data)
-            // })
+        // .then((data) => {
+        //     return instance.exit()
+        //         .then( () => data)
+        // })
     }
 
 

@@ -23,19 +23,19 @@ module.exports = class Report {
 
     /**
      * Get config for loader
-     * 
-     * @param {String} key 
-     * @returns 
+     *
+     * @param {String} key
+     * @returns
      */
-    _getConfig( key ){
+    _getConfig(key) {
         let len = this.loaderConfig.length;
         for (let i = 0; i < len; i++) {
             let loaderConf = this.loaderConfig[i];
-            if(loaderConf.key === key ){
+            if (loaderConf.key === key) {
                 return loaderConf;
             }
         }
-        throw new Error('No config for '+key);
+        throw new Error('No config for ' + key);
         return null;
     }
 
@@ -52,35 +52,35 @@ module.exports = class Report {
             let loaderKey = enabledLoaders[i];
             let loaderConf = this._getConfig(loaderKey);
             p.push(this.moduleLoader.getClass(loaderKey)
-                .then( (Loader) => {
+                .then((Loader) => {
                     let loader = new Loader(this.url, this.config, loaderConf.config);
                     let loaderKey = Loader.getKey();
-        
+
                     if (process.env.NODE_ENV === 'dev' && fs.existsSync(jsonFile)) {
-                        let jsonFile = Path.resolve(Path.join(__dirname, '../../', 'data'), loaderKey + ".json");                    
+                        let jsonFile = Path.resolve(Path.join(__dirname, '../../', 'data'), loaderKey + ".json");
                         console.log('Load local data file for ', loaderKey);
                         loader.data = require(jsonFile);
                     } else {
                         loader.data = null;
                     }
-                    
-                    this.loaders[loaderKey] = loader;                    
+
+                    this.loaders[loaderKey] = loader;
                 })
-            )               
+            )
         }
         return Promise.all(p);
     }
 
     /**
      * Start the report
-     * 
-     * @param {Array} enabledLoaders 
-     * @returns 
+     *
+     * @param {Array} enabledLoaders
+     * @returns
      */
-    start( enabledLoaders ){
+    start(enabledLoaders) {
         return this._createLoaders(enabledLoaders)
-            .then( () => {
-                return this.create( enabledLoaders );
+            .then(() => {
+                return this.create(enabledLoaders);
             })
     }
 
@@ -103,7 +103,7 @@ module.exports = class Report {
      *
      * @returns {{}|*}
      */
-    getLoaders(){
+    getLoaders() {
         return this.loaders;
     }
 
@@ -121,7 +121,7 @@ module.exports = class Report {
      * @param {String} loader
      * @param {Object} data
      */
-    setLoaderData (data){
+    setLoaderData(data) {
         this.loaders = data;
     }
 };

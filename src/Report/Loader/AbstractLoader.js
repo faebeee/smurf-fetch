@@ -20,7 +20,7 @@ module.exports = class AbstractLoader {
 
     /**
      * Get key for loader
-     * 
+     *
      * @returns {String}
      */
     static getKey() {
@@ -29,22 +29,22 @@ module.exports = class AbstractLoader {
 
     /**
      * start the loader
-     * 
+     *
      * @returns {Promise}
      */
     start() {
         this.isLoading = true;
         let promise = this.load();
         var isPromise = typeof promise.then == 'function';
-        if(!isPromise){
+        if (!isPromise) {
             throw new Error('load() is not returning a promise');
         }
 
         return promise
-            .then( () => {
+            .then(() => {
                 this.isLoading = false;
             })
-            .catch( (e) => {
+            .catch((e) => {
                 this.error = e;
                 throw e;
             })
@@ -52,7 +52,7 @@ module.exports = class AbstractLoader {
 
     /**
      * execute the loader
-     * 
+     *
      * @returns {Promise}
      */
     load() {
@@ -60,7 +60,7 @@ module.exports = class AbstractLoader {
     }
 
     /**
-     * Get data 
+     * Get data
      * @returns {{}|*}
      */
     getData() {

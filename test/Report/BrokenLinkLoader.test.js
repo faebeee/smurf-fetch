@@ -11,17 +11,17 @@ describe('BrokenLinkLoader', function () {
             {
                 "key": "BrokenLinkLoader",
                 "config": {
-                  "checkLinks" : true,
+                    "checkLinks": true,
                 }
-              }
+            }
         ]);
 
         reporter.start(Config.url, ['BrokenLinkLoader'])
-            .then( (data) => {
+            .then((data) => {
                 unit.array(data.data.BrokenLinkLoader.data.links).isNotEmpty();
                 done();
             })
-            .catch( done );
+            .catch(done);
 
     });
 

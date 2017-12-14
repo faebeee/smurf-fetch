@@ -6,7 +6,7 @@ const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class AccessSniffLoader extends AbstractLoader {
 
-    static getKey(){
+    static getKey() {
         return 'AccessSniffLoader';
     }
 
@@ -18,7 +18,7 @@ module.exports = class AccessSniffLoader extends AbstractLoader {
                     reportType: 'json'
                 });
             })
-            .then( (data) => {
+            .then((data) => {
                 this.data = JSON.parse(data);
                 return this.data;
             })

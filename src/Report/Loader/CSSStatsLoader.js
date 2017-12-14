@@ -6,9 +6,9 @@ const path = require('path');
 
 const AbstractLoader = require('./AbstractLoader');
 
-module.exports = class CSSStatsLoader extends AbstractLoader{
+module.exports = class CSSStatsLoader extends AbstractLoader {
 
-    static getKey(){
+    static getKey() {
         return 'CSSStatsLoader';
     }
 
@@ -17,14 +17,14 @@ module.exports = class CSSStatsLoader extends AbstractLoader{
 
 
         return getCss(this.url, this.config)
-            .then( (response) => {
+            .then((response) => {
                 for (let i = 0; i < response.links.length; i++) {
                     let link = response.links[i];
-                        let stats = cssstats(link.css);
-                        stats.fullUrl = link.url;
-                        stats.specificityGraph = stats.selectors.getSpecificityGraph();
-                        stats.specificityValues = stats.selectors.getSpecificityValues();
-                        this.data[path.parse(link.url).name] = stats;
+                    let stats = cssstats(link.css);
+                    stats.fullUrl = link.url;
+                    stats.specificityGraph = stats.selectors.getSpecificityGraph();
+                    stats.specificityValues = stats.selectors.getSpecificityValues();
+                    this.data[path.parse(link.url).name] = stats;
                 }
             })
     }

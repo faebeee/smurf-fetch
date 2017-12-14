@@ -30,11 +30,11 @@ module.exports = class BrokenLinkLoader extends AbstractLoader {
                 page: (error, pageUrl, customData) => {
 
                 },
-                site:  (error, siteUrl, customData) => {
+                site: (error, siteUrl, customData) => {
                 },
                 end: () => {
                     this.data = {
-                        links:brokenLinks,
+                        links: brokenLinks,
                     };
                     res(this.data);
                 }

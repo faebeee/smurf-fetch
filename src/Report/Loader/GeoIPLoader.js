@@ -8,7 +8,7 @@ const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class GeoIPLoader extends AbstractLoader {
 
-    static getKey(){
+    static getKey() {
         return 'GeoIPLoader';
     }
 

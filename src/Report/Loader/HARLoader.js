@@ -5,7 +5,7 @@ const AbstractLoader = require('./AbstractLoader');
 
 module.exports = class HARLoader extends AbstractLoader {
 
-    static getKey(){
+    static getKey() {
         return 'HARLoader';
     }
 

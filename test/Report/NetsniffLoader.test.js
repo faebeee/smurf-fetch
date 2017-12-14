@@ -11,17 +11,17 @@ describe('NetsniffLoader', function () {
             {
                 "key": "NetsniffLoader",
                 "config": {
-                  "checkLinks" : true,
-                  "checkPages" : true
+                    "checkLinks": true,
+                    "checkPages": true
                 }
-              }
+            }
         ]);
         reporter.start(Config.url, ['NetsniffLoader'])
-            .then( (data) => {
+            .then((data) => {
                 unit.object(data.data.NetsniffLoader.data).isNot(null)
                 done();
             })
-            .catch( done );
+            .catch(done);
 
     });
 

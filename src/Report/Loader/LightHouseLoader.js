@@ -9,7 +9,7 @@ const AbstractLoader = require('./AbstractLoader');
 
 class LightHouseLoader extends AbstractLoader {
 
-    static getKey(){
+    static getKey() {
         return 'LightHouseLoader';
     }
 
@@ -26,11 +26,11 @@ class LightHouseLoader extends AbstractLoader {
                 flags.port = chrome.port;
                 return lighthouse(url, flags, config)
                     .then(results => chrome.kill().then(() => results))
-                    .catch( (e) => {
+                    .catch((e) => {
                         chrome.kill();
                         throw e;
                     })
-        });
+            });
     }
 }
 
