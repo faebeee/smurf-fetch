@@ -36,12 +36,17 @@
     "key": "WebPageTestLoader",
     "config": {
       "options": {
+        "location": "London_EC2:Chrome",
         "pollResults": 5,
         "timeout": 120,
         "runs" : 1,
         "private" : true,
         "connectivity" : "Cable",
-        "timeline" : true
+        "timeline" : true,
+        "disableScreenshot": true,
+        "htmlBody": false,
+        "pageSpeed" : false,
+        "medianMetric": false
       }
     }
   },

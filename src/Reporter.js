@@ -123,6 +123,10 @@ class Reporter {
      * @returns {Object}
      */
     getData() {
+        if(!this.report){
+            return null;
+        }
+
         return {
             createdAt: this.report.createdAt,
             url: this.report.url,

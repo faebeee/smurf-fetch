@@ -1,10 +1,7 @@
 'use strict';
 
-const phantom = require('phantom');
 const {run} = require('chrome-har-capturer');
-const moment = require('moment');
 const HeadlessChrome = require('simple-headless-chrome');
-
 
 const AbstractLoader = require('../AbstractLoader');
 
