@@ -7,11 +7,14 @@ const Bluebird = require('bluebird');
 
 const ROOT_PATH = '../Report/Loader';
 
-class ModuleLoder {
+/**
+ *
+ */
+class ModuleLoader {
     /**
      * Get all loaderfiles
-     * 
-     * @returns {Promsie}
+     *
+     * @returns {Promise}
      * @memberof ModuleLoder
      */
     getFiles() {
@@ -22,7 +25,7 @@ class ModuleLoder {
 
     /**
      * Get single file for specific loader
-     * @param {String} key 
+     * @param {String} key
      * @returns {Promise}
      */
     getFile(key) {
@@ -43,7 +46,7 @@ class ModuleLoder {
 
     /**
      * Get class for loader
-     * @param {String} key 
+     * @param {String} key
      * @returns {Promise}
      */
     getClass(key){
@@ -78,7 +81,7 @@ class ModuleLoder {
         if(keys === undefined){
             return this.getAllClasses();
         }
-        
+
         let p = [];
         for(let i = 0; i < keys.length; i++){
             let key = keys[i];
@@ -89,7 +92,7 @@ class ModuleLoder {
 
     /**
      * Get all keynames for loaders
-     * 
+     *
      * @returns {Promise}
      * @memberof ModuleLoder
      */
@@ -110,4 +113,4 @@ class ModuleLoder {
     }
 }
 
-module.exports = ModuleLoder;
+module.exports = ModuleLoader;

@@ -22,7 +22,8 @@
   {
     "key": "CSSAnalyzeLoader",
     "config": {
-      "timeout": 15000
+      "timeout": 15000,
+      "ignoreCerts": true
     }
   },
   {
@@ -59,7 +60,15 @@
   },
   {
     "key": "HARLoader",
-    "config": {}
+    "config": {
+      "requestOptions":{
+        "time": true,
+        "timeout": 5000
+      },
+      "harOptions" :{
+        "withContent": false
+      }
+    }
   },
   {
     "key": "W3CLoader",
@@ -101,7 +110,8 @@
   {
     "key": "NetsniffLoader",
     "config": {
-      "delay": 15000
+      "delay": 15000,
+      "timeout": 15000
     }
   },
   {

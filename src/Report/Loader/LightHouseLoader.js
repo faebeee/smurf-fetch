@@ -1,12 +1,13 @@
 'use strict';
-const PWMetricsPWMetrics = require('pwmetrics');
-const fs = require('fs');
 
 const lighthouse = require('lighthouse');
 const chromeLauncher = require('lighthouse/chrome-launcher');
 
 const AbstractLoader = require('./AbstractLoader');
 
+/**
+ * @extends {AbstractLoader}
+ */
 class LightHouseLoader extends AbstractLoader {
 
     static getKey() {

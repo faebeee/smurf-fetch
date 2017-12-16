@@ -1,0 +1,25 @@
+{
+  "opts": {
+    "encoding": "utf8",
+    "destination": "./doc",
+    "recurse": true
+  },
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc"]
+  },
+  "source": {
+    "include" : [
+      "./src/"
+    ]
+  },
+  "plugins": [],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "systemName" : "smurf-fetch",
+    "theme" : "simplex",
+    "linenums" : true,
+    "syntaxTheme" : "dark"
+  }
+}

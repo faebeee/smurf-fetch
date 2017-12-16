@@ -10,7 +10,8 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha test --recursive -t 60000",
-    "dev": "nodemon ./node_modules/.bin/mocha test --recursive -t 60000"
+    "dev": "nodemon ./node_modules/.bin/mocha test --recursive -t 60000",
+    "doc": "node_modules/.bin/jsdoc --configure ./jsdoc.json"
   },
   "engines": {
     "node": ">= 6"
@@ -20,7 +21,6 @@
     "analyze-css": "^0.12.5",
     "bluebird": "^3.5.0",
     "broken-link-checker": "^0.7.6",
-    "browsertime": "^2.1.1",
     "capture-har": "^0.4.0",
     "chrome-har-capturer": "^0.10.3",
     "chrome-launcher": "^0.10.0",
@@ -37,13 +37,9 @@
     "nightmare": "^2.10.0",
     "nightmare-har-plugin": "^0.9.1",
     "pa11y": "^4.13.2",
-    "pagexray": "^2.0.0",
-    "phantom": "^4.0.11",
-    "phantomhar": "0.0.9",
     "psi": "^3.0.0",
     "pwmetrics": "^3.1.2",
     "request": "^2.83.0",
-    "request-capture-har": "^1.2.2",
     "satelize": "^0.2.0",
     "seo-checker": "^0.3.2",
     "simple-headless-chrome": "^4.3.10",
@@ -52,15 +48,14 @@
     "uuid": "^3.1.0",
     "w3cjs": "^0.4.0",
     "wappalyzer": "^5.2.0",
-    "webpage": "^0.3.0",
     "webpagetest": "^0.3.8",
-    "webpagetest-mapper": "^1.0.1",
-    "xhr": "^2.4.0"
+    "webpagetest-mapper": "^1.0.1"
   },
   "license": "ISC",
   "devDependencies": {
+    "jsdoc": "^3.5.5",
     "mocha": "^4.0.0",
-    "unit.js": "^2.0.0",
-    "nodemon": "^1.12.5"
+    "nodemon": "^1.12.5",
+    "unit.js": "^2.0.0"
   }
 }

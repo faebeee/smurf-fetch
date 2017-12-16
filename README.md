@@ -29,3 +29,17 @@ smurf-fetch required some settings in order to work and use all given loaders. `
 
 Config
 ==
+
+[HARLoader](https://www.npmjs.com/package/capture-har)
+===
+- [requestOptions](https://www.npmjs.com/package/request#requestoptions-callback)
+- harOptions
+
+API
+==
+
+start
+===
+
+getAvailableLoaders
+===

@@ -5,11 +5,16 @@ const ModuleLoader = require('../Loader/ModuleLoader');
 const fs = require('fs');
 const Path = require('path');
 
-module.exports = class Report {
+/**
+ * @class
+ * @abstract
+ */
+class AbstractReport {
 
     /**
-     * @param url
-     * @param loaders
+     * @param {String} url
+     * @param {Object} config
+     * @param {Object} loaderConfig
      */
     constructor(url, config, loaderConfig) {
         this.url = url;
@@ -25,7 +30,7 @@ module.exports = class Report {
      * Get config for loader
      *
      * @param {String} key
-     * @returns
+     * @returns {Object}
      */
     _getConfig(key) {
         let len = this.loaderConfig.length;
@@ -75,7 +80,7 @@ module.exports = class Report {
      * Start the report
      *
      * @param {Array} enabledLoaders
-     * @returns
+     * @returns {Promise}
      */
     start(enabledLoaders) {
         return this._createLoaders(enabledLoaders)
@@ -86,6 +91,7 @@ module.exports = class Report {
 
     /**
      * run all loaders to create a report
+     *
      * @param {Array} enabledLoaders array of loader names
      */
     create(enabledLoaders) {
@@ -94,6 +100,7 @@ module.exports = class Report {
 
     /**
      * Transform data to json
+     * @return {String}
      */
     toJson() {
         return JSON.stringify(this.loaders);
@@ -101,7 +108,9 @@ module.exports = class Report {
 
     /**
      *
-     * @returns {{}|*}
+     * Get all loaders
+     *
+     * @returns {Object}
      */
     getLoaders() {
         return this.loaders;
@@ -109,6 +118,7 @@ module.exports = class Report {
 
     /**
      * Get loader by key
+     *
      * @param key
      * @returns {Object}
      */
@@ -117,11 +127,13 @@ module.exports = class Report {
     }
 
     /**
+     * Set data for loader
      *
-     * @param {String} loader
      * @param {Object} data
      */
-    setLoaderData(data) {
+    setLoaders(data) {
         this.loaders = data;
     }
-};
+}
+
+module.exports = AbstractReport;

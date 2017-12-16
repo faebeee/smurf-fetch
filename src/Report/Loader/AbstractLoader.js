@@ -1,11 +1,14 @@
 'use strict';
 
-module.exports = class AbstractLoader {
+/**
+ * @abstract
+ */
+class AbstractLoader {
     /**
      *
-     * @param key
-     * @param url
-     * @param config
+     * @param {String} url
+     * @param {Object} userConf
+     * @param {Object} config
      */
     constructor(url, userConf, config) {
         this.url = url;
@@ -21,7 +24,7 @@ module.exports = class AbstractLoader {
     /**
      * Get key for loader
      *
-     * @returns {String}
+     * @returns{String}
      */
     static getKey() {
         throw new Error('Method not implemented')
@@ -61,9 +64,12 @@ module.exports = class AbstractLoader {
 
     /**
      * Get data
-     * @returns {{}|*}
+     *
+     * @returns {Object}
      */
     getData() {
         return this.data
     }
 }
+
+module.exports = AbstractLoader;

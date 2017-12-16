@@ -5,11 +5,14 @@ const Promise = require("bluebird");
 
 const AbstractReport = require("./AbstractReport");
 
-
-module.exports = class ChunkedReport extends AbstractReport {
+/**
+ * @extends {AbstractReport}
+ */
+class ChunkedReport extends AbstractReport {
 
     /**
      * Process single chunk element
+     *
      * @param {AbstractLoader[]} loadersChunk
      * @returns {Promise<T>}
      * @private
@@ -37,6 +40,7 @@ module.exports = class ChunkedReport extends AbstractReport {
 
     /**
      * Process all chunks
+     *
      * @param {Array[]} loaderChunk
      * @private
      */
@@ -54,6 +58,7 @@ module.exports = class ChunkedReport extends AbstractReport {
 
     /**
      * run all loaders to create a report
+     *
      * @param {Array} enabledLoaders array of loader names
      * @returns {Promise}
      */
@@ -78,4 +83,6 @@ module.exports = class ChunkedReport extends AbstractReport {
                 throw e;
             })
     }
-};
+}
+
+module.exports = ChunkedReport;

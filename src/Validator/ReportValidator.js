@@ -4,6 +4,9 @@ const Promise = require('bluebird');
 const joi = require('joi');
 const schema = require('../Schema/ReportSchema');
 
+/**
+ * @class
+ */
 class ReportValidator {
 
     /**

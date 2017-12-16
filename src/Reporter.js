@@ -6,7 +6,10 @@ const Report = require('./Report/ChunkedReport');
 const ModuleLoader = require('./Loader/ModuleLoader');
 const ReportValidator = require('./Validator/ReportValidator');
 
-module.exports = class Reporter {
+/**
+ * @class
+ */
+class Reporter {
 
     /**
      *
@@ -109,7 +112,7 @@ module.exports = class Reporter {
                 //this.report.loaders = json.loaders;
 
                 this.enabledLoaders = json.loaders;
-                this.report.setLoaderData(json.data);
+                this.report.setLoaders(json.data);
 
                 return this.getData();
             })
@@ -139,4 +142,6 @@ module.exports = class Reporter {
     getJson() {
         return JSON.stringify(this.getData());
     }
-};
+}
+
+module.exports = Reporter;
