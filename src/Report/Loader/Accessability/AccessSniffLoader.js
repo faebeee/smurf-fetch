@@ -1,15 +1,24 @@
 'use strict';
 
 const AccessSniff = require('access-sniff');
-const AbstractLoader = require('./AbstractLoader');
+const AbstractLoader = require('../AbstractLoader');
 
+/**
+ * @extends {AbstractLoader}
+ */
+class AccessSniffLoader extends AbstractLoader {
 
-module.exports = class AccessSniffLoader extends AbstractLoader {
-
-    static getKey(){
+    /**
+     * @inheritDoc
+     */
+    static getKey() {
         return 'AccessSniffLoader';
     }
 
+    /**
+     *
+     * @inheritDoc
+     */
     load() {
         return AccessSniff
             .default([this.url], this.config)
@@ -18,9 +27,11 @@ module.exports = class AccessSniffLoader extends AbstractLoader {
                     reportType: 'json'
                 });
             })
-            .then( (data) => {
+            .then((data) => {
                 this.data = JSON.parse(data);
                 return this.data;
             })
     }
-};
+}
+
+module.exports = AccessSniffLoader;

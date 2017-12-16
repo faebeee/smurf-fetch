@@ -4,7 +4,9 @@ const Promise = require('bluebird');
 const joi = require('joi');
 const schema = require('../Schema/ReportSchema');
 
-
+/**
+ * @class
+ */
 class ReportValidator {
 
     /**
@@ -15,10 +17,10 @@ class ReportValidator {
      */
     validate(report) {
         const result = joi.validate(report, schema);
-        if(result.error === null){
+        if (result.error === null) {
             return Promise.resolve()
         }
-        
+
         return Promise.reject(result.error);
     }
 }

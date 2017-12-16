@@ -1,15 +1,16 @@
 'use strict';
-const PWMetricsPWMetrics = require('pwmetrics');
-const fs = require('fs');
 
 const lighthouse = require('lighthouse');
 const chromeLauncher = require('lighthouse/chrome-launcher');
 
 const AbstractLoader = require('./AbstractLoader');
 
+/**
+ * @extends {AbstractLoader}
+ */
 class LightHouseLoader extends AbstractLoader {
 
-    static getKey(){
+    static getKey() {
         return 'LightHouseLoader';
     }
 
@@ -26,11 +27,11 @@ class LightHouseLoader extends AbstractLoader {
                 flags.port = chrome.port;
                 return lighthouse(url, flags, config)
                     .then(results => chrome.kill().then(() => results))
-                    .catch( (e) => {
+                    .catch((e) => {
                         chrome.kill();
                         throw e;
                     })
-        });
+            });
     }
 }
 

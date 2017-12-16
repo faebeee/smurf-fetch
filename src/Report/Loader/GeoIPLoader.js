@@ -6,9 +6,12 @@ const satelize = require('satelize');
 
 const AbstractLoader = require('./AbstractLoader');
 
-module.exports = class GeoIPLoader extends AbstractLoader {
+/**
+ * @extends {AbstractLoader}
+ */
+class GeoIPLoader extends AbstractLoader {
 
-    static getKey(){
+    static getKey() {
         return 'GeoIPLoader';
     }
 
@@ -33,6 +36,7 @@ module.exports = class GeoIPLoader extends AbstractLoader {
                 return res(this.data);
             });
         })
-
     }
-};
+}
+
+module.exports = GeoIPLoader;

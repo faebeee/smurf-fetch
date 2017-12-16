@@ -2,16 +2,19 @@
 
 const seochecker = require('seo-checker');
 
-const AbstractLoader = require('./AbstractLoader');
+const AbstractLoader = require('../AbstractLoader');
 
-module.exports = class SEOLoader extends AbstractLoader {
+/**
+ * @extends {AbstractLoader}
+ */
+class SEOLoader extends AbstractLoader {
 
-    static getKey(){
+    static getKey() {
         return 'SEOLoader';
     }
 
     load() {
-        return new Promise( (res, rej) => {
+        return new Promise((res, rej) => {
             seochecker.load(this.url, (response) => {
                 if (!response) { // response will be false on error
                     return res();
@@ -23,4 +26,6 @@ module.exports = class SEOLoader extends AbstractLoader {
             });
         });
     }
-};
+}
+
+module.exports = SEOLoader;

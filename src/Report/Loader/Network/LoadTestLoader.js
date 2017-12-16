@@ -1,12 +1,18 @@
 'use strict';
 
-let loadtest = require('loadtest');
+const loadtest = require('loadtest');
 
-const AbstractLoader = require('./AbstractLoader');
+const AbstractLoader = require('../AbstractLoader');
 
-module.exports = class LoadTestLoader extends AbstractLoader {
+/**
+ * @extends {AbstractLoader}
+ */
+class LoadTestLoader extends AbstractLoader {
 
-    constructor (url, userConfig, config) {
+    /**
+     * @inheritDoc
+     */
+    constructor(url, userConfig, config) {
         super(url, userConfig, config);
 
         this.max = config.view.max;
@@ -18,11 +24,11 @@ module.exports = class LoadTestLoader extends AbstractLoader {
         }
     }
 
-    static getKey(){
+    static getKey() {
         return 'LoadTestLoader';
     }
 
-    load () {
+    load() {
         let options = {
             url: this.url,
 
@@ -72,4 +78,6 @@ module.exports = class LoadTestLoader extends AbstractLoader {
             res()
         })
     }
-};
+}
+
+module.exports = LoadTestLoader;

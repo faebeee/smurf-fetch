@@ -4,9 +4,12 @@ const psi = require('psi');
 
 const AbstractLoader = require('./AbstractLoader');
 
-module.exports = class PSILoader extends AbstractLoader {
-    
-    static getKey(){
+/**
+ * @extends {AbstractLoader}
+ */
+class PSILoader extends AbstractLoader {
+
+    static getKey() {
         return 'PSILoader';
     }
 
@@ -19,4 +22,5 @@ module.exports = class PSILoader extends AbstractLoader {
                 return this.data;
             })
     }
-};
+}
+module.exports = PSILoader;

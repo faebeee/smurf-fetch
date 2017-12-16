@@ -1,14 +1,18 @@
 "use strict";
 
 const Promise = require('bluebird');
-const Report = require("./AbstractReport");
+const AbstractReport = require("./AbstractReport");
 
-module.exports = class SingleReport extends Report{
+/**
+ * @extends {AbstractReport}
+ */
+class SingleReport extends AbstractReport {
 
     /**
+     * Execute single loader
      *
-     * @param loaders
-     * @param enabledLoaders
+     * @param {Array} loaders
+     * @param {Array} enabledLoaders
      * @returns {Promise.<T>}
      * @private
      */
@@ -26,7 +30,7 @@ module.exports = class SingleReport extends Report{
                     }
                     return null;
                 })
-                .catch( e => {
+                .catch(e => {
                     loader.errorMessage = e.message;
                     console.error(e);
                 })
@@ -41,12 +45,14 @@ module.exports = class SingleReport extends Report{
 
     /**
      * run all loaders to create a report
+     *
      * @param {Array} enabledLoaders array of loader names
+     * @returns {Promise}
      */
     create(enabledLoaders) {
         this.isCompleted = false;
         let loaders = Object.values(this.loaders).splice(0);
-        for(let i = 0; i < loaders.length; i++){
+        for (let i = 0; i < loaders.length; i++) {
             if (!!~enabledLoaders.indexOf(loaders[i].getKey())) {
                 loaders[i].isLoading = true;
             }
@@ -62,4 +68,6 @@ module.exports = class SingleReport extends Report{
                 throw e;
             })
     }
-};
+}
+
+module.exports = SingleReport;

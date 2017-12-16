@@ -5,11 +5,16 @@ const ModuleLoader = require('../Loader/ModuleLoader');
 const fs = require('fs');
 const Path = require('path');
 
-module.exports = class Report {
+/**
+ * @class
+ * @abstract
+ */
+class AbstractReport {
 
     /**
-     * @param url
-     * @param loaders
+     * @param {String} url
+     * @param {Object} config
+     * @param {Object} loaderConfig
      */
     constructor(url, config, loaderConfig) {
         this.url = url;
@@ -23,19 +28,19 @@ module.exports = class Report {
 
     /**
      * Get config for loader
-     * 
-     * @param {String} key 
-     * @returns 
+     *
+     * @param {String} key
+     * @returns {Object}
      */
-    _getConfig( key ){
+    _getConfig(key) {
         let len = this.loaderConfig.length;
         for (let i = 0; i < len; i++) {
             let loaderConf = this.loaderConfig[i];
-            if(loaderConf.key === key ){
+            if (loaderConf.key === key) {
                 return loaderConf;
             }
         }
-        throw new Error('No config for '+key);
+        throw new Error('No config for ' + key);
         return null;
     }
 
@@ -52,40 +57,41 @@ module.exports = class Report {
             let loaderKey = enabledLoaders[i];
             let loaderConf = this._getConfig(loaderKey);
             p.push(this.moduleLoader.getClass(loaderKey)
-                .then( (Loader) => {
+                .then((Loader) => {
                     let loader = new Loader(this.url, this.config, loaderConf.config);
                     let loaderKey = Loader.getKey();
-        
+
                     if (process.env.NODE_ENV === 'dev' && fs.existsSync(jsonFile)) {
-                        let jsonFile = Path.resolve(Path.join(__dirname, '../../', 'data'), loaderKey + ".json");                    
+                        let jsonFile = Path.resolve(Path.join(__dirname, '../../', 'data'), loaderKey + ".json");
                         console.log('Load local data file for ', loaderKey);
                         loader.data = require(jsonFile);
                     } else {
                         loader.data = null;
                     }
-                    
-                    this.loaders[loaderKey] = loader;                    
+
+                    this.loaders[loaderKey] = loader;
                 })
-            )               
+            )
         }
         return Promise.all(p);
     }
 
     /**
      * Start the report
-     * 
-     * @param {Array} enabledLoaders 
-     * @returns 
+     *
+     * @param {Array} enabledLoaders
+     * @returns {Promise}
      */
-    start( enabledLoaders ){
+    start(enabledLoaders) {
         return this._createLoaders(enabledLoaders)
-            .then( () => {
-                return this.create( enabledLoaders );
+            .then(() => {
+                return this.create(enabledLoaders);
             })
     }
 
     /**
      * run all loaders to create a report
+     *
      * @param {Array} enabledLoaders array of loader names
      */
     create(enabledLoaders) {
@@ -94,6 +100,7 @@ module.exports = class Report {
 
     /**
      * Transform data to json
+     * @return {String}
      */
     toJson() {
         return JSON.stringify(this.loaders);
@@ -101,14 +108,17 @@ module.exports = class Report {
 
     /**
      *
-     * @returns {{}|*}
+     * Get all loaders
+     *
+     * @returns {Object}
      */
-    getLoaders(){
+    getLoaders() {
         return this.loaders;
     }
 
     /**
      * Get loader by key
+     *
      * @param key
      * @returns {Object}
      */
@@ -117,11 +127,13 @@ module.exports = class Report {
     }
 
     /**
+     * Set data for loader
      *
-     * @param {String} loader
      * @param {Object} data
      */
-    setLoaderData (data){
+    setLoaders(data) {
         this.loaders = data;
     }
-};
+}
+
+module.exports = AbstractReport;
