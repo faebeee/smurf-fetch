@@ -25,7 +25,6 @@ class ChunkedReport extends AbstractReport {
             let loaderName = loaderNames[i];
             promises.push(
                 this.loaders[loaderName].start()
-                    .catch(console.error)
             )
         }
 

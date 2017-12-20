@@ -6,20 +6,21 @@
   },
   "tags": {
     "allowUnknownTags": true,
-    "dictionaries": ["jsdoc"]
+    "dictionaries": [
+      "jsdoc"
+    ]
   },
   "source": {
-    "include" : [
+    "include": [
       "./src/"
     ]
   },
-  "plugins": [],
   "templates": {
     "cleverLinks": false,
     "monospaceLinks": false,
-    "systemName" : "smurf-fetch",
-    "theme" : "simplex",
-    "linenums" : true,
-    "syntaxTheme" : "dark"
+    "systemName": "smurf-fetch",
+    "theme": "simplex",
+    "linenums": true,
+    "syntaxTheme": "dark"
   }
 }
