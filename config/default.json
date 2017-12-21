@@ -29,23 +29,25 @@
   {
     "key": "PSILoader",
     "config": {
-      "strategy": "desktop"
+      "strategy": "desktop",
+      "local": true
     }
   },
   {
     "key": "WebPageTestLoader",
     "config": {
+      "local": true,
       "options": {
         "location": "London_EC2:Chrome",
         "pollResults": 5,
         "timeout": 120,
-        "runs" : 1,
-        "private" : true,
-        "connectivity" : "Cable",
-        "timeline" : true,
+        "runs": 1,
+        "private": true,
+        "connectivity": "Cable",
+        "timeline": true,
         "disableScreenshot": true,
         "htmlBody": false,
-        "pageSpeed" : false,
+        "pageSpeed": false,
         "medianMetric": false
       }
     }
@@ -66,11 +68,11 @@
   {
     "key": "HARLoader",
     "config": {
-      "requestOptions":{
+      "requestOptions": {
         "time": true,
         "timeout": 5000
       },
-      "harOptions" :{
+      "harOptions": {
         "withContent": false
       }
     }
@@ -109,7 +111,7 @@
   {
     "key": "BrokenLinkLoader",
     "config": {
-      "checkLinks" : true
+      "checkLinks": true
     }
   },
   {
