@@ -41,7 +41,6 @@ class Reporter {
                 this.elapsedMilliseconds = (~~(Date.now())) - startTimeStamp;
                 return this.getData();
             });
-
     }
 
     /**
@@ -107,9 +106,9 @@ class Reporter {
 
                 this.report.isCompleted = json.isCompleted;
                 this.report.createdAt = json.createdAt;
+                this.report.proxy = json.proxy;
                 this.report.url = json.url;
                 this.elapsedMilliseconds = json.elapsedMilliseconds;
-                //this.report.loaders = json.loaders;
 
                 this.enabledLoaders = json.loaders;
                 this.report.setLoaders(json.data);
@@ -129,6 +128,7 @@ class Reporter {
 
         return {
             createdAt: this.report.createdAt,
+            proxy: this.report.proxy,
             url: this.report.url,
             isCompleted: this.report.isCompleted,
             loaders: this.enabledLoaders,

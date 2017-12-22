@@ -12,12 +12,23 @@ const Path = require('path');
 class AbstractReport {
 
     /**
-     * @param {String} url
+     * @param {Object|String} options
      * @param {Object} config
      * @param {Object} loaderConfig
      */
-    constructor(url, config, loaderConfig) {
-        this.url = url;
+    constructor(options, config, loaderConfig) {
+        if (typeof options === 'string') {
+            options = {url: options}
+        }
+
+        let defaultOptions = Object.assign({}, {
+            url: null,
+            proxy: null
+        }, options);
+
+        this.url = defaultOptions.url;
+        this.proxy = defaultOptions.proxy;
+
         this.config = config;
         this.loaderConfig = loaderConfig || [];
         this.createdAt = null;
@@ -58,7 +69,8 @@ class AbstractReport {
             let loaderConf = this._getConfig(loaderKey);
             p.push(this.moduleLoader.getClass(loaderKey)
                 .then((Loader) => {
-                    let loader = new Loader(this.url, this.config, loaderConf.config);
+                    let url = this.proxy !== null ? this.proxy : this.url;
+                    let loader = new Loader(url, this.config, loaderConf.config);
                     let loaderKey = Loader.getKey();
 
                     if (process.env.NODE_ENV === 'dev' && fs.existsSync(jsonFile)) {

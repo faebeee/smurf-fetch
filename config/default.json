@@ -29,14 +29,12 @@
   {
     "key": "PSILoader",
     "config": {
-      "strategy": "desktop",
-      "local": true
+      "strategy": "desktop"
     }
   },
   {
     "key": "WebPageTestLoader",
     "config": {
-      "local": true,
       "options": {
         "location": "London_EC2:Chrome",
         "pollResults": 5,
