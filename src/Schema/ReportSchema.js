@@ -9,6 +9,12 @@ module.exports = {
             'https'
         ]
     }),
+    proxy: Joi.string().uri({
+        scheme: [
+            'http',
+            'https'
+        ]
+    }).allow([null]),
     isCompleted: Joi.boolean().required(),
     createdAt: Joi.date().timestamp().required(),
     elapsedMilliseconds: Joi.number().required(),
