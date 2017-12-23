@@ -1,6 +1,6 @@
 {
   "name": "smurf-fetch",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "",
   "main": "./src/Reporter.js",
   "author": "faebeee <faebeee@gmail.com>",
