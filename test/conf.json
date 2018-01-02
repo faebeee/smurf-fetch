@@ -1,10 +1,16 @@
 {
-  "url" : "https://faebeee.github.io/smurf-fetch/",
-  "loaders" : ["CSSStatsLoader", "CSSAnalyzeLoader", "PSILoader", "W3CLoader", "SEOLoader"],
-  "userConf" : {
-    "chunkSize" : 3
+  "url": "https://faebeee.github.io/smurf-fetch/",
+  "loaders": [
+    "CSSStatsLoader",
+    "CSSAnalyzeLoader",
+    "PSILoader",
+    "W3CLoader",
+    "SEOLoader"
+  ],
+  "userConf": {
+    "chunkSize": 3
   },
-  "loaderConf" : [
+  "loaderConf": [
     {
       "key": "CSSStatsLoader",
       "config": {
@@ -19,6 +25,13 @@
     },
     {
       "key": "PSILoader",
+      "budget": {
+        "ruleGroups": {
+          "SPEED": {
+            "score": 90
+          }
+        }
+      },
       "config": {
         "strategy": "desktop"
       }

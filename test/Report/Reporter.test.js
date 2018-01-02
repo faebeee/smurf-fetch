@@ -73,4 +73,14 @@ describe('Reporter', function () {
             })
             .catch(done);
     });
+
+    it('create report with budget', (done) => {
+        let reporter = new Reporter(Config.userConf, Config.loaderConf);
+        reporter.start(Config.url, ["PSILoader"])
+            .then((data) => {
+                unit.object(data.data.PSILoader.budget).isNot(null);
+                done()
+            })
+            .catch(done);
+    });
 });
