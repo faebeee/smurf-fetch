@@ -1,7 +1,6 @@
 'use strict';
 
 const WebPageTest = require('webpagetest');
-
 const AbstractLoader = require('./AbstractLoader');
 
 /**
@@ -13,6 +12,10 @@ class WebPageTestLoader extends AbstractLoader {
     }
 
     load() {
+        return this._runTest(this.url);
+    }
+
+    _runTest(url) {
         return new Promise((res, rej) => {
             let key = this.userConfg.webPageTestApiKey;
             if (!key) {
@@ -20,9 +23,9 @@ class WebPageTestLoader extends AbstractLoader {
             }
 
             const wpt = new WebPageTest('www.webpagetest.org', key);
-            wpt.runTest(this.url, this.config.options, (err, data) => {
+            wpt.runTest(url, this.config.options, (err, data) => {
                 if (err) {
-                    throw err;
+                    return rej(err);
                 }
                 this.data = data;
                 return res(data);

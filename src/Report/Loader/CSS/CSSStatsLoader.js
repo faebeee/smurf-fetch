@@ -27,6 +27,11 @@ class CSSStatsLoader extends AbstractLoader {
                     stats.fullUrl = link.url;
                     stats.specificityGraph = stats.selectors.getSpecificityGraph();
                     stats.specificityValues = stats.selectors.getSpecificityValues();
+
+                    delete stats.selectors.getSpecificityGraph;
+                    delete stats.selectors.getSpecificityValues;
+                    delete stats.selectors.getSortedSpecificity;
+
                     this.data[path.parse(link.url).name] = stats;
                 }
             })

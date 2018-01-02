@@ -4,17 +4,20 @@
  * @abstract
  */
 class AbstractLoader {
+
     /**
      *
      * @param {String} url
      * @param {Object} userConf
      * @param {Object} config
+     * @param {Object} budget
      */
-    constructor(url, userConf, config) {
+    constructor(url, userConf, config, budget) {
         this.url = url;
         this.config = config;
         this.userConfg = userConf;
         this.data = null;
+        this.budget = budget;
         this.key = this.constructor.getKey();
         this.isLoading = false;
         this.errorMessage = null;
@@ -38,7 +41,7 @@ class AbstractLoader {
     start() {
         this.isLoading = true;
         let promise = this.load();
-        var isPromise = typeof promise.then == 'function';
+        const isPromise = typeof promise.then === 'function';
         if (!isPromise) {
             throw new Error('load() is not returning a promise');
         }
@@ -69,6 +72,10 @@ class AbstractLoader {
      */
     getData() {
         return this.data
+    }
+
+    getBudget(){
+        return this.budget;
     }
 }
 

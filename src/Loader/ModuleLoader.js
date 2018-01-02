@@ -2,8 +2,6 @@
 
 const glob = require( 'glob' );
 const path = require('path');
-const fs = require('fs');
-const Bluebird = require('bluebird');
 
 const ROOT_PATH = '../Report/Loader';
 

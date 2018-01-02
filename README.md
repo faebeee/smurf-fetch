@@ -35,6 +35,9 @@ Config
 - [requestOptions](https://www.npmjs.com/package/request#requestoptions-callback)
 - harOptions
 
+[WebPageTestLoader](https://www.npmjs.com/package/webpagetest)
+===
+
 API
 ==
 
