@@ -67,10 +67,11 @@ class AbstractReport {
         for (let i = 0; i < len; i++) {
             let loaderKey = enabledLoaders[i];
             let loaderConf = this._getConfig(loaderKey);
+
             p.push(this.moduleLoader.getClass(loaderKey)
                 .then((Loader) => {
                     let url = this.proxy !== null ? this.proxy : this.url;
-                    let loader = new Loader(url, this.config, loaderConf.config);
+                    let loader = new Loader(url, this.config, loaderConf.config, loaderConf.budget);
                     let loaderKey = Loader.getKey();
 
                     if (process.env.NODE_ENV === 'dev' && fs.existsSync(jsonFile)) {

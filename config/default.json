@@ -1,6 +1,7 @@
 [
   {
     "key": "LoadTestLoader",
+    "budget": {},
     "config": {
       "view": {
         "max": 40
@@ -15,12 +16,14 @@
   },
   {
     "key": "CSSStatsLoader",
+    "budget": {},
     "config": {
       "timeout": 15000
     }
   },
   {
     "key": "CSSAnalyzeLoader",
+    "budget": {},
     "config": {
       "timeout": 15000,
       "ignoreCerts": true
@@ -28,12 +31,20 @@
   },
   {
     "key": "PSILoader",
+    "budget": {
+      "ruleGroups": {
+        "SPEED": {
+          "score": 90
+        }
+      }
+    },
     "config": {
       "strategy": "desktop"
     }
   },
   {
     "key": "WebPageTestLoader",
+    "budget": {},
     "config": {
       "options": {
         "location": "London_EC2:Chrome",
@@ -52,6 +63,7 @@
   },
   {
     "key": "LightHouseLoader",
+    "budget": {},
     "config": {
       "onlyAudits": [
         "works-offline",
@@ -65,6 +77,7 @@
   },
   {
     "key": "HARLoader",
+    "budget": {},
     "config": {
       "requestOptions": {
         "time": true,
@@ -77,14 +90,17 @@
   },
   {
     "key": "W3CLoader",
+    "budget": {},
     "config": {}
   },
   {
     "key": "SEOLoader",
+    "budget": {},
     "config": {}
   },
   {
     "key": "AccessSniffLoader",
+    "budget": {},
     "config": {
       "browser": true,
       "accessibilityLevel": "WCAG2AAA",
@@ -95,6 +111,7 @@
   },
   {
     "key": "WappalyzerLoader",
+    "budget": {},
     "config": {
       "options": {
         "debug": true,
@@ -108,12 +125,14 @@
   },
   {
     "key": "BrokenLinkLoader",
+    "budget": {},
     "config": {
       "checkLinks": true
     }
   },
   {
     "key": "NetsniffLoader",
+    "budget": {},
     "config": {
       "delay": 15000,
       "timeout": 15000
@@ -121,6 +140,7 @@
   },
   {
     "key": "Pa11yLoader",
+    "budget": {},
     "config": {
     }
   }

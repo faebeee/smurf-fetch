@@ -25,7 +25,7 @@ class WebPageTestLoader extends AbstractLoader {
             const wpt = new WebPageTest('www.webpagetest.org', key);
             wpt.runTest(url, this.config.options, (err, data) => {
                 if (err) {
-                    throw err;
+                    return rej(err);
                 }
                 this.data = data;
                 return res(data);
