@@ -143,5 +143,11 @@
     "budget": {},
     "config": {
     }
+  },
+  {
+    "key": "GeoIpLoader",
+    "budget": {},
+    "config": {
+    }
   }
 ]
