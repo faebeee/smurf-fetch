@@ -145,7 +145,7 @@
     }
   },
   {
-    "key": "GeoIpLoader",
+    "key": "GeoIPLoader",
     "budget": {},
     "config": {
     }
