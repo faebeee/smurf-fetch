@@ -8,7 +8,9 @@
     "SEOLoader"
   ],
   "userConf": {
-    "chunkSize": 3
+    "chunkSize": 3,
+    "GTMETRIX_KEY": null,
+    "GTMETRIX_MAIL": null
   },
   "loaderConf": [
     {
@@ -43,6 +45,13 @@
     {
       "key": "SEOLoader",
       "config": {}
+    },
+    {
+      "key": "GTMetrixLoader",
+      "config": {
+        "location": 2,
+        "browser": 3
+      }
     }
   ]
 }

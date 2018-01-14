@@ -149,5 +149,13 @@
     "budget": {},
     "config": {
     }
+  },
+  {
+    "key": "GTMetrixLoader",
+    "budget": {},
+    "config": {
+      "location": 2,
+      "browser": 3
+    }
   }
 ]
