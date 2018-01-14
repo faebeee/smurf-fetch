@@ -5,7 +5,7 @@ const Reporter = require('../../src/Reporter');
 const Config = require('../conf.json');
 require('dotenv').config();
 
-describe('BrokenLinkLoader', function () {
+describe('BTMetrixLoader', function () {
 
     it('Create', (done) => {
         const config = Object.assign({}, Config.userConf, {
