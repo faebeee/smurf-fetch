@@ -24,6 +24,7 @@
     "capture-har": "^0.4.0",
     "chrome-har-capturer": "^0.10.3",
     "chrome-launcher": "^0.10.0",
+    "chrome-reporter": "0.0.1",
     "chunk": "0.0.2",
     "cssstats": "^3.1.0",
     "get-css": "^1.2.5",

@@ -27,7 +27,7 @@ class CSSAnalyzeLoader extends AbstractLoader {
                     }
                     new Analyzer(link.css, {}, (err, results) => {
                         if (err) {
-                            throw err;
+                            return Promise.reject(err);
                         }
                         results.fullUrl = link.url;
                         this.data[path.parse(link.url).name] = results;

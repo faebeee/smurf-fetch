@@ -21,7 +21,11 @@ class HARLoader extends AbstractLoader {
         return captureHar(requestOptions, harOptions)
             .then(har => {
                 this.data = har;
-            });
+                return true;
+            })
+            .catch( e => {
+                console.error(e);
+            })
     }
 }
 

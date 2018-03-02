@@ -36,6 +36,7 @@ class Reporter {
         this.report = new Report(url, this.config, this.loaderConfig);
         this.enabledLoaders = loaders;
         let startTimeStamp = ~~(Date.now());
+
         return this.report.start(loaders)
             .then(() => {
                 this.elapsedMilliseconds = (~~(Date.now())) - startTimeStamp;

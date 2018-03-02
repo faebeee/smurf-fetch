@@ -49,8 +49,10 @@ class AbstractLoader {
         return promise
             .then(() => {
                 this.isLoading = false;
+                return true;
             })
             .catch((e) => {
+                console.error(e);
                 this.error = e;
                 throw e;
             })

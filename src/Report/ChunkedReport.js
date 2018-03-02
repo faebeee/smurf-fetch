@@ -23,7 +23,6 @@ class ChunkedReport extends AbstractReport {
 
         for (let i = 0; i < loaderNames.length; i++) {
             let loaderName = loaderNames[i];
-
             promises.push(
                 this.loaders[loaderName].start()
             )
@@ -45,7 +44,7 @@ class ChunkedReport extends AbstractReport {
      * @private
      */
     _processChunks(loaderChunk) {
-        let chunk = loaderChunk.pop();
+        let chunk = loaderChunk.shift();
 
         return this._processChunk(chunk)
             .then(() => {
@@ -65,12 +64,13 @@ class ChunkedReport extends AbstractReport {
     create(enabledLoaders) {
         let chunkSize = this.config.chunkSize || 3;
         this.isCompleted = false;
-        let loaders = Object.values(this.loaders).splice(0);
-        let loadersToProcess = [];
+        //let loaders = Object.values(this.loaders).splice(0);
+        //let loadersToProcess = [];
 
         if (enabledLoaders.length === 0) {
             throw new Error('No loaders given');
         }
+
 
         enabledLoaders = chunk(enabledLoaders, chunkSize);
         return this._processChunks(enabledLoaders)
